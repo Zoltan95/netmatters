@@ -1,0 +1,15 @@
+// ==========================================================================
+// Base Styles
+// ==========================================================================
+
+*, :before, :after {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	color: palette(grey);
+	font-size: $base__font-size;
+	font-family: $font-family--primary;
+	line-height: calc($base__line/$base__font-size);
+}
