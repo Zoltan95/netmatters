@@ -29,11 +29,9 @@ a {
 }
 
 
-footer .footer__row .footer__social-logos a span {
-	position: relative;
-	top: 4px;
-}
-
+/////////////////////////////////////////////////////////
+//// Footer
+/////////////////////////////////////////////////////////
 footer {
 	background-color: #323544;
 	color: $white;
@@ -69,87 +67,5 @@ footer {
 	}
 }
 
-.footer__row {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-}
-
-.footer__company-info {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	width: 100%;	
-}
-
-.footer__social-logos {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	margin-bottom: 30px;
-}
-
-.footer__info {
-	width: auto;
-}
-
-.footer__logo {
-	width: 250px;
-	img {
-		width: 100%;
-		vertical-align: middle;
-		border: 0;
-	}
-}
-
-.footer__menu {
-	position: relative;
-	float: left;
-	width: 100%;
-	padding-left: 15px;
-	padding-right: 15px;
-	margin-bottom: 30px;
-}
-
-.footer__bottom {
-	display: flex;
-	justify-content: space-between;
-	font-size: .8125rem;
-	padding-top: 10px;
-	width: 100%;
-	left: 0;
-	background: #212330;
-	border: 0;
-}
-
-.footer__bottom-container {
-	padding-left: 15px;
-	padding-right: 15px;
-}
-
-.license {
-	color: $white;
-	font-size: .8125rem;
-	display: flex;
-	flex-direction: column;
-	text-decoration: none;
-	padding: 5px 0 10px;
-	width: 100%;
-	a {
-		color: $white;
-	}
-
-	a:hover, a:focus {
-		text-decoration: underline;
-		color: $white;
-	}
-}
-
-.row {
-	display: flex;
-	flex-wrap: wrap;
-	margin-left: -15px;
-	margin-right: -15px;
-}
 
 

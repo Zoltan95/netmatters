@@ -1,0 +1,17 @@
+.license {
+	color: $white;
+	font-size: .8125rem;
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
+	padding: 5px 0 10px;
+	width: 100%;
+	a {
+		color: $white;
+	}
+
+	a:hover, a:focus {
+		text-decoration: underline;
+		color: $white;
+	}
+}

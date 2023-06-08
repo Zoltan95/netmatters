@@ -1,0 +1,78 @@
+.footer {
+    /////////////////////////////////////////////////////////
+    // Footer Top
+    /////////////////////////////////////////////////////////
+
+    @include e(row){
+        @extend %flexwrap;
+        justify-content: space-between;
+    }
+
+    @include e(company-info){
+        @extend %flexwrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    @include e(info){
+        width: auto;
+    }
+
+    @include e(logo){
+        width: 250px;
+        img {
+            width: 100%;
+            vertical-align: middle;
+            border: 0;
+	    }
+    }
+
+    /////////////////////////////////////////////////////////
+    // Footer Top - Social Logos
+    /////////////////////////////////////////////////////////
+
+    @include e(social-logos){
+        @extend %flexwrap;
+        flex-direction: row;
+        margin-bottom: 30px;
+        a span {
+            position: relative;
+	        top: 4px;
+        }
+    }
+
+    /////////////////////////////////////////////////////////
+    // Footer Top - List
+    /////////////////////////////////////////////////////////
+
+    @include e(row){
+        @extend %flexwrap;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    @include e(menu){
+        position: relative;
+        float: left;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    /////////////////////////////////////////////////////////
+    // Footer Bottom
+    /////////////////////////////////////////////////////////
+    
+    @include e(bottom){
+        display: flex;
+        justify-content: space-between;
+        font-size: .8125rem;
+        padding-top: 10px;
+        width: 100%;
+        left: 0;
+        background: #212330;
+        border: 0;
+    }
+
+}   
