@@ -22,3 +22,13 @@
 @function palette($palette, $shade: 'base') {
 	@return map-get(map-get($color-palettes, $palette), $shade);
 }
+
+// If a class starts with icon change fontfamily
+[class*=" icon-"], [class^="icon-"] {
+  font-family: icomoon !important;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}

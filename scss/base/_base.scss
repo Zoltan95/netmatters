@@ -8,20 +8,114 @@
 }
 
 body {
-	color: palette(grey);
+	color: $white;
 	font-size: $base__font-size;
 	font-family: $font-family--primary;
 	line-height: calc($base__line/$base__font-size);
+	letter-spacing: .4px;
 }
 
 div {
 	display: block;
 }
 
-.footer-row {
-	display: flex;
+a {
+	text-decoration: none;
+	background: transparent;
 }
 
-.footer-company-info {
-	
+.icon-facebook::before {
+	content: "\E907";
 }
+
+
+footer .footer__row .footer__social-logos a span {
+	position: relative;
+	top: 4px;
+}
+
+footer {
+	background-color: #323544;
+	color: $white;
+	padding: 27px 0 0;
+	position: relative;
+	h4 {
+		margin-top: 24px;
+		font-family: inherit;
+		font-weight: 400;
+		margin-top: 24px;
+		text-transform: uppercase;
+		font-size: 1rem;
+		color: $white;
+		margin-bottom: 26px;
+	}
+
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		li {
+			font-size: .8125rem;
+			line-height: 1.375rem;
+			a {
+				color: $white;
+			}
+
+			a:hover, a:focus {
+				text-decoration: underline;
+				color: $white;
+			}
+		}
+	}
+}
+
+.footer__row {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.footer__company-info {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;	
+}
+
+.footer__social-logos {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+}
+
+.footer__info {
+	width: auto;
+}
+
+.footer__logo {
+	width: 250px;
+	img {
+		width: 100%;
+		vertical-align: middle;
+		border: 0;
+	}
+}
+
+.footer__menu {
+	position: relative;
+	float: left;
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-bottom: 30px;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+
