@@ -4,9 +4,12 @@
 
 // Font Stacks
 
-$font-url--google        : 'http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900';
-$font-family--primary    : 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$font-family--secondary  : 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-url--primary       	: 'fonts/poppins-v15-latin-regular.woff2';
+$font-url--primarybold		: 'fonts/poppins-v15-latin-600.woff2';
+$font-url--primarybolditalic: 'fonts/poppins-v15-latin-600italic.woff2';
+$font-url--icomoon			: 'fonts/icomoon.ttf';
+$font-family--primary    	: 'Poppins, sans-serif';
+$font-family--secondary  	: 'Lato', Helvetica, Arial, sans-serif;
 
 // Font Weights
 
@@ -66,18 +69,9 @@ $ui-colors: (
 
 // Text
 
-$base__font-size : 16px;
-$base__line      : 24px;
-$letter-space    : 1px;
-
-// Border radius
-
-$br--default    : .4em;
-$br--round      : 50%;
-
-// Transitions
-
-$trns-duration  : .3s;
+$base__font-size : 1rem;
+$base__line      : 1.42857143rem;
+$letter-space    : .4px;
 
 // Path to Assets
 

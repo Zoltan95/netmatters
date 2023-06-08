@@ -13,3 +13,15 @@ body {
 	font-family: $font-family--primary;
 	line-height: calc($base__line/$base__font-size);
 }
+
+div {
+	display: block;
+}
+
+.footer-row {
+	display: flex;
+}
+
+.footer-company-info {
+	
+}

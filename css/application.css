@@ -1,4 +1,7 @@
-@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+@import url("fonts/poppins-v15-latin-regular.woff2");
+@import url("fonts/poppins-v15-latin-600.woff2");
+@import url("fonts/poppins-v15-latin-600italic.woff2");
+@import url("fonts/icomoon.ttf");
 .srt {
   border: 0;
   clip: rect(0 0 0 0);
@@ -242,9 +245,24 @@ th {
 
 body {
   color: #797e83;
-  font-size: 16px;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  font-size: 1rem;
+  font-family: "Poppins, sans-serif";
+  line-height: 1.42857143;
+}
+
+div {
+  display: block;
+}
+
+.footer-row {
+  display: flex;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /*# sourceMappingURL=application.css.map */

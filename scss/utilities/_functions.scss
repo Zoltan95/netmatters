@@ -4,8 +4,11 @@
 
 // Import if Google Fonts URL is defined
 
-@if variable-exists(font-url--google) {
-  @import url($font-url--google);
+@if variable-exists(font-url--primary) {
+  @import url($font-url--primary);
+  @import url($font-url--primarybold);
+  @import url($font-url--primarybolditalic);
+  @import url($font-url--icomoon);
 }
 
 // Calculate em values
