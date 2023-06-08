@@ -4,12 +4,9 @@
 
 // Font Stacks
 
-$font-url--primary       	: 'fonts/poppins-v15-latin-regular.woff2';
-$font-url--primarybold		: 'fonts/poppins-v15-latin-600.woff2';
-$font-url--primarybolditalic: 'fonts/poppins-v15-latin-600italic.woff2';
-$font-url--icomoon			: 'fonts/IcoMoonFree.ttf';
-$font-family--primary    	: 'Poppins, sans-serif';
-$font-family--secondary  	: 'Lato', Helvetica, Arial, sans-serif;
+$font-url--primary       	: 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,600&display=swap';
+$font-family--primary    	: 'Poppins', 'sans-serif';
+$font-family--secondary  	: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
 
 // Font Weights
 

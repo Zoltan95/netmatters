@@ -1,9 +1,15 @@
-@import url("fonts/poppins-v15-latin-regular.woff2");
-@import url("fonts/poppins-v15-latin-600.woff2");
-@import url("fonts/poppins-v15-latin-600italic.woff2");
-@import url("fonts/IcoMoonFree.ttf");
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,600&display=swap");
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?368ibp");
+  src: url("../fonts/icomoon.eot?368ibp#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?368ibp") format("truetype"), url("../fonts/icomoon.woff?368ibp") format("woff"), url("../fonts/icomoon.svg?368ibp#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
 [class*=" icon-"], [class^=icon-] {
-  font-family: icomoon !important;
+  font-family: "icomoon" !important;
   font-style: normal;
   font-weight: 400;
   font-variant: normal;
@@ -255,7 +261,7 @@ th {
 body {
   color: #fff;
   font-size: 1rem;
-  font-family: "Poppins, sans-serif";
+  font-family: "Poppins", "sans-serif";
   line-height: 1.42857143;
   letter-spacing: 0.4px;
 }
@@ -269,8 +275,8 @@ a {
   background: transparent;
 }
 
-.icon-facebook::before {
-  content: "\e907";
+.icon-facebook:before {
+  content: "󪤇";
 }
 
 footer {
