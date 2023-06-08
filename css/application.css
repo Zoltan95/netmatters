@@ -353,6 +353,39 @@ footer ul li a:hover, footer ul li a:focus {
   margin-bottom: 30px;
 }
 
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8125rem;
+  padding-top: 10px;
+  width: 100%;
+  left: 0;
+  background: #212330;
+  border: 0;
+}
+
+.footer__bottom-container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.license {
+  color: #fff;
+  font-size: 0.8125rem;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  padding: 5px 0 10px;
+  width: 100%;
+}
+.license a {
+  color: #fff;
+}
+.license a:hover, .license a:focus {
+  text-decoration: underline;
+  color: #fff;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
