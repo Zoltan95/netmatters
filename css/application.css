@@ -1,4 +1,19 @@
 @charset "UTF-8";
+/*
+$color-primary   : $fountain-blue;
+$color-secondary : $scooter;
+$color-accent    : $emerald;
+$color-shadow    : rgba($black, .2);
+*/
+/*
+$ui-colors: (
+	default : $fountain-blue,
+	success : $emerald,
+	error   : $sunglo,
+	warning : $coral,
+	info    : $purple-majesty
+);
+*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,600&display=swap");
 @font-face {
   font-family: "icomoon";
@@ -266,6 +281,14 @@ body {
   letter-spacing: 0.4px;
 }
 
+h2 {
+  font-family: inherit;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0 0 15px;
+  color: #333645;
+}
+
 div {
   display: block;
 }
@@ -275,41 +298,29 @@ a {
   background: transparent;
 }
 
-.icon-facebook:before {
-  content: "󪤇";
+.newsletter {
+  background-color: #ddd;
+  margin: 0;
+  padding: 50px 0;
+}
+.newsletter__main {
+  background-color: #ddd;
+  margin: 0;
+}
+.newsletter__input-box {
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 footer {
-  background-color: #323544;
-  color: #fff;
-  padding: 27px 0 0;
   position: relative;
-}
-footer h4 {
-  margin-top: 24px;
-  font-family: inherit;
-  font-weight: 400;
-  margin-top: 24px;
-  text-transform: uppercase;
-  font-size: 1rem;
   color: #fff;
-  margin-bottom: 26px;
+  background-color: #323544;
+  padding: 27px 0 0;
 }
-footer ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-footer ul li {
-  font-size: 0.8125rem;
-  line-height: 1.375rem;
-}
-footer ul li a {
-  color: #fff;
-}
-footer ul li a:hover, footer ul li a:focus {
-  text-decoration: underline;
-  color: #fff;
+
+.icon-facebook:before {
+  content: "󪤇";
 }
 
 .container {
@@ -324,7 +335,7 @@ footer ul li a:hover, footer ul li a:focus {
   padding-right: 15px;
 }
 
-.footer__social-logos, .footer__company-info, .footer__row {
+.footer__social-logos, .footer__company-info, .footer__row, .newsletter__input-box {
   display: flex;
   flex-wrap: wrap;
 }
@@ -347,6 +358,13 @@ footer ul li a:hover, footer ul li a:focus {
   vertical-align: middle;
   border: 0;
 }
+.footer__logo h4 {
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+  margin-top: 24px;
+}
 .footer__social-logos {
   flex-direction: row;
   margin-bottom: 30px;
@@ -367,14 +385,30 @@ footer ul li a:hover, footer ul li a:focus {
   width: 100%;
   margin-bottom: 30px;
 }
+.footer__menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer__menu ul li {
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+}
+.footer__menu ul li a {
+  color: #fff;
+}
+.footer__menu ul li a:hover, .footer__menu ul li a:focus {
+  text-decoration: underline;
+  color: #fff;
+}
 .footer__bottom {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  background: #212330;
   font-size: 0.8125rem;
   padding-top: 10px;
-  width: 100%;
   left: 0;
-  background: #212330;
   border: 0;
 }
 

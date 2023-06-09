@@ -22,20 +22,16 @@ $white    : #fff;
 $black    : #0b0b0b;
 $grey     : #797e83;
 
-$fountain-blue  : #52bab3;
-$emerald        : #5ece7f;
-$sunglo         : #e67478;
-$coral          : #ff784f;
-$purple-majesty : #9279c3;
-$scooter        : #39add1;
+$tuna		    : #323544;
+$ebony-clay     : #212330;
 
 // Color Usage
-
+/*
 $color-primary   : $fountain-blue;
 $color-secondary : $scooter;
 $color-accent    : $emerald;
 $color-shadow    : rgba($black, .2);
-
+*/
 // Color Palette Modifiers
 
 $color-palettes: (
@@ -56,6 +52,7 @@ $color-palettes: (
 
 // UI Colors
 
+/*
 $ui-colors: (
 	default : $fountain-blue,
 	success : $emerald,
@@ -63,12 +60,15 @@ $ui-colors: (
 	warning : $coral,
 	info    : $purple-majesty
 );
+*/
 
 // Text
 
-$base__font-size : 1rem;
-$base__line      : 1.42857143rem;
-$letter-space    : .4px;
+$base__font-size 			: 1rem;
+$base__font-size--secondary : .8125rem;
+$headding-resize--huge		: 2rem;
+$base__line      			: 1.42857143rem;
+$letter-space    			: .4px;
 
 // Path to Assets
 

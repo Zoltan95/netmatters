@@ -25,6 +25,13 @@
             vertical-align: middle;
             border: 0;
 	    }
+        h4 {
+            color: $white;
+            font-size: $base__font-size;
+            text-transform: uppercase;
+            margin-bottom: 26px;
+            margin-top: 24px;
+        }
     }
 
     /////////////////////////////////////////////////////////
@@ -58,6 +65,23 @@
         float: left;
         width: 100%;
         margin-bottom: 30px;
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li {
+                font-size: $base__font-size--secondary;
+                line-height: 1.375rem;
+                a {
+                    color: $white;
+                }
+    
+                a:hover, a:focus {
+                    text-decoration: underline;
+                    color: $white;
+                }
+            }
+        }
     }
 
     /////////////////////////////////////////////////////////
@@ -67,11 +91,11 @@
     @include e(bottom){
         display: flex;
         justify-content: space-between;
-        font-size: .8125rem;
-        padding-top: 10px;
         width: 100%;
+        background: $ebony-clay;
+        font-size: $base__font-size--secondary;
+        padding-top: 10px;
         left: 0;
-        background: #212330;
         border: 0;
     }
 
