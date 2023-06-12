@@ -6,8 +6,14 @@
 	text-decoration: none;
 	padding: 5px 0 10px;
 	width: 100%;
-	a {
-		color: $white;
+	ul {
+		display: flex;
+		list-style: none;
+		padding: 0;
+		margin: 0;	
+		li a {
+			color: $white;
+		}
 	}
 
 	a:hover, a:focus {
