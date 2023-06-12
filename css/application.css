@@ -281,6 +281,13 @@ body {
   letter-spacing: 0.4px;
 }
 
+.h1 {
+  font-size: 2.25rem;
+  font-weight: 400;
+  margin: 0 0 28px;
+  color: #333645;
+}
+
 h2 {
   font-family: inherit;
   font-size: 2rem;
@@ -298,18 +305,34 @@ a {
   background: transparent;
 }
 
-.newsletter {
-  background-color: #ddd;
-  margin: 0;
-  padding: 50px 0;
+label {
+  display: block;
+  color: #333645;
+  font-weight: 600;
+  margin-bottom: 5px;
 }
-.newsletter__main {
-  background-color: #ddd;
-  margin: 0;
+
+.branding {
+  background-color: #333645;
 }
-.newsletter__input-box {
-  margin-left: -15px;
-  margin-right: -15px;
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 1.063rem;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #333645;
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  border: 1px solid #333645;
+  border-radius: 3px;
+  white-space: normal;
 }
 
 footer {
@@ -335,9 +358,194 @@ footer {
   padding-right: 15px;
 }
 
-.footer__social-logos, .footer__company-info, .footer__row, .newsletter__input-box {
+.headings-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.row {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.col {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.footer__social-logos, .footer__company-info, .footer__row, .newsletter__input-box-wrapper {
   display: flex;
   flex-wrap: wrap;
+}
+
+.articles__bar {
+  padding-top: 50px;
+}
+.articles__section {
+  padding-bottom: 50px;
+}
+.articles__list {
+  margin-top: -30px;
+}
+.articles__item {
+  font-size: 0.8125rem;
+  margin-top: 30px;
+  position: relative;
+  top: 0;
+  transition: 0.5s ease;
+}
+.articles__item-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.articles__img-container {
+  position: relative;
+}
+.articles__category {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  color: #fff;
+  background-color: #67809f;
+  font-size: 0.75rem;
+  padding: 0 10px;
+  line-height: 1.438rem;
+  text-transform: uppercase;
+  z-index: 1;
+}
+.articles__img {
+  display: block;
+  border: 0;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.articles__block {
+  color: #666;
+  display: block;
+  border: 1px solid #ccc;
+  padding: 30px;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+}
+.articles__block h3 a {
+  color: #67809f;
+  font-weight: 600;
+}
+.articles__block p {
+  margin-bottom: 25px;
+}
+.articles__read-time {
+  display: inline;
+  font-family: inherit;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: rgba(51, 54, 69, 0.5);
+  font-size: 0.85rem;
+  vertical-align: middle;
+}
+.articles__user {
+  display: table;
+  width: 100%;
+  font-size: 0.875rem;
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #ccc;
+}
+.articles__user-avatar {
+  width: 1%;
+  border-radius: 50%;
+  overflow: hidden;
+  display: table-cell;
+  vertical-align: middle;
+}
+.articles__user-details {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 20px;
+  line-height: 1.375rem;
+}
+.articles__user-details strong {
+  color: #333645;
+  font-weight: 600;
+}
+
+.newsletter {
+  background-color: #ddd;
+  margin: 0;
+  padding: 50px 0;
+}
+.newsletter__main {
+  background-color: #ddd;
+  margin: 0;
+}
+.newsletter__input-box-wrapper {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.newsletter__input-box {
+  flex: 1 1 450px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.newsletter__input-fields {
+  margin-bottom: 15px;
+}
+.newsletter__input-ctrl {
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  color: #555;
+  width: 100%;
+  height: 47px;
+  padding: 5px 15px;
+  margin: 0;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+}
+
+.ckbox {
+  overflow: hidden;
+}
+.ckbox__label {
+  display: inline-block;
+  font-weight: 600;
+  color: #333645;
+  line-height: 32px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.ckbox__left {
+  display: table-cell;
+  vertical-align: top;
+  padding-right: 0;
+}
+.ckbox__button {
+  border-radius: 3px;
+  border: 3px solid #333645;
+  height: 32px;
+  width: 32px;
+  position: relative;
+  float: left;
+  margin-right: 20px;
+}
+.ckbox__body {
+  display: table-cell;
+  vertical-align: top;
+  width: 10000px;
+  overflow: hidden;
 }
 
 .footer__row {

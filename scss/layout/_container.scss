@@ -13,3 +13,25 @@
 	padding-left: 15px;
 	padding-right: 15px;
 }
+
+.headings-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.row {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.col {
+    position: relative;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
