@@ -7,6 +7,7 @@
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
+    @extend %clearfix;
 }
 
 .footer__bottom-container {
@@ -27,6 +28,7 @@
 .row {
     padding-top: 50px;
     padding-bottom: 50px;
+    @extend %clearfix;
 }
 
 .col {

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/application.css">
+    <script src="https://kit.fontawesome.com/7a897e5abc.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
@@ -242,14 +243,18 @@
                             <h2 class="h1">
                                 <strong>Latest News</strong>
                             </h2>
+                            <h3>
+                                <a href="#">View All</a>
+                                <strong><em class="fa-solid fa-arrow-right arrow"></em></strong>
+                            </h3>
                         </div>
                     </div>
                 </div>
                 <div class="articles__section">
                     <div class="container">
-                        <div class="articles-list">
+                        <div class="articles__list">
                             <div class="row">
-                                <div class="col">
+                                <div class="col software">
                                     <div class="articles__item">
                                         <a class="articles__item-link" href="#"></a>
                                         <div class="articles__img-container">
@@ -268,7 +273,7 @@
                                             <p>
                                                 Customer retention is critical to any business that is looking to grow. For fast-paced businesses th...
                                             </p>
-                                            <a class="btn" href="">
+                                            <a class="btn btn--software" href="">
                                                 Read More
                                             </a>
                                             <div class="articles__user">
@@ -286,7 +291,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col">
+                                <div class="col it">
                                     <div class="articles__item">
                                         <a class="articles__item-link" href="#"></a>
                                         <div class="articles__img-container">
@@ -305,7 +310,7 @@
                                             <p>
                                                 Today, we are congratulating Elliot Traling for attaining the Netmatters Long Service Award and earn...
                                             </p>
-                                            <a class="btn" href="">
+                                            <a class="btn btn--it" href="">
                                                 Read More
                                             </a>
                                             <div class="articles__user">
@@ -323,13 +328,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col">
+                                <div class="col web">
                                     <div class="articles__item">
                                         <a class="articles__item-link" href="#"></a>
                                         <div class="articles__img-container">
                                             <a class="articles__category" href="#">News</a>
                                             <a class="articles__img-link" href="#">
-                                                <img class="articles__img" src="https://www.netmatters.co.uk/assets/images/thumbnails/thumb/elliot-tarling-b892.png">
+                                                <img class="articles__img" src="https://www.netmatters.co.uk/assets/images/thumbnails/thumb/may-2023-notables-wAcE.png">
                                             </a>
                                         </div>
                                         <div class="articles__block">
@@ -342,7 +347,7 @@
                                             <p>
                                                 Each month, various departments recognise those employees who have excelled in their work and helped...
                                             </p>
-                                            <a class="btn" href="">
+                                            <a class="btn btn--web" href="">
                                                 Read More
                                             </a>
                                             <div class="articles__user">
@@ -364,22 +369,52 @@
                         </div>
                     </div>
                 </div>
+                <div class="container view-all visible-xs">
+                    <h3>
+                        <a href="#">View All</a>
+                        <strong><em class="fa-solid fa-arrow-right arrow"></em></strong>
+                    </h3>
+                </div>
             </div>
             <!--Articles End-->
 
             <!--Slideshow 2 Start-->
-            <div>
-                <div>
-                    <div>
-                        <div>
-                            <div>
-
-                            </div>
-                            <div>
-
-                            </div>
-                        </div>
-                    </div>
+            <div class="slide-box">
+                <div class="slide-item">
+                    <img src="img/clients/ashcroftlogo_landscape_goldblack_DP60P-small.png" alt="">
+                </div>
+                <div class="slide-item">
+                    <img src="img/clients/beat_logo.png" alt="">
+                </div>
+                <div class="slide-item">
+                    <img src="img/clients/black_swan_logo.png" alt="">
+                </div>
+                <div class="slide-item">
+                    <img src="img/clients/crane_logo.png" alt="">
+                </div>
+                <div class="slide-item">
+                    <img src="img/clients/girl_guides_anglia_logo.png" alt="">
+                </div>
+                <div class="slide-item">
+                    <img src="img/clients/girls_day_school_trust_logob.png" alt="">
+                </div>
+                <div class="slide-item">
+                    <img src="img/clients/howespercivallogo.png" alt="">
+                </div>
+                <div class="slide-item">
+                    <img src="img/clients/onetravellerlogo_white_figuire.png" alt="">
+                </div>
+                <div class="slide-item">
+                    <img src="img/clients/searles_logo.png" alt="">
+                </div>
+                <div class="slide-item">
+                    <img src="img/clients/survey_solutions_logo.png" alt="">
+                </div>
+                <div class="slide-item">
+                    <img src="img/clients/sweetzy_logo.png" alt="">
+                </div>
+                <div class="slide-item">
+                    <img src="img/clients/xupes_logo.png" alt="">
                 </div>
             </div>
             <!--Slideshow 2 End-->
@@ -416,7 +451,7 @@
                                     <span class="ckbox__body">
                                         Please tick this box if you wish to recieve
                                         marketing information from us.
-                                        <a href="#">Privacy Policy</a>
+                                        Please see our <a href="#">Privacy Policy</a>
                                         for more information on how we keep your data safe.
                                     </span>
                                 </span>
@@ -444,14 +479,14 @@
                             </div>
                             <h4>Follow us on:</h4>
                             <div class="footer__social-logos">
-                                <a href="#"><span class="icon-facebook"></span></a>
-                                <a href="#"></a>
-                                <a href="#"></a>
-                                <a href="#"></a>
+                                <a class="facebook btn" href="#"><span class="fa-brands fa-facebook-f"></span></a>
+                                <a class="linkedin btn" href="#"><span class="fa-brands fa-linkedin-in"></span></a>
+                                <a class="twitter btn" href="#"><span class="fa-brands fa-twitter"></span></a>
+                                <a class="instagram btn" href="#"><span class="fa-brands fa-instagram"></span></a>
                             </div>
                         </div>
                     </div>
-                    <div class="footer__row">
+                    <div class="footer__menu-row">
                         <div class="footer__menu">
                             <h4>About Netmatters</h4>
                             <ul>

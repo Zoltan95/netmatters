@@ -15,4 +15,41 @@
 	border: 1px solid #333645;
 	border-radius: 3px;
 	white-space: normal;
+
+	@include m(it) {
+		background-color: #4183d7;
+		border-color: #4183d7;
+	}
+	@include m(web) {
+		background-color: #926fb1;
+		border-color: #926fb1;
+	}
+	@include m(software) {
+		background-color: #67809f;
+		border-color: #67809f;
+	}
+}
+
+.facebook {
+	&:hover {
+		background-color: #3b5998;
+	}
+}
+
+.linkedin {
+	&:hover {
+		background-color: #0077b5;
+	}
+}
+
+.twitter {
+	&:hover {
+		background-color: #00aced;
+	}
+}
+
+.instagram {
+	&:hover {
+		background-color: #d93175;
+	}
 }

@@ -42,6 +42,16 @@
         @extend %flexwrap;
         flex-direction: row;
         margin-bottom: 30px;
+        a {
+            text-align: center;
+            text-decoration: none;
+            font-size: 26px;
+            line-height: 26px;
+            padding: 12px 22px 16px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            background-color: #212330;
+        }
         a span {
             position: relative;
 	        top: 4px;
@@ -52,7 +62,7 @@
     // Footer Top - List
     /////////////////////////////////////////////////////////
 
-    @include e(row){
+    @include e(menu-row){
         @extend %flexwrap;
         padding-left: 15px;
         padding-right: 15px;

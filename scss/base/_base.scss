@@ -15,7 +15,7 @@ body {
 	letter-spacing: .4px;
 }
 
-.h1 {
+.h1, h1 {
 	font-size: 2.25rem;
 	font-weight: 400;
 	margin: 0 0 28px;
@@ -30,6 +30,17 @@ h2 {
 	color: #333645;
 }
 
+h3 {
+	font-weight: 400;
+	margin: 0 0 15px;
+	color: #333645;
+}
+
+h4 {
+	font-weight: 400;
+	margin: 0 0 15px;
+}
+
 p {
 	line-height: 1.875rem;
 	margin-bottom: 25px;
@@ -39,9 +50,13 @@ div {
 	display: block;
 }
 
-a {
+a {	
+	color: #333645;
 	text-decoration: none;
 	background: transparent;
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 label {
@@ -58,3 +73,109 @@ footer {
 	background-color: $tuna;
 	padding: 27px 0 0;
 }
+
+@keyframes slide {
+	0%   {transform: translate(0px);}
+	2.5%,7.5%  {transform: translate(-50px);}
+	10% {transform: translate(-200px);}
+	15% {transform: translate(-200px);}
+	17.5% {transform: translate(-350px);}
+	22.5% {transform: translate(-350px);}
+	25% {transform: translate(-500px);}
+	30% {transform: translate(-500px);}
+	32.5% {transform: translate(-650px);}
+	37.5% {transform: translate(-650px);}
+	40% {transform: translate(-740px);}
+	50% {transform: translate(-740px);}
+	52.5% {transform: translate(-650px);}
+	57.5% {transform: translate(-650px);}
+	60% {transform: translate(-500px);}
+	65% {transform: translate(-500px);}
+	67.5% {transform: translate(-350px);}
+	72.5% {transform: translate(-350px);}
+	75% {transform: translate(-200px);}
+	80% {transform: translate(-200px);}
+	82.5%  {transform: translate(-50px);}
+	87.5% {transform: translate(-50px);}
+	
+}
+
+.it {
+	.articles__block h3 a {
+	color: #4183d7;	
+	}
+	.articles__category {
+		background-color: #4183d7;
+	}
+}
+.web {
+	.articles__block h3 a {
+	color: #926fb1;	
+	}
+	.articles__category {
+		background-color: #926fb1;
+	}
+}
+.software {
+	.articles__block h3 a {
+	color: #67809f;	
+	}
+	.articles__category {
+		background-color: #67809f;
+	}
+}
+
+.articles__list .row {
+	margin-top: -30px;
+	margin-left: -15px;
+	margin-right: -15px;
+	padding: 0;
+}
+
+
+
+
+
+.slide {
+
+	&-box {
+		display: flex;
+		flex-direction: row;
+		row-gap: 50px;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	&-item {
+		margin-right: 50px;
+		animation-name: slide;
+		animation-duration: 25s;
+		animation-iteration-count: infinite;
+		h3 {
+			line-height: 1.1;
+		}
+		img {
+			filter: grayscale(1);
+		}
+		img:hover {
+			filter: grayscale(0);
+		}
+	}
+}
+
+.view-all {
+	text-align: center;
+	margin-bottom: 20px;
+	h3 a {
+		color: #333645;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.arrow {
+	color: #333645;
+}
+
+

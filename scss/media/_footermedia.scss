@@ -1,0 +1,66 @@
+// ==========================================================================
+// Breakpoint Small
+// ==========================================================================
+
+@media (max-width: 480px) {
+    .footer__social-logos a {
+        width: 35%
+    }
+}
+
+@media (min-width: 768px) {
+    .visible-xs {
+        display: none;
+    }
+
+    .license {
+        flex-direction: row;
+        ul li::before {
+            display: inline-block;
+        }     
+    }
+
+    .footer__menu {
+        width: 50%
+    }
+
+    .footer__social-logos {
+        flex-wrap: nowrap;
+        width: 90%;
+    }
+
+    .footer__menu-row {
+        flex-grow: 1;
+    }
+}
+
+
+// ==========================================================================
+// Breakpoint Medium
+// ==========================================================================
+@media (min-width: 992px) {
+    .footer__menu {
+        width: 25%;
+        float: left;
+        margin-bottom: 30px;
+    }
+}
+
+
+// ==========================================================================
+// Breakpoint Large
+// ==========================================================================
+@media (min-width: 1260px) {
+    .footer__menu {
+        margin-bottom: 40px;
+    }
+
+    .footer__company-info {
+        width: 400px;
+    }
+
+    .container {
+        width: 1200px;
+    }
+}
+
