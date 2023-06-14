@@ -8,11 +8,17 @@
 		margin-bottom: 40px;
 		margin-top: -6px;
 	}
-	a {
+	p a {
 		color: $white;
 		&:hover {
 			text-decoration: underline;
 		}
+	}
+	em {
+		color:#fff;
+		line-height: 35px;
+		margin-right: -4px;
+		margin-left: 12px;
 	}
 
 }
@@ -26,4 +32,11 @@
 		color: #a3a8ac;
 		font-size: 1.1rem;
 	}
+}
+
+.stars {
+	color: orange;
+	margin-bottom: 25px;
+	font-size: 50px;
+	margin-bottom: 25px;
 }

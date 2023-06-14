@@ -16,6 +16,77 @@
 	border-radius: 3px;
 	white-space: normal;
 
+	@include m(primary-inverse) {
+		background-color: #272936;
+		border-radius: 6px;
+		padding: 10px 30px;
+		font-size: 20px;
+		margin-bottom: 50px;
+		&:hover {
+			text-decoration: none;
+			background-color: #121318;
+		}
+	}
+
+	@include m(dev) {
+		color: #fff;
+		background-color: #ce4125;
+		border-color: #ce4125;
+	}
+
+	@include m(security) {
+		color: #fff;
+		background-color: #f62459;
+		border-color: #f62459;
+	}
+	@include m(web-service) {
+		color: #fff;
+		background-color: #926fb1;
+		border-color: #926fb1;
+	}
+	@include m(telecoms) {
+		color: #fff;
+		background-color: #d64541;
+		border-color: #d64541;
+	}
+	@include m(digital) {
+		color: #fff;
+		background-color: #2ecc71;
+		border-color: #2ecc71;
+	}
+	@include m(it-services) {
+		color: #fff;
+		background-color: #4183d7;
+		border-color: #4183d7;
+	}
+	@include m(software) {
+		color: #fff;
+		background-color: #67809f;
+		border-color: #67809f;
+	}
+	@include m(google) {
+		margin-top: 20px;
+		background-color: #4387f6;
+		margin-right: 8px;
+		border-radius: 6px;
+		padding: 10px 30px;
+		font-size: 20px;
+		&:hover {
+			text-decoration: none;
+			background-color: #166af4;
+		}
+	}
+	@include m(trustpilot) {
+		margin-top: 20px;
+		background-color: #00b67b;
+		border-radius: 6px;
+		padding: 10px 30px;
+		font-size: 20px;
+		&:hover {
+			text-decoration: none;
+			background-color: #009b69;
+		}
+	}
 	@include m(it) {
 		background-color: #4183d7;
 		border-color: #4183d7;

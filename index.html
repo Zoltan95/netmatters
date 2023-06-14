@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/application.css">
     <script src="https://kit.fontawesome.com/7a897e5abc.js" crossorigin="anonymous"></script>
     <title>Document</title>
@@ -16,28 +17,50 @@
         </div>
         <!--Header End-->
 
-        <!--Banner Start-->
-        <div>
-
-        </div>
-        <!--Banner End-->
-
         <!--Main Start-->
         <div class="main">
+           
+            <!--Banner Start-->
+            <div class="banner">
+                <div class="banner__img">
+                    <img class="img-banner" src="https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-O67Y.jpg" alt="">
+                    <div class="banner__content container">
+                        <div class="text">
+                            <div class="h1">
+                                Bespoke Software
+                            </div>
+                            <p>
+                                Delivering expert bespoke software
+                                <br>
+                                solutions across a range of industries.
+                            </p>
+                            <a class="btn btn--software" href="#">Find Out More<em class="fa-solid fa-arrow-right arrow"></em></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner__controls">
+
+                </div>
+            </div>
+            <!--Banner End-->
 
             <!--Our Services Start-->
             <div class="container section">
                 <div class="services-list">
-                    <div class="row">
-                        <div class="col">
+                    <div class="row-services">
+                        <div class="col--xl clearfix">
                             <h2 class="h1">
                                 <strong>
                                     Our Services
                                 </strong>
                             </h2>
+                            <h3 class="float--right hidden-xs">
+                                <a href="#">View Our Work</a>
+                                <strong><em class="fa-solid fa-arrow-right arrow"></em></strong>
+                            </h3>
                         </div>
-                        <div class="col">
-                            <a class="services-list__block" href="#">
+                        <div class="col--med">
+                            <a class="services-list__block software" href="#">
                                 <span class="services-list__icon">
                                     <span>
 
@@ -48,15 +71,15 @@
                                     Bespoke software solutions for all your business needs including integrations and reporting.
                                 </span>
                                 <span class="btn-container">
-                                    <span class="btn">Read More</span>
+                                    <span class="btn btn--software">Read More</span>
                                 </span>
                             </a>
                         </div>
-                        <div class="col">
-                            <a class="services-list__block" href="#">
+                        <div class="col--med">
+                            <a class="services-list__block it-services" href="#">
                                 <span class="services-list__icon">
-                                    <span>
-
+                                    <span class="fa-solid fa-display">
+                                        
                                     </span>
                                 </span>
                                 <span class="services-list__h2">IT Support</span>
@@ -64,30 +87,31 @@
                                     Fully managed IT support and consultancy packages tailored to meet your exact business needs.
                                 </span>
                                 <span class="btn-container">
-                                    <span class="btn">Read More</span>
+                                    <span class="btn btn--it-services">Read More</span>
                                 </span>
                             </a>
                         </div>
-                        <div class="col">
-                            <a class="services-list__block" href="#">
+                        <div class="col--med">
+                            <a class="services-list__block digital" href="#">
                                 <span class="services-list__icon">
-                                    <span>
-
+                                    <span class="material-icons">
+                                        signal_cellular_alt
                                     </span>
                                 </span>
                                 <span class="services-list__h2">Digital Marketing</span>
                                 <span class="services-list__p">
                                     Driven brand awareness & ROI through creative digital marketing campaigns.
                                 </span>
+                                <br>
                                 <span class="btn-container">
-                                    <span class="btn">Read More</span>
+                                    <span class="btn btn--digital">Read More</span>
                                 </span>
                             </a>
                         </div>
-                        <div class="col">
-                            <a class="services-list__block" href="#">
+                        <div class="col--lg">
+                            <a class="services-list__block telecoms" href="#">
                                 <span class="services-list__icon">
-                                    <span>
+                                    <span class="fa-solid fa-phone-volume">
 
                                     </span>
                                 </span>
@@ -96,15 +120,15 @@
                                     Business telephony solutions including mobile & connectivity solutions.
                                 </span>
                                 <span class="btn-container">
-                                    <span class="btn">Read More</span>
+                                    <span class="btn btn--telecoms">Read More</span>
                                 </span>
                             </a>
                         </div>
-                        <div class="col">
-                            <a class="services-list__block" href="#">
+                        <div class="col--lg">
+                            <a class="services-list__block web-service" href="#">
                                 <span class="services-list__icon">
-                                    <span>
-
+                                    <span class="fa-solid fa-code">
+                                        
                                     </span>
                                 </span>
                                 <span class="services-list__h2">Web Design</span>
@@ -112,15 +136,15 @@
                                     User-centric design for businesses looking to make a lasting impression.
                                 </span>
                                 <span class="btn-container">
-                                    <span class="btn">Read More</span>
+                                    <span class="btn btn--web-service">Read More</span>
                                 </span>
                             </a>
                         </div>
-                        <div class="col">
-                            <a class="services-list__block" href="#">
+                        <div class="col--lg">
+                            <a class="services-list__block security" href="#">
                                 <span class="services-list__icon">
-                                    <span>
-
+                                    <span class="material-icons">
+                                        security
                                     </span>
                                 </span>
                                 <span class="services-list__h2">Cyber Security</span>
@@ -128,15 +152,15 @@
                                     Prevention, testing, consultancy & breach management services.
                                 </span>
                                 <span class="btn-container">
-                                    <span class="btn">Read More</span>
+                                    <span class="btn btn--security">Read More</span>
                                 </span>
                             </a>
                         </div>
-                        <div class="col">
-                            <a class="services-list__block" href="#">
+                        <div class="col--lg">
+                            <a class="services-list__block dev-course" href="#">
                                 <span class="services-list__icon">
-                                    <span>
-
+                                    <span class="material-icons">
+                                        school
                                     </span>
                                 </span>
                                 <span class="services-list__h2">Developer Training</span>
@@ -144,15 +168,14 @@
                                     Web design & software training courses designed to secure a job in tech.
                                 </span>
                                 <span class="btn-container">
-                                    <span class="btn">Read More</span>
+                                    <span class="btn btn--dev">Read More</span>
                                 </span>
                             </a>
                         </div>
-                        <div class="view-all">
+                        <div class="view-all__services visible-xs">
                             <h3>
-                                <a href="#">
-                                    View Our Work
-                                </a>
+                                <a href="#">View All</a>
+                                <strong><em class="fa-solid fa-arrow-right arrow"></em></strong>
                             </h3>
                         </div>
                     </div>
@@ -161,18 +184,39 @@
             <!--Our Services End-->
 
             <!--Slideshow 1 Start-->
-            <div>
-                <div>
-                    <div>
-                        <div>
-                            <div>
-
-                            </div>
-                            <div>
-
-                            </div>
-                        </div>
-                    </div>
+            <div class="slide-box">
+                <div class="slide-item">
+                    <img src="img/accreditations/future-50.jpg" alt="">
+                </div>
+                <div class="slide-item">
+                    <img src="img/accreditations/google-partner.jpg" alt="">
+                </div>
+                <div class="slide-item">
+                    <img src="img/accreditations/investing-in-future-growth.jpg" alt="">
+                </div>
+                <div class="slide-item">
+                    <img src="img/accreditations/iso_27001.jpg" alt="">
+                </div>
+                <div class="slide-item">
+                    <img src="img/accreditations/living_wage.png" alt="">
+                </div>
+                <div class="slide-item">
+                    <img src="img/accreditations/norfolk_prohelp.png" alt="">
+                </div>
+                <div class="slide-item">
+                    <img src="img/accreditations/norfolk-carbon-charter.jpg" alt="">
+                </div>
+                <div class="slide-item">
+                    <img src="img/accreditations/PPC_logo.jpg" alt="">
+                </div>
+                <div class="slide-item">
+                    <img src="img/accreditations/princess-royal-training.jpg" alt="">
+                </div>
+                <div class="slide-item">
+                    <img src="img/accreditations/qms.jpg" alt="">
+                </div>
+                <div class="slide-item">
+                    <img src="img/accreditations/skills-of-tomorrow.jpg" alt="">
                 </div>
             </div>
             <!--Slideshow 1 End-->
@@ -207,14 +251,23 @@
                                 get the most from our relationship in an upfront manner.
                             </p>
                             <div>
-                                <a class="btn" href="#">why choose us?</a>
-                                <a class="btn" href="#">our culture</a>
+                                <a class="btn btn--primary-inverse" href="#">
+                                    why choose us?
+                                    <em class="fa-solid fa-arrow-right arrow"></em></a>
+                                <a class="btn btn--primary-inverse" href="#">
+                                    our culture
+                                    <em class="fa-solid fa-arrow-right arrow"></em></a>
                             </div>
                         </div>
                         <div class="col">
                             <h2 class="h1">
                                 <strong>What Our Clients Think</strong>
                             </h2>
+                            <div class="fa fa-star stars"></div>
+                            <div class="fa fa-star stars"></div>
+                            <div class="fa fa-star stars"></div>
+                            <div class="fa fa-star stars"></div>
+                            <div class="fa fa-star stars"></div>
                             <p><span class="client-quote">
                                 Netmatters stood out from the start. Great guys and very easy to work with. 
                                 Both the build and digital marketing teams are clearly skilled -they know their stuff! 
@@ -226,8 +279,12 @@
                                 <a href="#">Ashcroft Partnership LLP</a>
                             </p></span>
                             <div>
-                                <a class="btn" href="#">Google Reviews</a>
-                                <a class="btn" href="#">TrustPilot Reviews</a>
+                                <a class="btn btn--google" href="#">
+                                    Google Reviews
+                                    <em class="fa-solid fa-arrow-right arrow"></em></a>
+                                <a class="btn btn--trustpilot" href="#">
+                                    TrustPilot Reviews
+                                    <em class="fa-solid fa-arrow-right arrow"></em></a>
                             </div>
                         </div>
                     </div>

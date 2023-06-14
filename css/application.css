@@ -31,6 +31,12 @@ $ui-colors: (
   line-height: 1;
 }
 
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .row:after, .container:after {
   content: "";
   display: table;
@@ -302,6 +308,7 @@ h2 {
 }
 
 h3 {
+  font-size: 1.625rem;
   font-weight: 400;
   margin: 0 0 15px;
   color: #333645;
@@ -325,9 +332,6 @@ a {
   color: #333645;
   text-decoration: none;
   background: transparent;
-}
-a:hover {
-  text-decoration: underline;
 }
 
 label {
@@ -449,6 +453,7 @@ footer {
 }
 .slide-item {
   margin-right: 50px;
+  margin-left: 50px;
   animation-name: slide;
   animation-duration: 25s;
   animation-iteration-count: infinite;
@@ -473,9 +478,68 @@ footer {
 .view-all h3 a:hover {
   text-decoration: underline;
 }
+.view-all__services {
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 30px auto -70px;
+}
+.view-all__services a:hover {
+  text-decoration: underline;
+}
 
 .arrow {
   color: #333645;
+}
+
+.img-banner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+@media (min-width: 992px) {
+  .img-banner .img-banner::before {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(270deg, transparent 25%, #000);
+    z-index: 3;
+  }
+}
+
+.banner {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.banner__img {
+  height: 550px;
+  width: 100%;
+  position: relative;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.banner__content {
+  position: relative;
+  z-index: 4;
+  padding: 3.75rem 0;
+}
+.banner__content .h1 {
+  color: #fff;
+  font-size: 4rem;
+  line-height: 5rem;
 }
 
 .container {
@@ -504,6 +568,14 @@ footer {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+.row-services {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.float--right {
+  float: right;
+}
 
 .col {
   position: relative;
@@ -511,7 +583,44 @@ footer {
   padding-left: 15px;
   padding-right: 15px;
 }
+.col--med {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col--lg {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col--xl {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
+@media (min-width: 992px) {
+  .col--med {
+    float: left;
+    width: 33.3%;
+  }
+  .col--lg {
+    float: left;
+    width: 50%;
+  }
+  .col--xl {
+    float: left;
+    width: 100%;
+  }
+}
+@media (min-width: 1260px) {
+  .col--lg {
+    width: 25%;
+  }
+}
 .footer__menu-row, .footer__social-logos, .footer__company-info, .footer__row, .newsletter__input-box-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -534,6 +643,75 @@ footer {
   border: 1px solid #333645;
   border-radius: 3px;
   white-space: normal;
+}
+.btn--primary-inverse {
+  background-color: #272936;
+  border-radius: 6px;
+  padding: 10px 30px;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+.btn--primary-inverse:hover {
+  text-decoration: none;
+  background-color: #121318;
+}
+.btn--dev {
+  color: #fff;
+  background-color: #ce4125;
+  border-color: #ce4125;
+}
+.btn--security {
+  color: #fff;
+  background-color: #f62459;
+  border-color: #f62459;
+}
+.btn--web-service {
+  color: #fff;
+  background-color: #926fb1;
+  border-color: #926fb1;
+}
+.btn--telecoms {
+  color: #fff;
+  background-color: #d64541;
+  border-color: #d64541;
+}
+.btn--digital {
+  color: #fff;
+  background-color: #2ecc71;
+  border-color: #2ecc71;
+}
+.btn--it-services {
+  color: #fff;
+  background-color: #4183d7;
+  border-color: #4183d7;
+}
+.btn--software {
+  color: #fff;
+  background-color: #67809f;
+  border-color: #67809f;
+}
+.btn--google {
+  margin-top: 20px;
+  background-color: #4387f6;
+  margin-right: 8px;
+  border-radius: 6px;
+  padding: 10px 30px;
+  font-size: 20px;
+}
+.btn--google:hover {
+  text-decoration: none;
+  background-color: #166af4;
+}
+.btn--trustpilot {
+  margin-top: 20px;
+  background-color: #00b67b;
+  border-radius: 6px;
+  padding: 10px 30px;
+  font-size: 20px;
+}
+.btn--trustpilot:hover {
+  text-decoration: none;
+  background-color: #009b69;
 }
 .btn--it {
   background-color: #4183d7;
@@ -564,6 +742,9 @@ footer {
   background-color: #d93175;
 }
 
+.services-list {
+  margin-top: 20px;
+}
 .services-list__block {
   font-weight: 600;
   color: #333645;
@@ -577,6 +758,17 @@ footer {
   border-radius: 15px;
   position: relative;
   top: 0;
+  transition: 0.5s ease;
+}
+.services-list__block:hover {
+  color: #fff;
+  border-color: transparent;
+  top: -10px;
+  transition: 0.5s ease;
+}
+.services-list__block:hover > span.btn-container .btn {
+  border-color: #fff;
+  background-color: #fff;
 }
 .services-list__icon {
   display: block;
@@ -585,6 +777,10 @@ footer {
   margin: 0 auto 17px;
   color: #fff;
   border-radius: 50%;
+}
+.services-list__icon span {
+  font-size: 2rem;
+  line-height: 62px;
 }
 .services-list__h2 {
   font-family: inherit;
@@ -604,6 +800,153 @@ footer {
   margin-bottom: 13px;
   font-weight: 400;
 }
+.services-list .h1 {
+  font-size: 2.7rem;
+  margin-bottom: -10px;
+  margin-top: -13px;
+}
+.services-list h3 {
+  float: right;
+  margin-left: 20px;
+}
+
+.dev-course .services-list__icon {
+  background-color: #ce4125;
+}
+.dev-course:hover {
+  background-color: #ce4125;
+}
+.dev-course:hover .services-list__icon {
+  background-color: #fff;
+  color: #ce4125;
+}
+.dev-course:hover .btn--dev {
+  border-color: #fff;
+  background-color: #fff;
+  color: #ce4125;
+}
+.dev-course:hover .services-list__h2, .dev-course:hover .services-list__p {
+  color: #fff;
+}
+
+.security .services-list__icon {
+  background-color: #f62459;
+}
+.security:hover {
+  background-color: #f62459;
+}
+.security:hover .services-list__icon {
+  background-color: #fff;
+  color: #f62459;
+}
+.security:hover .btn--security {
+  border-color: #fff;
+  background-color: #fff;
+  color: #f62459;
+}
+.security:hover .services-list__h2, .security:hover .services-list__p {
+  color: #fff;
+}
+
+.web-service .services-list__icon {
+  background-color: #926fb1;
+}
+.web-service:hover {
+  background-color: #926fb1;
+}
+.web-service:hover .services-list__icon {
+  background-color: #fff;
+  color: #926fb1;
+}
+.web-service:hover .btn--web-service {
+  border-color: #fff;
+  background-color: #fff;
+  color: #926fb1;
+}
+.web-service:hover .services-list__h2, .web-service:hover .services-list__p {
+  color: #fff;
+}
+
+.telecoms .services-list__icon {
+  background-color: #d64541;
+}
+.telecoms:hover {
+  background-color: #d64541;
+}
+.telecoms:hover .services-list__icon {
+  background-color: #fff;
+  color: #d64541;
+}
+.telecoms:hover .btn--telecoms {
+  border-color: #fff;
+  background-color: #fff;
+  color: #d64541;
+}
+.telecoms:hover .services-list__h2, .telecoms:hover .services-list__p {
+  color: #fff;
+}
+
+.digital .services-list__icon {
+  background-color: #2ecc71;
+}
+.digital:hover {
+  background-color: #2ecc71;
+}
+.digital:hover .services-list__icon {
+  background-color: #fff;
+  color: #2ecc71;
+}
+.digital:hover .btn--digital {
+  border-color: #fff;
+  background-color: #fff;
+  color: #2ecc71;
+}
+.digital:hover .services-list__h2, .digital:hover .services-list__p {
+  color: #fff;
+}
+
+.it-services .services-list__icon {
+  background-color: #4183d7;
+}
+.it-services:hover {
+  background-color: #4183d7;
+}
+.it-services:hover .services-list__icon {
+  background-color: #fff;
+  color: #4183d7;
+}
+.it-services:hover .btn--it-services {
+  border-color: #fff;
+  background-color: #fff;
+  color: #4183d7;
+}
+.it-services:hover .services-list__h2, .it-services:hover .services-list__p {
+  color: #fff;
+}
+
+.software .services-list__icon {
+  background-color: #67809f;
+}
+.software:hover {
+  background-color: #67809f;
+}
+.software:hover .services-list__icon {
+  background-color: #fff;
+  color: #67809f;
+}
+.software:hover .btn--software {
+  border-color: #fff;
+  background-color: #fff;
+  color: #67809f;
+}
+.software:hover .services-list__h2, .software:hover .services-list__p {
+  color: #fff;
+}
+
+.material-icons {
+  font-size: 2rem;
+  line-height: 62px;
+}
 
 .branding {
   background-color: #333645;
@@ -616,11 +959,17 @@ footer {
   margin-bottom: 40px;
   margin-top: -6px;
 }
-.branding a {
+.branding p a {
   color: #fff;
 }
-.branding a:hover {
+.branding p a:hover {
   text-decoration: underline;
+}
+.branding em {
+  color: #fff;
+  line-height: 35px;
+  margin-right: -4px;
+  margin-left: 12px;
 }
 
 .client-quote {
@@ -632,6 +981,13 @@ footer {
   font-weight: 600;
   color: #a3a8ac;
   font-size: 1.1rem;
+}
+
+.stars {
+  color: orange;
+  margin-bottom: 25px;
+  font-size: 50px;
+  margin-bottom: 25px;
 }
 
 .articles__bar {
@@ -916,6 +1272,12 @@ footer {
   color: #fff;
 }
 
+@media (min-width: 992px) {
+  .branding .col {
+    width: 50%;
+    float: left;
+  }
+}
 @media (min-width: 768px) {
   .articles__list .col {
     float: left;
@@ -943,6 +1305,11 @@ footer {
 @media (min-width: 992px) {
   .container {
     width: 970px;
+  }
+}
+@media (min-width: 1260px) {
+  .container {
+    width: 1200px;
   }
 }
 @media (max-width: 480px) {
