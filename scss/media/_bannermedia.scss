@@ -1,0 +1,32 @@
+@media (max-width: 991px) {
+	.banner__box-item > * {
+  		text-align: center;
+	}
+    .banner__img-cover-container {
+    opacity: .5;
+    }
+}
+
+@media (min-width: 992px) {
+	.banner__img-cover-container::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background: linear-gradient(270deg,transparent 25%,#000);
+		z-index: 3;
+	}
+
+    .banner__box-item {
+        .h1 {
+            font-size: 4rem;
+            line-height: 5rem;
+        }
+        p {
+            font-size: 1.625rem;
+            line-height: 2.5rem;
+        }
+    }
+}

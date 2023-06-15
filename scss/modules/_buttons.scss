@@ -39,7 +39,7 @@
 		background-color: #f62459;
 		border-color: #f62459;
 	}
-	@include m(web-service) {
+	@include m(web) {
 		color: #fff;
 		background-color: #926fb1;
 		border-color: #926fb1;
@@ -54,7 +54,7 @@
 		background-color: #2ecc71;
 		border-color: #2ecc71;
 	}
-	@include m(it-services) {
+	@include m(it) {
 		color: #fff;
 		background-color: #4183d7;
 		border-color: #4183d7;
@@ -63,6 +63,14 @@
 		color: #fff;
 		background-color: #67809f;
 		border-color: #67809f;
+	}
+	@include m(lg) {
+		height: auto;
+		padding: 5px 20px;
+		font-size: 1.25rem;
+		border-radius: 3px;
+		white-space: normal;
+		text-transform: uppercase;
 	}
 	@include m(google) {
 		margin-top: 20px;
@@ -87,17 +95,12 @@
 			background-color: #009b69;
 		}
 	}
-	@include m(it) {
-		background-color: #4183d7;
-		border-color: #4183d7;
-	}
-	@include m(web) {
-		background-color: #926fb1;
-		border-color: #926fb1;
-	}
-	@include m(software) {
-		background-color: #67809f;
-		border-color: #67809f;
+}
+
+.btn--software {
+	&:hover {
+		background-color: #566c88;
+		border-color: #4e627b;
 	}
 }
 

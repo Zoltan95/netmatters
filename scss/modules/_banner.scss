@@ -1,0 +1,82 @@
+.banner {
+	position: relative;
+	height: 550px;
+	width: 100%;
+	z-index: 1;
+
+	@include e(box) {
+		@extend %clearfix;
+		position: relative;
+		display: block;
+	}
+
+	@include e(box-item) {
+		width: 100%;
+		min-height: 550px;
+		position: relative;
+		background-color: #000;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	@include e(img-cover-container) {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 4;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+		overflow: hidden;
+	}
+
+	@include e(content) {
+		@extend %clearfix;
+		position: relative;
+		z-index: 4;
+		padding: 3.75rem 0;
+	}
+
+}
+
+.banner__box-item {
+	> *, .h1 {
+		color: $white;
+	}
+
+    .h1 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        margin: 0 0 1.25rem;
+        font-weight: 600;
+    }
+
+	p {
+		margin-bottom: .375rem;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        font-weight: 600;
+	}
+	img {
+		display: block;
+		object-fit: cover;
+		height: 100%;
+		width: 100%;
+	}
+}
+
+.btn--lg {
+    margin-top: 1.938rem;
+    margin-bottom: 1.125rem;
+    em {
+        line-height: 50px;
+    }
+
+    .arrow {
+        color: $white;
+    }
+}
