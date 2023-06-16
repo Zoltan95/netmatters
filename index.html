@@ -5,16 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/application.css">
     <script src="https://kit.fontawesome.com/7a897e5abc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/application.css">
     <title>Document</title>
 </head>
-I have completed the main navigation and its sub header, ( I have wated a lot of time trying to figure out how to create the arrow point down on hover. ) I have fixed the alignment bugs that I had on the services section. I've been looking at an other way of getting some of the icons, as on FontAwesome and Google Icons, I can not find all that is included in the main net matters site.
 <body>
     <div>
         <!--Header Start-->
         <div class="header">
-            <div class="main-navigation hidden-xs hidden-sm">
+            <header>
+                <div class="inner">
+                    <div class="container">
+                        <div class="row-services">
+                            <div class="col--nav-logo">
+                                <div>
+                                    <a href="#">
+                                        <img src="img/f-logo.png" alt="Netmatters">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col--nav-info">
+                                <div class="actions">
+                                    <a class="btn btn--it hidden-sm" href="#">
+                                        <span>
+
+                                        </span>
+                                        Support
+                                    </a>
+                                    <a class="btn btn--default hidden-sm" href="#">
+                                        <span>
+
+                                        </span>
+                                        Contact
+                                    </a>
+                                    <div class="float--left hidden-xs">
+                                        <form class="search-form" action="#">
+                                            <label class="hidden" for="search-input">Search:</label>
+                                            <input id="search-input" class="form-control" placeholder="Search..." name="keyword" type="text" value="">
+                                            <button>
+                                                <span class="search-input__icon"></span>
+                                            </button>
+                                      </form>
+                                    </div>
+                                    <button></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="main-navigation hidden-sm">
                 <div class="container">
                     <ul>
                         <li class="software nav-item">
@@ -131,7 +171,7 @@ I have completed the main navigation and its sub header, ( I have wated a lot of
                         </li>
                         <li class="it nav-item">
                             <a class="nav-item-btn" href="#">
-                                <span>
+                                <span class="fa-solid fa-display">
 
                                 </span>
                                 <small>IT</small>
@@ -195,8 +235,8 @@ I have completed the main navigation and its sub header, ( I have wated a lot of
                         </li>
                         <li class="digital nav-item">
                             <a class="nav-item-btn" href="#">
-                                <span>
-
+                                <span class="material-icons">
+                                    signal_cellular_alt
                                 </span>
                                 <small>Digital</small>
                                 Marketing
@@ -259,7 +299,7 @@ I have completed the main navigation and its sub header, ( I have wated a lot of
                         </li>
                         <li class="telecoms nav-item">
                             <a class="nav-item-btn" href="#">
-                                <span>
+                                <span class="fa-solid fa-phone-volume">
 
                                 </span>
                                 <small>Telecoms</small>
@@ -323,7 +363,7 @@ I have completed the main navigation and its sub header, ( I have wated a lot of
                         </li>
                         <li class="web nav-item">
                             <a class="nav-item-btn" href="#">
-                                <span>
+                                <span class="fa-solid fa-code">
 
                                 </span>
                                 <small>Web</small>
@@ -387,8 +427,8 @@ I have completed the main navigation and its sub header, ( I have wated a lot of
                         </li>
                         <li class="security nav-item">
                             <a class="nav-item-btn" href="#">
-                                <span>
-
+                                <span class="material-icons">
+                                    security
                                 </span>
                                 <small>Cyber</small>
                                 Security
@@ -451,8 +491,8 @@ I have completed the main navigation and its sub header, ( I have wated a lot of
                         </li>
                         <li class="dev nav-item">
                             <a class="nav-item-btn" href="#">
-                                <span>
-
+                                <span class="material-icons">
+                                    school
                                 </span>
                                 <small>Developer</small>
                                 Course
@@ -548,7 +588,7 @@ I have completed the main navigation and its sub header, ( I have wated a lot of
                             </h3>
                         </div>
                         <div class="col--med">
-                            <a class="services-list__block software" href="#">
+                            <a class="services-list__block software clearfix" href="#">
                                 <span class="services-list__icon">
                                     <span>
 
@@ -575,7 +615,7 @@ I have completed the main navigation and its sub header, ( I have wated a lot of
                                     Fully managed IT support and consultancy packages tailored to meet your exact business needs.
                                 </span>
                                 <span class="btn-container">
-                                    <span class="btn btn--it-services">Read More</span>
+                                    <span class="btn btn--it">Read More</span>
                                 </span>
                             </a>
                         </div>
@@ -600,7 +640,7 @@ I have completed the main navigation and its sub header, ( I have wated a lot of
                             <a class="services-list__block telecoms" href="#">
                                 <span class="services-list__icon">
                                     <span class="fa-solid fa-phone-volume">
-
+                                        
                                     </span>
                                 </span>
                                 <span class="services-list__h2">Telecoms Services</span>

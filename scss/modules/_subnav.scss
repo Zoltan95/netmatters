@@ -1,0 +1,72 @@
+@include nav-triangle(software,#67809f);
+@include nav-triangle(it,#4183d7);
+@include nav-triangle(digital,#2ecc71);
+@include nav-triangle(telecoms,#d64541);
+@include nav-triangle(web,#926fb1);
+@include nav-triangle(security,#f62459);
+@include nav-triangle(dev,#ce4125);
+
+.sub-menu {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-top: -15px;
+	list-style: none;
+	text-align: left;
+	padding: 0;
+	.h2.sub-menu-banner-title {
+		font-size: 2rem;
+	}
+
+
+	li {
+		&.h2.sub-menu-banner-title {
+			display: block;
+			width: 100%;
+			color: #fff !important;
+			margin-bottom: 10px;
+			margin-top: 15px;
+			font-weight: 500;
+		}
+
+		width: 33%;
+		margin-top: 15px;
+		a {
+			color: #fff;
+			font-size: 1.2rem;
+			line-height: 1.313rem;
+			padding: .625rem .938rem .625rem 0;
+			display: flex;
+			align-items: center;
+			:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.sub-menu-banner {
+	margin: 0;
+	display: none;
+	background-color: #1d1f28;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	min-width: 100%;
+	z-index: 10;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.link-icon-container {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	min-width: 25px;
+}
+
+.link-text {
+	font-size: 1.2rem;
+	line-height: 1.313rem;
+	margin-left: 10px;
+}

@@ -26,11 +26,11 @@
             border: 0;
 	    }
         h4 {
+            margin-bottom: 26px;
+            margin-top: 24px;
             color: $white;
             font-size: $base__font-size;
             text-transform: uppercase;
-            margin-bottom: 26px;
-            margin-top: 24px;
         }
     }
 
@@ -43,14 +43,14 @@
         flex-direction: row;
         margin-bottom: 30px;
         a {
+            padding: 12px 22px 16px;
+            margin-right: 10px;
+            margin-bottom: 10px;
             text-align: center;
             text-decoration: none;
             font-size: 26px;
             line-height: 26px;
-            padding: 12px 22px 16px;
-            margin-right: 10px;
-            margin-bottom: 10px;
-            background-color: #212330;
+            background-color: $ebony-clay;
         }
         a span {
             position: relative;
@@ -102,11 +102,10 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
-        background: $ebony-clay;
-        font-size: $base__font-size--secondary;
         padding-top: 10px;
         left: 0;
+        background: $ebony-clay;
+        font-size: $base__font-size--secondary;
         border: 0;
     }
-
 }   

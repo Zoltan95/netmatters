@@ -44,6 +44,66 @@
 	}
 }
 
+// Nav Triangle Element
+@mixin nav-triangle ($service, $color) {
+	.main-navigation .container ul li.#{$service}.nav-item:hover > a::before {
+		content: "";
+		position: absolute;
+		left: 50%;
+		bottom: -35px;
+		transform: translateX(-50%);
+		z-index: 90;
+		width: 0;
+		height: 0;
+		border-color: $color transparent transparent;
+		border-style: solid;
+		border-width: 35px 83.5px 0;
+	}
+}
+
+// Services Colorols
+@mixin services-colors($service, $color, $white: $white) {
+	.#{$service} {
+		.services-list__icon {
+			background-color: $color;
+		}
+		&:hover {
+			.services-list__icon {
+				background-color: $white;
+				color: $color;
+			}
+			.services-list__h2, .services-list__p {
+				color: $white;
+			}
+		}
+		.sub-menu-banner {
+			background-color: $color;
+		}
+		.articles__block h3 a {
+			color: $color;	
+		}
+		.articles__category {
+			background-color: $color;
+		}
+	}
+
+	.#{$service} .sub-menu-banner {
+		background-color: $color;
+	}
+
+	.services-list__block.#{$service}:hover, .#{$service}.nav-item:hover {
+		background-color: $color;
+	}
+
+	.main-navigation .container ul li.#{$service}.nav-item .nav-item-btn span {
+		color: $color;
+	}
+
+	.main-navigation .container ul li.#{$service}.nav-item:hover .nav-item-btn span {
+		color: $white;
+	}
+}
+
 // Image replacement
 
 @mixin img-replace($img, $w, $h, $disp: block) {

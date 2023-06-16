@@ -27,6 +27,11 @@
 			background-color: #121318;
 		}
 	}
+	@include m(default) {
+		color: #fff;
+		background-color: #999aa2;
+		border-color: #999aa2;
+	}
 
 	@include m(dev) {
 		color: #fff;
@@ -126,4 +131,20 @@
 	&:hover {
 		background-color: #d93175;
 	}
+}
+
+.btn--lg {
+    margin-top: 1.938rem;
+    margin-bottom: 1.125rem;
+    em {
+        line-height: 50px;
+    }
+
+    .arrow {
+        color: $white;
+    }
+}
+
+.btn-container {
+	display:block;
 }

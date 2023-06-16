@@ -1,0 +1,52 @@
+@keyframes slide {
+	0%   {transform: translate(0px);}
+	2.5%,7.5%  {transform: translate(-50px);}
+	10% {transform: translate(-200px);}
+	15% {transform: translate(-200px);}
+	17.5% {transform: translate(-350px);}
+	22.5% {transform: translate(-350px);}
+	25% {transform: translate(-500px);}
+	30% {transform: translate(-500px);}
+	32.5% {transform: translate(-650px);}
+	37.5% {transform: translate(-650px);}
+	40% {transform: translate(-740px);}
+	50% {transform: translate(-740px);}
+	52.5% {transform: translate(-650px);}
+	57.5% {transform: translate(-650px);}
+	60% {transform: translate(-500px);}
+	65% {transform: translate(-500px);}
+	67.5% {transform: translate(-350px);}
+	72.5% {transform: translate(-350px);}
+	75% {transform: translate(-200px);}
+	80% {transform: translate(-200px);}
+	82.5%  {transform: translate(-50px);}
+	87.5% {transform: translate(-50px);}	
+}
+
+.slide {
+
+	&-box {
+		display: flex;
+		flex-direction: row;
+		row-gap: 50px;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	&-item {
+		margin-right: 50px;
+		margin-left: 50px;
+		animation-name: slide;
+		animation-duration: 25s;
+		animation-iteration-count: infinite;
+		h3 {
+			line-height: 1.1;
+		}
+		img {
+			filter: grayscale(1);
+		}
+		img:hover {
+			filter: grayscale(0);
+		}
+	}
+}

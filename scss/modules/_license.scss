@@ -1,11 +1,11 @@
 .license {
-	color: $white;
-	font-size: .8125rem;
 	display: flex;
 	flex-direction: column;
-	text-decoration: none;
 	padding: 5px 0 10px;
 	width: 100%;
+	color: $white;
+	font-size: $base__font-size--secondary;
+	text-decoration: none;
 	ul {
 		display: flex;
 		list-style: none;

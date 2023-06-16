@@ -1,65 +1,78 @@
+@include services-colors(dev, #ce4125);
+@include services-colors(security, #f62459);
+@include services-colors(web, #926fb1);
+@include services-colors(telecoms, #d64541);
+@include services-colors(digital, #2ecc71);
+@include services-colors(software, #67809f);
+@include services-colors(it, #4183d7);
+
 .services-list {
 	margin-top: 20px;
+
 	@include e(block) {
-		font-weight: 600;
-		color: #333645;
 		display: block;
-		border: 1px solid #ccc;
-		padding: 30px;
-		box-shadow: 0 3px 35px rgba(0,0,0,.1);
-		text-decoration: none;
-		margin-top: 30px;
-		text-align: center;
-		border-radius: 15px;
 		position: relative;
 		top: 0;
+		margin-top: 30px;
+		padding: 30px;
+		width: 32px;
+		color: #333645;
+		font-weight: $font-weight--bold;
+		border: 1px solid $silver;
+		box-shadow: 0 3px 35px rgba(0,0,0,.1);
+		text-decoration: none;
+		text-align: center;
+		border-radius: 15px;
 		transition: .5s ease;
 		&:hover {
-			color: #fff;
-			border-color: transparent;
 			top: -10px;
+			color: $white;
+			border-color: transparent;
 			transition: .5s ease;
 		}
 		&:hover > span.btn-container .btn {
-			border-color: #fff;
-			background-color: #fff;
+			border-color: $white;
+			background-color: $white;
 		}
 	}
+
 	@include e(icon) {
 		display: block;
 		height: 65px;
 		width: 65px;
 		margin: 0 auto 17px;
-		color: #fff;
+		color: $white;
 		border-radius: 50%;
 		span {
 			font-size: 2rem;
 			line-height: 62px;
 		}		
 	}
+
 	@include e(h2) {
-		font-family: inherit;
-		color: #333645;
 		display: block;
-		font-size: 1.3rem;
-		font-weight: 400;
 		position: relative;
 		padding-bottom: 10px;
 		margin: 0 0 11px;	
+		font-family: inherit;
+		color: $tuna;
+		font-size: 1.3rem;
+		font-weight: $font-weight--medium;
 	}
+
 	@include e(p) {
-		color: #333645;
 		display: block;
+		margin-bottom: 13px;
+		color: $tuna;
 		font-size: .8125rem;
 		line-height: 1.375rem;
-		margin-bottom: 13px;
-		font-weight: 400;	
+		font-weight: $font-weight--medium;	
 	}
 
 	.h1 {
-		font-size: 2.7rem;
 		margin-bottom: -10px;
 		margin-top: -13px;
+		font-size: 2.7rem;
 	}
 
 	h3 {
@@ -68,150 +81,22 @@
 	}
 }
 
-.dev {
-
-	.services-list__icon {
-		background-color: #ce4125;
-	}
-	&:hover {
-		background-color: #ce4125;
-		.services-list__icon {
-			background-color: $white;
-			color: #ce4125;
-		}
-		.btn--dev {
-			border-color: $white;
-			background-color: $white;
-			color: #ce4125;
-		}
-		.services-list__h2, .services-list__p {
-			color: $white;
+.view-all {
+	text-align: center;
+	margin-bottom: 20px;
+	h3 a {
+		color: #333645;
+		&:hover {
+			text-decoration: underline;
 		}
 	}
-}
-
-.security {
-	.services-list__icon {
-		background-color: #f62459;
-	}
-	&:hover {
-		background-color: #f62459;
-		.services-list__icon {
-			background-color: $white;
-			color: #f62459;
-		}
-		.btn--security {
-			border-color: $white;
-			background-color: $white;
-			color: #f62459;
-		}
-		.services-list__h2, .services-list__p {
-			color: $white;
-		}
-	}
-}
-
-.web {
-	.services-list__icon {
-		background-color: #926fb1;
-	}
-	&:hover {
-		background-color: #926fb1;
-		.services-list__icon {
-			background-color: $white;
-			color: #926fb1;
-		}
-		.btn--web-service {
-			border-color: $white;
-			background-color: $white;
-			color: #926fb1;
-		}
-		.services-list__h2, .services-list__p {
-			color: $white;
-		}
-	}
-}
-
-.telecoms {
-	.services-list__icon {
-		background-color: #d64541;
-	}
-	&:hover {
-		background-color: #d64541;
-		.services-list__icon {
-			background-color: $white;
-			color: #d64541;
-		}
-		.btn--telecoms {
-			border-color: $white;
-			background-color: $white;
-			color: #d64541;
-		}
-		.services-list__h2, .services-list__p {
-			color: $white;
-		}
-	}
-}
-
-.digital {
-	.services-list__icon {
-		background-color: #2ecc71;
-	}
-	&:hover {
-		background-color: #2ecc71;
-		.services-list__icon {
-			background-color: $white;
-			color: #2ecc71;
-		}
-		.btn--digital {
-			border-color: $white;
-			background-color: $white;
-			color: #2ecc71;
-		}
-		.services-list__h2, .services-list__p {
-			color: $white;
-		}
-	}
-}
-
-.it {
-	.services-list__icon {
-		background-color: #4183d7;
-	}
-	&:hover {
-		background-color: #4183d7;
-		.services-list__icon {
-			background-color: $white;
-			color: #4183d7;
-		}
-		.btn--it-services {
-			border-color: $white;
-			background-color: $white;
-			color: #4183d7;
-		}
-		.services-list__h2, .services-list__p {
-			color: $white;
-		}
-	}
-}
-
-.software {
-	.services-list__icon {
-		background-color: #67809f;
-	}
-	&:hover {
-		background-color: #67809f;
-		.services-list__icon {
-			background-color: $white;
-			color: #67809f;
-		}
-		.btn--software {
-			border-color: $white;
-			background-color: $white;
-			color: #67809f;
-		}
-		.services-list__h2, .services-list__p {
-			color: $white;
+	@include e(services) {
+		text-align: center;
+		padding-left: 15px;
+		padding-right: 15px;
+		margin: 30px auto -70px;
+		a:hover {
+			text-decoration: underline;
 		}
 	}
 }
@@ -220,3 +105,5 @@
 	font-size: 2rem;
 	line-height: 62px;
 }
+
+

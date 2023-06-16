@@ -1,12 +1,12 @@
 .branding {
-	background-color: #333645;
+	background-color: $tuna;
 	h2 {
-		font-family: inherit;
-		font-weight: 400;
-		color: #fff;
-		font-size: 2.25rem;
 		margin-bottom: 40px;
 		margin-top: -6px;
+		font-family: inherit;
+		font-weight: $font-weight--medium;
+		color: $white;
+		font-size: 2.25rem;
 	}
 	p a {
 		color: $white;
@@ -15,28 +15,21 @@
 		}
 	}
 	em {
-		color:#fff;
-		line-height: 35px;
 		margin-right: -4px;
 		margin-left: 12px;
+		color: $white;
+		line-height: 35px;
 	}
 
 }
 
 .client-quote {
-	font-weight: 600;
+	font-weight: $font-weight--bold;
 	font-size: 1.3rem;
 	font-style: italic;
 	@include e(author) {
-		font-weight: 600;
-		color: #a3a8ac;
+		font-weight: $font-weight--bold;
+		color: $gray-chateau;
 		font-size: 1.1rem;
 	}
-}
-
-.stars {
-	color: orange;
-	margin-bottom: 25px;
-	font-size: 50px;
-	margin-bottom: 25px;
 }

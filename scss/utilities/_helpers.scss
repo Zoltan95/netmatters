@@ -55,8 +55,26 @@
 	margin-right: auto;
 }
 
+.hidden {
+	display: none;
+	visibility: hidden;
+}
+
+// Helpres Media
+@media (max-width: 767px) {
+    .hidden-xs {
+        display: none;
+    }
+}
+
 @media (min-width: 768px) {
     .visible-xs {
         display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .hidden-sm {
+        display: none!important;
     }
 }
