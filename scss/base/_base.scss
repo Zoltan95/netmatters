@@ -145,52 +145,6 @@ header .form-control {
 	}
 }
 
-.main-navigation {
-	background-color: #333645;
-	position: relative;
-	.container ul {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-		margin-top: -15px;
-		list-style: none;
-		text-align: left;
-		padding: 0;
-	}
-}
-
-
-.nav-item {
-	flex: 1;
-	-webkit-flex: 1;
-	text-align: center;
-	.nav-item-btn {
-		position: relative;
-		display: block;
-		color: #fff;
-		padding: 19px 0 18px;
-		text-transform: uppercase;
-		font-size: 1.125rem;
-		text-decoration: none;
-		line-height: 1;
-		span {
-			display: block;
-			font-size: 1.438rem;
-			line-height: 1;
-			padding-bottom: 10px;
-		}
-		small {
-			display: block;
-			font-size: .625rem;
-			padding-bottom: 1px;
-		}
-	}
-}
-
-.main-navigation .container > ul > li:hover > div {
-	display: block;
-}
-
 
 
 

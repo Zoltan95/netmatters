@@ -86,6 +86,9 @@
 			background-color: $color;
 		}
 	}
+	.#{$service}.services-list__block:hover .btn  {
+		color: $color;
+	}
 
 	.#{$service} .sub-menu-banner {
 		background-color: $color;
@@ -112,4 +115,14 @@
 	width: $w;
 	height: $h;
 	display: $disp;
+}
+
+//Service Buttons Helper
+
+@mixin service-buttons($service, $color) {
+	@include m(#{$service}) {
+		color: $white;
+		background-color: $color;
+		border-color: $color;
+	}
 }

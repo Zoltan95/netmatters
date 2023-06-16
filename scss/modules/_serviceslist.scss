@@ -1,22 +1,20 @@
-@include services-colors(dev, #ce4125);
-@include services-colors(security, #f62459);
-@include services-colors(web, #926fb1);
-@include services-colors(telecoms, #d64541);
-@include services-colors(digital, #2ecc71);
-@include services-colors(software, #67809f);
-@include services-colors(it, #4183d7);
+@include services-colors(dev, $dev);
+@include services-colors(security, $security);
+@include services-colors(web, $web);
+@include services-colors(telecoms, $telecoms);
+@include services-colors(digital, $digital);
+@include services-colors(software, $software);
+@include services-colors(it, $it);
 
 .services-list {
 	margin-top: 20px;
-
 	@include e(block) {
 		display: block;
 		position: relative;
 		top: 0;
 		margin-top: 30px;
 		padding: 30px;
-		width: 32px;
-		color: #333645;
+		color: $tuna;
 		font-weight: $font-weight--bold;
 		border: 1px solid $silver;
 		box-shadow: 0 3px 35px rgba(0,0,0,.1);
@@ -26,7 +24,6 @@
 		transition: .5s ease;
 		&:hover {
 			top: -10px;
-			color: $white;
 			border-color: transparent;
 			transition: .5s ease;
 		}
@@ -74,17 +71,13 @@
 		margin-top: -13px;
 		font-size: 2.7rem;
 	}
-
-	h3 {
-		float: right;
-		margin-left: 20px;
-	}
 }
 
 .view-all {
 	text-align: center;
 	margin-bottom: 20px;
 	h3 a {
+		font-weight: 600;
 		color: #333645;
 		&:hover {
 			text-decoration: underline;
@@ -95,9 +88,19 @@
 		padding-left: 15px;
 		padding-right: 15px;
 		margin: 30px auto -70px;
+		a {
+			font-weight: 600;
+		}
 		a:hover {
 			text-decoration: underline;
 		}
+	}
+}
+
+.row-services .col--xl.clearfix h3 a {
+	font-weight: 600;
+	&:hover {
+		text-decoration: underline;
 	}
 }
 
@@ -105,5 +108,7 @@
 	font-size: 2rem;
 	line-height: 62px;
 }
+
+
 
 

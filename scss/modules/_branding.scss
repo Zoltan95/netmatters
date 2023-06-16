@@ -1,6 +1,6 @@
 .branding {
 	background-color: $tuna;
-	h2 {
+	.h1 {
 		margin-bottom: 40px;
 		margin-top: -6px;
 		font-family: inherit;
@@ -14,11 +14,11 @@
 			text-decoration: underline;
 		}
 	}
-	em {
-		margin-right: -4px;
-		margin-left: 12px;
-		color: $white;
-		line-height: 35px;
+	.col p {
+		margin-top: 0px;
+	}
+	.button-container {
+		display: -webkit-box;
 	}
 
 }
@@ -31,5 +31,6 @@
 		font-weight: $font-weight--bold;
 		color: $gray-chateau;
 		font-size: 1.1rem;
+		margin: 0;
 	}
 }

@@ -14,6 +14,10 @@
 }
 
 @media (min-width: 768px) {
+    .float--right-sm {
+      float: right;
+      margin-left: 20px;
+    }
     .col--nav-logo {
         position: relative;
         min-height: 1px;

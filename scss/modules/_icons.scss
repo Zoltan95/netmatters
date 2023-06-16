@@ -1,10 +1,16 @@
 .stars {
 	color: orange;
-	margin-bottom: 25px;
-	font-size: 50px;
+	font-style: normal;
+	font-size: 45px;
 	margin-bottom: 25px;
 }
 
 .arrow {
 	color: #333645;
+	&-white {
+		margin-right: -4px;
+		margin-left: 12px;
+		color: $white;
+		line-height: 35px;
+	}
 }

@@ -14,25 +14,27 @@
 	list-style: none;
 	text-align: left;
 	padding: 0;
+
 	.h2.sub-menu-banner-title {
 		font-size: 2rem;
 	}
 
 
 	li {
+		width: 33%;
+		margin-top: 15px;
+
 		&.h2.sub-menu-banner-title {
 			display: block;
 			width: 100%;
-			color: #fff !important;
+			color: $white !important;
 			margin-bottom: 10px;
 			margin-top: 15px;
 			font-weight: 500;
 		}
 
-		width: 33%;
-		margin-top: 15px;
 		a {
-			color: #fff;
+			color: $white;
 			font-size: 1.2rem;
 			line-height: 1.313rem;
 			padding: .625rem .938rem .625rem 0;

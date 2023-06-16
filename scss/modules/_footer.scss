@@ -16,6 +16,13 @@
 
     @include e(info){
         width: auto;
+        h4 {
+            margin-bottom: 26px;
+            margin-top: 24px;
+            color: $white;
+            font-size: $base__font-size;
+            text-transform: uppercase;
+        }
     }
 
     @include e(logo){
@@ -25,13 +32,6 @@
             vertical-align: middle;
             border: 0;
 	    }
-        h4 {
-            margin-bottom: 26px;
-            margin-top: 24px;
-            color: $white;
-            font-size: $base__font-size;
-            text-transform: uppercase;
-        }
     }
 
     /////////////////////////////////////////////////////////
@@ -91,6 +91,11 @@
                     color: $white;
                 }
             }
+        }
+        h4 {
+            text-transform: uppercase;
+            font-size: 1rem;
+            margin-bottom: 26px;
         }
     }
 

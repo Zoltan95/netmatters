@@ -22,6 +22,10 @@
 
 	@include e(input-fields) {
 		margin-bottom: 15px;
+		label::after {
+			content: " *";
+			color: #d24d57;
+		}
 	}
 
 	@include e(input-ctrl) {

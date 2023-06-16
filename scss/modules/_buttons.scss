@@ -1,6 +1,14 @@
 .btn {
+	@include service-buttons(dev, $dev);
+	@include service-buttons(security, $security);
+	@include service-buttons(web, $web);
+	@include service-buttons(telecoms, $telecoms);
+	@include service-buttons(digital, $digital);
+	@include service-buttons(it, $it);
+	@include service-buttons(software, $software);
+
 	display: inline-block;
-	color: #fff;
+	color: $white;
 	font-family: inherit;
 	font-weight: 400;
 	font-size: 1.063rem;
@@ -14,7 +22,6 @@
 	text-transform: uppercase;
 	border: 1px solid #333645;
 	border-radius: 3px;
-	white-space: normal;
 
 	@include m(primary-inverse) {
 		background-color: #272936;
@@ -27,48 +34,13 @@
 			background-color: #121318;
 		}
 	}
+
 	@include m(default) {
-		color: #fff;
+		color: $white;
 		background-color: #999aa2;
 		border-color: #999aa2;
 	}
 
-	@include m(dev) {
-		color: #fff;
-		background-color: #ce4125;
-		border-color: #ce4125;
-	}
-
-	@include m(security) {
-		color: #fff;
-		background-color: #f62459;
-		border-color: #f62459;
-	}
-	@include m(web) {
-		color: #fff;
-		background-color: #926fb1;
-		border-color: #926fb1;
-	}
-	@include m(telecoms) {
-		color: #fff;
-		background-color: #d64541;
-		border-color: #d64541;
-	}
-	@include m(digital) {
-		color: #fff;
-		background-color: #2ecc71;
-		border-color: #2ecc71;
-	}
-	@include m(it) {
-		color: #fff;
-		background-color: #4183d7;
-		border-color: #4183d7;
-	}
-	@include m(software) {
-		color: #fff;
-		background-color: #67809f;
-		border-color: #67809f;
-	}
 	@include m(lg) {
 		height: auto;
 		padding: 5px 20px;
@@ -77,6 +49,7 @@
 		white-space: normal;
 		text-transform: uppercase;
 	}
+
 	@include m(google) {
 		margin-top: 20px;
 		background-color: #4387f6;
@@ -84,17 +57,20 @@
 		border-radius: 6px;
 		padding: 10px 30px;
 		font-size: 20px;
+		float: left;
 		&:hover {
 			text-decoration: none;
 			background-color: #166af4;
 		}
 	}
+
 	@include m(trustpilot) {
 		margin-top: 20px;
 		background-color: #00b67b;
 		border-radius: 6px;
 		padding: 10px 30px;
 		font-size: 20px;
+		float: left;
 		&:hover {
 			text-decoration: none;
 			background-color: #009b69;
@@ -102,35 +78,25 @@
 	}
 }
 
-.btn--software {
-	&:hover {
-		background-color: #566c88;
-		border-color: #4e627b;
-	}
+.btn--software:hover {
+	background-color: #566c88;
+	border-color: #4e627b;
 }
 
-.facebook {
-	&:hover {
-		background-color: #3b5998;
-	}
+.facebook:hover{
+	background-color: #3b5998;
 }
 
-.linkedin {
-	&:hover {
-		background-color: #0077b5;
-	}
+.linkedin:hover {
+	background-color: #0077b5;
 }
 
-.twitter {
-	&:hover {
-		background-color: #00aced;
-	}
+.twitter:hover {
+	background-color: #00aced;
 }
 
-.instagram {
-	&:hover {
-		background-color: #d93175;
-	}
+.instagram:hover {
+	background-color: #d93175;
 }
 
 .btn--lg {
@@ -143,8 +109,4 @@
     .arrow {
         color: $white;
     }
-}
-
-.btn-container {
-	display:block;
 }
