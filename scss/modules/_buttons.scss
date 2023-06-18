@@ -15,6 +15,7 @@
 	text-align: center;
 	vertical-align: middle;
 	background-color: #333645;
+	background-image: none;
 	height: auto;
 	line-height: 35px;
 	padding: 5px 15px;
@@ -78,6 +79,47 @@
 	}
 }
 
+.search-form button {
+	outline: none;
+	padding: 7px 20px 3px;
+	height: 56px;
+	font-size: 1.063rem;
+	border-radius: 0 3px 3px 0;
+	border: none;
+	vertical-align: bottom;
+	background-color: #999aa2;
+	color: $white;
+	overflow: visible;
+}
+
+.hamburger.btn {
+	font-size: 1.438rem;
+    line-height: 45px;
+    background-color: #333645;
+    border-color: #333645;
+    padding: 15px 15px 5px 15px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    white-space: normal;
+	&:hover {
+		color: $white;
+    	background-color: #22242e;
+    	border-color: #191a22;
+	}
+}
+
+.btn--lg {
+    margin-top: 1.938rem;
+    margin-bottom: 1.125rem;
+    em {
+        line-height: 50px;
+    }
+
+    .arrow {
+        color: $white;
+    }
+}
+
 .btn--software:hover {
 	background-color: #566c88;
 	border-color: #4e627b;
@@ -97,16 +139,4 @@
 
 .instagram:hover {
 	background-color: #d93175;
-}
-
-.btn--lg {
-    margin-top: 1.938rem;
-    margin-bottom: 1.125rem;
-    em {
-        line-height: 50px;
-    }
-
-    .arrow {
-        color: $white;
-    }
 }

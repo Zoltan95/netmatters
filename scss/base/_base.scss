@@ -11,7 +11,7 @@ body {
 	color: $white;
 	font-size: $base__font-size;
 	font-family: $font-family--primary;
-	line-height: calc($base__line/$base__font-size);
+	line-height: $base__line;
 	letter-spacing: .4px;
 }
 
@@ -35,6 +35,7 @@ h2 {
 h3 {
 	font-size: 1.625rem;
 	font-weight: 400;
+	line-height: 1.1;
 	margin: 0 0 15px;
 	color: #333645;
 }
@@ -58,6 +59,11 @@ button, input, select, textarea {
 	font-family: inherit;
 	font-size: inherit;
 	line-height: inherit;
+}
+
+header {
+	display: block;
+	background-color: $white;
 }
 
 div {
@@ -86,64 +92,15 @@ footer {
 }
 
 
-//////////////////////////////////////////////////////////////
-
-header .inner .logo img {
-	max-width: 100%;
-	display: block;
+button::-moz-focus-inner, input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
 }
 
-header .inner .actions {
-	float: right;
-	padding: 7px 0;
-}
 
-header .inner .actions .btn {
-	height: 56px;
-	line-height: 46px;
-	font-size: 1.125rem;
-	float: left;
-}
 
-header .inner .actions > * + * {
-	margin-left: 20px;
-}
 
-.form-control::placeholder {
-	color: #888;
-	opacity: 1;
-}
 
-header .form-control {
-	width: 300px;
-	height: 56px;
-	display: none;
-	
-}
-
-.search-form button {
-	outline: none;
-	padding: 7px 20px 3px;
-	height: 56px;
-	font-size: 1.063rem;
-	border-radius: 0 3px 3px 0;
-	border: none;
-	vertical-align: bottom;
-	background-color: #999aa2;
-	color: #fff;
-}
-
-.search-input__icon {
-	font-size: 23px;
-}
-
-@media (min-width: 1260px) {
-	header .form-control {
-		display: inline-block !important;
-		border-radius: 0;
-		width: 240px;
-	}
-}
 
 
 

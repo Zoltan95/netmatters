@@ -40,7 +40,50 @@
 		padding: 3.75rem 0;
 		@extend %clearfix;
 	}
+	@include e(controls) {
+		position: absolute;
+    	left: 0;
+    	right: 0;
+		bottom: 44px;
+		margin-top: 10px;
+    	text-align: center;
+    	-webkit-tap-highlight-color: transparent;
+		z-index: 10;
+	}
 
+}
+
+.banner__controls {
+	&-dot {
+		cursor: pointer;
+		display: inline-block;
+		zoom: 1;
+		span {
+			width: 10px;
+			height: 10px;
+			margin: 5px 7px;
+			background: #d6d6d6;
+			display: block;
+			-webkit-backface-visibility: visible;
+			transition: opacity .2s ease;
+			border-radius: 30px
+		}
+		&:hover span {
+			background-color: $white;
+			position: relative
+		}
+		&:hover span:after {
+			content: "";
+			position: absolute;
+			top: -7px;
+			left: -7px;
+			width: 24px;
+			height: 24px;
+			border-radius: 50%;
+			border: 2px solid $white;
+			z-index: 10;
+		}
+	}
 }
 
 .banner__box-item {

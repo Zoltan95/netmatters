@@ -59,6 +59,11 @@
 		border-style: solid;
 		border-width: 35px 83.5px 0;
 	}
+	@media (max-width: 1259px) {
+		.main-navigation .container ul li.#{$service}.nav-item:hover > a::before {
+			border-width: 35px 68px 0;
+		}
+	}
 }
 
 // Services Colorols
@@ -76,9 +81,6 @@
 				color: $white;
 			}
 		}
-		.sub-menu-banner {
-			background-color: $color;
-		}
 		.articles__block h3 a {
 			color: $color;	
 		}
@@ -88,10 +90,6 @@
 	}
 	.#{$service}.services-list__block:hover .btn  {
 		color: $color;
-	}
-
-	.#{$service} .sub-menu-banner {
-		background-color: $color;
 	}
 
 	.services-list__block.#{$service}:hover, .#{$service}.nav-item:hover {

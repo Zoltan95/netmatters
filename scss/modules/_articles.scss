@@ -30,6 +30,9 @@
 		font-weight: 600;
 		line-height: 1.438rem;
 		text-transform: uppercase;
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 
 	@include e(item) {

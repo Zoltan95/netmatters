@@ -6,6 +6,28 @@
 @include nav-triangle(security,#f62459);
 @include nav-triangle(dev,#ce4125);
 
+.dev .sub-menu-banner {
+	background-color: #a3331d;
+}
+.security .sub-menu-banner {
+	background-color: #de093f;
+}
+.web .sub-menu-banner {
+	background-color: #79539a;
+}
+.telecoms .sub-menu-banner {
+	background-color: #bc2c28;
+}
+.digital .sub-menu-banner {
+	background-color: #25a25a;
+}
+.it .sub-menu-banner {
+	background-color: #286abd;
+}
+.software .sub-menu-banner {
+	background-color: #526781;;
+}
+
 .sub-menu {
 	display: flex;
 	flex-wrap: wrap;
@@ -40,31 +62,40 @@
 			padding: .625rem .938rem .625rem 0;
 			display: flex;
 			align-items: center;
-			:hover {
-				text-decoration: underline;
+			&:hover {
+				.link-text {					
+					text-decoration: underline;
+										
+				}
+				span.link-icon-container {
+					text-decoration: none;
+				}
 			}
+			span.link-icon-container {
+				font-size: 1rem;
+			}
+			
 		}
 	}
-}
-
-.sub-menu-banner {
-	margin: 0;
-	display: none;
-	background-color: #1d1f28;
-	position: absolute;
-	top: 100%;
-	left: 0;
-	min-width: 100%;
-	z-index: 10;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	&-banner {
+		margin: 0;
+		display: none;
+		background-color: #1d1f28;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		min-width: 100%;
+		z-index: 10;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
 }
 
 .link-icon-container {
 	display: flex;
 	justify-content: left;
 	align-items: center;
-	min-width: 25px;
+	min-width: 23px;
 }
 
 .link-text {

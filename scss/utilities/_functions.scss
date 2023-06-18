@@ -4,11 +4,11 @@
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?368ibp');
-  src:  url('../fonts/icomoon.eot?368ibp#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?368ibp') format('truetype'),
-    url('../fonts/icomoon.woff?368ibp') format('woff'),
-    url('../fonts/icomoon.svg?368ibp#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?y2yl7d');
+  src:  url('fonts/icomoon.eot?y2yl7d#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?y2yl7d') format('truetype'),
+    url('fonts/icomoon.woff?y2yl7d') format('woff'),
+    url('fonts/icomoon.svg?y2yl7d#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -33,11 +33,27 @@
 }
 
 // If a class starts with icon change fontfamily
-[class*=" icon-"], [class^="icon-"] {
-  font-family: "icomoon"!important;
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
   font-style: normal;
-  font-weight: 400;
+  font-weight: normal;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+  
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

@@ -1,0 +1,115 @@
+header {
+
+    .inner .logo-container a img {
+	max-width: 100%;
+	display: block;
+    }
+
+    .form-control {
+        width: 300px;
+        height: 56px;
+        display: none;
+        &:focus {
+            border-color: #5bc0de;
+            outline: 0;
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(91,192,222,.6);
+        }
+    }
+
+    .mobile-container {
+        display: none;
+        .mobile {
+            font-size: 27px;
+            margin-left: 15px;
+        }
+    }
+
+    .search-form-mobile {
+        display: none;
+
+        button {
+            padding: 1px 6px 8px 0px;
+            background: none;
+            border: none;
+            color: #333645;
+            position: absolute;
+            right: 5px;
+            line-height: 47px;
+            font-size: 20px;
+            outline: none;
+        }
+        .form-control {
+            background-color: rgba(0,0,0,.1);
+            outline: 1px solid hsla(0,0%,100%,.2);
+            border: 2px solid rgba(0,0,0,.1);
+            transition: none;
+            width: 100%;
+            height: 47px;
+            padding: 5px 40px 5px 15px;
+            &:focus {
+                box-shadow: 0 0 3px #fff;
+            }
+        }
+        .search-form {
+            margin-top: 11px;
+            position: relative;
+        }
+    }
+
+    .actions {
+        display: flex;
+        float: right;
+        flex-direction: row;
+        padding: 7px 0;
+
+        > * + * {
+            margin-left: 20px;
+        }
+        a {
+            display: flex;
+        }
+        div {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        form {
+            display: flex;
+            flex-direction: row;
+            button {
+                display: flex;
+                padding-top: 15px;
+            }
+        }
+        .btn {
+            height: 56px;
+            line-height: 46px;
+            font-size: 1.125rem;
+        }
+        button.hamburger {
+            display: flex;
+        }
+        .form-control {
+            ::placeholder {
+                color: #888;
+                opacity: 1;
+            }
+        }
+        .search-input__icon {
+            font-size: 23px;
+        }
+        .btn span {
+            &.fa-regular {
+            font-size: 1.438rem;
+            line-height: 45px;
+            margin-right: 5px;
+            }
+        }
+        .btn span.fa-computer-mouse {
+            font-size: 1.3rem;
+            line-height: 48px;
+            margin-right: 8px;
+            margin-left: 3px;
+        }
+    }
+
+}

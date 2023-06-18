@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/7a897e5abc.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e82bcef862.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/application.css">
     <title>Document</title>
 </head>
@@ -15,41 +15,58 @@
         <div class="header">
             <header>
                 <div class="inner">
-                    <div class="container">
+                    <div class="container clearfix">
                         <div class="row-services">
                             <div class="col--nav-logo">
-                                <div>
+                                <div class="logo-container">
                                     <a href="#">
                                         <img src="img/f-logo.png" alt="Netmatters">
                                     </a>
                                 </div>
                             </div>
+                            <div class="mobile-container">
+                                <a class="mobile" href="#">
+                                    <span class="fa-solid fa-phone-volume">
+                                    </span>
+                                </a>
+                            </div>
                             <div class="col--nav-info">
                                 <div class="actions">
                                     <a class="btn btn--it hidden-sm" href="#">
-                                        <span>
+                                        <span class="fa-computer-mouse fa-solid">
 
                                         </span>
                                         Support
                                     </a>
                                     <a class="btn btn--default hidden-sm" href="#">
-                                        <span>
-
-                                        </span>
+                                        <span class="fa-regular fa-paper-plane"></span>
                                         Contact
                                     </a>
-                                    <div class="float--left hidden-xs">
+                                    <div class="float--left hidden-xs search-form-wrapper-tablet">
                                         <form class="search-form" action="#">
                                             <label class="hidden" for="search-input">Search:</label>
-                                            <input id="search-input" class="form-control" placeholder="Search..." name="keyword" type="text" value="">
-                                            <button>
-                                                <span class="search-input__icon"></span>
+                                            <input id="search-input" class="newsletter__input-ctrl form-control" placeholder="Search..." name="keyword" type="text" value="">
+                                            <button type="submit">
+                                                <span class="search-input__icon fa-sharp fa-solid fa-magnifying-glass"></span>
                                             </button>
                                       </form>
                                     </div>
-                                    <button></button>
+                                    <button type="button" class="btn hamburger hamburger--spin">
+                                        <span class="hamburger-box">
+                                            <span class="hamburger-inner"></span>
+                                        </span>
+                                    </button>
                                 </div>
                             </div>
+                        </div>
+                        <div class="search-form-mobile">
+                            <form class="search-form" action="#">
+                                <label class="hidden" for="search-input">Search:</label>
+                                <input id="search-input" class="newsletter__input-ctrl form-control" placeholder="Search..." name="keyword" type="text" value="">
+                                <button type="submit">
+                                        <span class="search-input__icon fa-sharp fa-solid fa-magnifying-glass"></span>
+                                </button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -59,8 +76,8 @@
                     <ul>
                         <li class="software nav-item">
                             <a class="nav-item-btn" href="#">
-                                <span>
-
+                                <span class="material-icons">
+                                    dvr
                                 </span>
                                 <small>Bespoke</small>
                                 Software
@@ -73,7 +90,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-gears"></span>
                                             </span>
                                             <span class="link-text">Bespoke CRM</span>
                                         </a>
@@ -81,7 +98,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-suitcase"></span>
                                             </span>
                                             <span class="link-text">Business Automation</span>
                                         </a>
@@ -89,7 +106,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-rotate"></span>
                                             </span>
                                             <span class="link-text">Software Integrations</span>
                                         </a>
@@ -97,7 +114,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-mobile-screen"></span>
                                             </span>
                                             <span class="link-text">Mobile App Development</span>
                                         </a>
@@ -105,7 +122,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-folder-open"></span>
                                             </span>
                                             <span class="link-text">Bespoke Databases</span>
                                         </a>
@@ -113,7 +130,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-arrow-right-arrow-left"></span>
                                             </span>
                                             <span class="link-text">Sharepoint Development</span>
                                         </a>
@@ -121,7 +138,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-download"></span>
                                             </span>
                                             <span class="link-text">Operational Systems</span>
                                         </a>
@@ -129,7 +146,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-users"></span>
                                             </span>
                                             <span class="link-text">Business Central Implementation</span>
                                         </a>
@@ -137,7 +154,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-laptop"></span>
                                             </span>
                                             <span class="link-text">Internet of Things (IoT)</span>
                                         </a>
@@ -145,7 +162,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-cloud"></span>
                                             </span>
                                             <span class="link-text">Intranet Development</span>
                                         </a>
@@ -153,7 +170,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-cloud-arrow-down"></span>
                                             </span>
                                             <span class="link-text">Customer Portal Development</span>
                                         </a>
@@ -161,7 +178,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-earth-europe"></span>
                                             </span>
                                             <span class="link-text">Reporting Hub</span>
                                         </a>
@@ -185,7 +202,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-headphones-simple"></span>
                                             </span>
                                             <span class="link-text">Managed IT Support</span>
                                         </a>
@@ -193,7 +210,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-briefcase"></span>
                                             </span>
                                             <span class="link-text">Business IT Support</span>
                                         </a>
@@ -201,7 +218,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-laptop"></span>
                                             </span>
                                             <span class="link-text">Office 365 for Business</span>
                                         </a>
@@ -209,7 +226,9 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="material-icons">
+                                                    school
+                                                </span>
                                             </span>
                                             <span class="link-text">IT Consultancy</span>
                                         </a>
@@ -217,7 +236,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-cloud"></span>
                                             </span>
                                             <span class="link-text">Cloud Service Provider</span>
                                         </a>
@@ -225,7 +244,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-hard-drive"></span>
                                             </span>
                                             <span class="link-text">Data Backup & Disaster Recovery</span>
                                         </a>
@@ -249,7 +268,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-magnifying-glass"></span>
                                             </span>
                                             <span class="link-text">Search Engine Optimisation (SEO)</span>
                                         </a>
@@ -257,15 +276,15 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-money-bill-1"></span>
                                             </span>
                                             <span class="link-text">Pay Per Click Advertising (PPC)</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <span class="link-icon-container">
-                                                <span></span>
+                                            <span class="fa-solid link-icon-container">
+                                                <span class="fa-arrow-trend-up"></span>
                                             </span>
                                             <span class="link-text">Conversion Rate Optimisation (CRO)</span>
                                         </a>
@@ -273,7 +292,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-envelope"></span>
                                             </span>
                                             <span class="link-text">Email Marketing</span>
                                         </a>
@@ -281,7 +300,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-users"></span>
                                             </span>
                                             <span class="link-text">Social Media Marketing</span>
                                         </a>
@@ -289,7 +308,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-pencil"></span>
                                             </span>
                                             <span class="link-text">Content Marketing</span>
                                         </a>
@@ -313,7 +332,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-ticket"></span>
                                             </span>
                                             <span class="link-text">Business Mobile</span>
                                         </a>
@@ -321,7 +340,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-phone"></span>
                                             </span>
                                             <span class="link-text">Hosted VoIP Provider</span>
                                         </a>
@@ -329,7 +348,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-square-phone"></span>
                                             </span>
                                             <span class="link-text">Business VoIP Systems</span>
                                         </a>
@@ -337,7 +356,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-gauge-high"></span>
                                             </span>
                                             <span class="link-text">Business Broadband</span>
                                         </a>
@@ -345,7 +364,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-handshake"></span>
                                             </span>
                                             <span class="link-text">Leased Lines Provider</span>
                                         </a>
@@ -353,7 +372,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-phone-volume"></span>
                                             </span>
                                             <span class="link-text">3CX Systems</span>
                                         </a>
@@ -377,7 +396,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-pencil"></span>
                                             </span>
                                            <span class="link-text">Bespoke Website Design</span>
                                         </a>
@@ -385,7 +404,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-cart-shopping"></span>
                                             </span>
                                             <span class="link-text">eCommerce Website Design</span>
                                         </a>
@@ -393,7 +412,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-display"></span>
                                             </span>
                                             <span class="link-text">Pay Monthly Websites</span>
                                         </a>
@@ -401,7 +420,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-bullhorn"></span>
                                             </span>
                                             <span class="link-text">Branding & Design</span>
                                         </a>
@@ -409,7 +428,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-mobile-screen"></span>
                                             </span>
                                             <span class="link-text">Mobile App Development</span>
                                         </a>
@@ -417,7 +436,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-cloud"></span>
                                             </span>
                                             <span class="link-text">Web Hosting</span>
                                         </a>
@@ -441,7 +460,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-paste"></span>
                                             </span>
                                            <span class="link-text">Cyber Security Assessment</span>
                                         </a>
@@ -449,7 +468,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-clock"></span>
                                             </span>
                                             <span class="link-text">Cyber Security Management</span>
                                         </a>
@@ -457,7 +476,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-flask"></span>
                                             </span>
                                             <span class="link-text">Cyber Penetration Testing</span>
                                         </a>
@@ -465,7 +484,9 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="material-icons">
+                                                    school
+                                                </span>
                                             </span>
                                             <span class="link-text">Cyber Essentials Certification</span>
                                         </a>
@@ -473,7 +494,9 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="material-icons">
+                                                    security
+                                                </span>
                                             </span>
                                             <span class="link-text">PCI Compliance</span>
                                         </a>
@@ -481,7 +504,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-lock"></span>
                                             </span>
                                             <span class="link-text">Hacking Prevention</span>
                                         </a>
@@ -505,7 +528,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-laptop"></span>
                                             </span>
                                            <span class="link-text">Train For A Career In Tech</span>
                                         </a>
@@ -513,7 +536,9 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-code">
+                                        
+                                                </span>
                                             </span>
                                             <span class="link-text">Skills Bootcamp</span>
                                         </a>
@@ -521,7 +546,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-circle-question"></span>
                                             </span>
                                             <span class="link-text">Scion Scheme Frequently Asked Questions</span>
                                         </a>
@@ -529,7 +554,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="link-icon-container">
-                                                <span></span>
+                                                <span class="fa-solid fa-handshake"></span>
                                             </span>
                                             <span class="link-text">Scion Collaborators</span>
                                         </a>
@@ -566,6 +591,31 @@
                     </div>
                 </div>
             </div>
+            <div class="banner__controls">
+                <div class="banner__controls-dots">
+                    <div class="banner__controls-dot">
+                        <span></span>
+                    </div>
+                    <div class="banner__controls-dot">
+                        <span></span>
+                    </div>
+                    <div class="banner__controls-dot">
+                        <span></span>
+                    </div>
+                    <div class="banner__controls-dot">
+                        <span></span>
+                    </div>
+                    <div class="banner__controls-dot">
+                        <span></span>
+                    </div>
+                    <div class="banner__controls-dot">
+                        <span></span>
+                    </div>
+                    <div class="banner__controls-dot">
+                        <span></span>
+                    </div>         
+                </div>
+            </div>
         </div>
         <!--Banner End-->
 
@@ -582,7 +632,7 @@
                                     Our Services
                                 </strong>
                             </h2>
-                            <h3 class="float--right-sm hidden-xs">
+                            <h3 class="float--right hidden-xs">
                                 <a href="#">View Our Work</a>
                                 <strong><em class="fa-solid fa-arrow-right arrow"></em></strong>
                             </h3>
@@ -590,8 +640,8 @@
                         <div class="col--med">
                             <a class="services-list__block software" href="#">
                                 <span class="services-list__icon">
-                                    <span>
-
+                                    <span class="material-icons">
+                                        dvr
                                     </span>
                                 </span>
                                 <span class="services-list__h2">Bespoke Software</span>
