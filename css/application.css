@@ -1652,6 +1652,7 @@ header .actions .btn span.fa-computer-mouse {
   margin-bottom: 40px;
   margin-top: -6px;
   font-family: inherit;
+  line-height: 3rem;
   font-weight: 400;
   color: #fff;
   font-size: 2.25rem;
