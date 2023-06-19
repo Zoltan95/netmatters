@@ -1060,6 +1060,9 @@ header .search-form-mobile .search-form {
   margin-top: 11px;
   position: relative;
 }
+header .search-form-mobile .search-form button:hover {
+  background-color: #7e808a;
+}
 header .actions {
   display: flex;
   float: right;

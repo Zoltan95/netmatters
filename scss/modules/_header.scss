@@ -53,6 +53,9 @@ header {
         .search-form {
             margin-top: 11px;
             position: relative;
+            button:hover {
+                background-color: $jumbo;
+            }
         }
     }
 
