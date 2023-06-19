@@ -1079,6 +1079,14 @@ header .actions div {
   display: flex;
   flex-wrap: nowrap;
 }
+header .actions div a.btn--it:hover {
+  background-color: #2a6ec6;
+  border-color: #2665b5;
+}
+header .actions div a.btn--default:hover {
+  background-color: #84858f;
+  border-color: #797a85;
+}
 header .actions form {
   display: flex;
   flex-direction: row;

@@ -74,6 +74,14 @@ header {
         div {
             display: flex;
             flex-wrap: nowrap;
+            a.btn--it:hover {
+                background-color: #2a6ec6;
+                border-color: #2665b5;
+            }
+            a.btn--default:hover {
+                background-color: #84858f;
+                border-color: #797a85;
+            }
         }
         form {
             display: flex;
