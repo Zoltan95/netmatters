@@ -861,6 +861,9 @@ header .actions .btn span.fa-computer-mouse {
   padding: 0;
   margin-bottom: 0;
 }
+.main-navigation .container ul li a span.material-icons {
+  font-size: 1.5em;
+}
 
 .nav-item {
   flex: 1;
