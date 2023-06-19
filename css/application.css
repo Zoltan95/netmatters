@@ -760,6 +760,10 @@ footer {
   content: "\e902";
 }
 
+.icon-laptop:before {
+  content: "\e913";
+}
+
 .icon-bullhorn1:before {
   content: "\e903";
 }
@@ -908,6 +912,10 @@ footer {
   content: "\e90a";
 }
 
+.icon-apps:before {
+  content: "\e91c";
+}
+
 .icon-clock-o:before {
   content: "\e90b";
 }
@@ -946,10 +954,6 @@ footer {
 
 .icon-hdd-o:before {
   content: "\e912";
-}
-
-.icon-laptop:before {
-  content: "\e913";
 }
 
 .icon-code:before {
