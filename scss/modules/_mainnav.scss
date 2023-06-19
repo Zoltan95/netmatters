@@ -1,11 +1,11 @@
 .main-navigation {
+	display: flex;
 	background-color: $tuna-dark;
-	position: relative;
 	.container ul {
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
-		margin-top: -15px;
+		margin-top: 0;
 		list-style: none;
 		text-align: left;
 		padding: 0;

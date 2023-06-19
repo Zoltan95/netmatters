@@ -1,5 +1,11 @@
-header {
+.header {
+    display: flex;
+    flex-direction: column;
+}
 
+header {
+    display: flex;
+    justify-content: center;
     .inner .logo-container a img {
 	max-width: 100%;
 	display: block;
@@ -119,5 +125,7 @@ header {
             margin-left: 3px;
         }
     }
-
+    .section {
+        height: 70px;
+    }
 }
