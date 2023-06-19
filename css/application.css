@@ -1099,7 +1099,7 @@ header .actions .form-control ::placeholder {
 header .actions .search-input__icon {
   font-size: 23px;
 }
-header .actions .btn span.fa-regular {
+header .actions .btn span.icon-paperplane {
   font-size: 1.438rem;
   line-height: 45px;
   margin-right: 5px;
@@ -1125,9 +1125,6 @@ header .actions .btn span.fa-computer-mouse {
   padding: 0;
   margin-bottom: 0;
 }
-.main-navigation .container ul li a span.material-icons {
-  font-size: 1.5em;
-}
 
 .nav-item {
   flex: 1;
@@ -1146,8 +1143,8 @@ header .actions .btn span.fa-computer-mouse {
 }
 .nav-item .nav-item-btn span {
   display: block;
-  font-size: 1.438rem;
-  line-height: 1;
+  font-size: 1.4rem;
+  line-height: 0.9;
   padding-bottom: 10px;
 }
 .nav-item .nav-item-btn small {
@@ -1360,7 +1357,7 @@ header .actions .btn span.fa-computer-mouse {
   text-decoration: none;
 }
 .sub-menu li a span.link-icon-container {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 .sub-menu-banner {
   margin: 0;
@@ -1906,11 +1903,6 @@ header .actions .btn span.fa-computer-mouse {
 }
 .row-services .col--xl.clearfix h3 a:hover {
   text-decoration: underline;
-}
-
-.material-icons {
-  font-size: 2rem;
-  line-height: 62px;
 }
 
 .branding {
