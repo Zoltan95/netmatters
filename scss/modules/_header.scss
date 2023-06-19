@@ -10,7 +10,7 @@ header {
         height: 56px;
         display: none;
         &:focus {
-            border-color: #5bc0de;
+            border-color: $viking;
             outline: 0;
             box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(91,192,222,.6);
         }
@@ -31,7 +31,7 @@ header {
             padding: 1px 6px 8px 0px;
             background: none;
             border: none;
-            color: #333645;
+            color: $tuna-dark;
             position: absolute;
             right: 5px;
             line-height: 47px;
@@ -47,7 +47,7 @@ header {
             height: 47px;
             padding: 5px 40px 5px 15px;
             &:focus {
-                box-shadow: 0 0 3px #fff;
+                box-shadow: 0 0 3px $white;
             }
         }
         .search-form {

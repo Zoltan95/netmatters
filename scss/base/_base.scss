@@ -21,7 +21,7 @@ body {
 	letter-spacing: .4px;
 	font-weight: 400;
 	margin: 0 0 28px;
-	color: #333645;
+	color: $tuna-dark;
 }
 
 h2 {
@@ -29,7 +29,7 @@ h2 {
 	font-size :$headding-resize--huge;
 	font-weight: 400;
 	margin: 0 0 15px;
-	color: #333645;
+	color: $tuna-dark;
 }
 
 h3 {
@@ -37,7 +37,7 @@ h3 {
 	font-weight: 400;
 	line-height: 1.1;
 	margin: 0 0 15px;
-	color: #333645;
+	color: $tuna-dark;
 }
 
 h4 {
@@ -52,13 +52,16 @@ p {
 
 button {
 	overflow: visible;
-}
-
-button, input, select, textarea {
-	margin: 0;
-	font-family: inherit;
-	font-size: inherit;
-	line-height: inherit;
+	&, input, select, textarea {
+		margin: 0;
+		font-family: inherit;
+		font-size: inherit;
+		line-height: inherit;
+	}
+	&::-moz-focus-inner, input::-moz-focus-inner {
+		border: 0;
+		padding: 0;
+	}
 }
 
 header {
@@ -71,14 +74,14 @@ div {
 }
 
 a {	
-	color: #333645;
+	color: $tuna-dark;
 	text-decoration: none;
 	background: transparent;
 }
 
 label {
 	display: block;
-	color: #333645;
+	color: $tuna-dark;
 	font-weight: 600;
 	margin-bottom: 5px;
 }
@@ -92,10 +95,6 @@ footer {
 }
 
 
-button::-moz-focus-inner, input::-moz-focus-inner {
-    border: 0;
-    padding: 0;
-}
 
 
 

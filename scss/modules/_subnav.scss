@@ -1,31 +1,31 @@
-@include nav-triangle(software,#67809f);
-@include nav-triangle(it,#4183d7);
-@include nav-triangle(digital,#2ecc71);
-@include nav-triangle(telecoms,#d64541);
-@include nav-triangle(web,#926fb1);
-@include nav-triangle(security,#f62459);
-@include nav-triangle(dev,#ce4125);
+@include nav-triangle(software,$software);
+@include nav-triangle(it,$it);
+@include nav-triangle(digital,$digital);
+@include nav-triangle(telecoms,$telecoms);
+@include nav-triangle(web,$web);
+@include nav-triangle(security,$security);
+@include nav-triangle(dev,$dev);
 
 .dev .sub-menu-banner {
-	background-color: #a3331d;
+	background-color: $dev-dark;
 }
 .security .sub-menu-banner {
-	background-color: #de093f;
+	background-color: $security-dark;
 }
 .web .sub-menu-banner {
-	background-color: #79539a;
+	background-color: $web-dark;
 }
 .telecoms .sub-menu-banner {
-	background-color: #bc2c28;
+	background-color: $telecoms-dark;
 }
 .digital .sub-menu-banner {
-	background-color: #25a25a;
+	background-color: $digital-dark;
 }
 .it .sub-menu-banner {
-	background-color: #286abd;
+	background-color: $it-dark;
 }
 .software .sub-menu-banner {
-	background-color: #526781;;
+	background-color: $software-dark;
 }
 
 .sub-menu {
@@ -80,7 +80,7 @@
 	&-banner {
 		margin: 0;
 		display: none;
-		background-color: #1d1f28;
+		background-color: $shark;
 		position: absolute;
 		top: 100%;
 		left: 0;

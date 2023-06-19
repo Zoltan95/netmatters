@@ -1,4 +1,5 @@
 .btn {
+	@extend %btn;
 	@include service-buttons(dev, $dev);
 	@include service-buttons(security, $security);
 	@include service-buttons(web, $web);
@@ -6,40 +7,29 @@
 	@include service-buttons(digital, $digital);
 	@include service-buttons(it, $it);
 	@include service-buttons(software, $software);
-
-	display: inline-block;
-	color: $white;
-	font-family: inherit;
-	font-weight: 400;
-	font-size: 1.063rem;
-	text-align: center;
-	vertical-align: middle;
-	background-color: #333645;
-	background-image: none;
-	height: auto;
-	line-height: 35px;
-	padding: 5px 15px;
-	margin-bottom: 0;
-	text-transform: uppercase;
-	border: 1px solid #333645;
-	border-radius: 3px;
+	@include article-buttons(google, $dodger-blue, $blue-ribbon);
+	@include article-buttons(trustpilot, $jade, $green-haze);
+	
+	&--google {
+		margin-right: 8px;
+	}
 
 	@include m(primary-inverse) {
-		background-color: #272936;
+		background-color: $charade;
 		border-radius: 6px;
 		padding: 10px 30px;
 		font-size: 20px;
 		margin-bottom: 50px;
 		&:hover {
 			text-decoration: none;
-			background-color: #121318;
+			background-color: $wood-smoke;
 		}
 	}
 
 	@include m(default) {
 		color: $white;
-		background-color: #999aa2;
-		border-color: #999aa2;
+		background-color: $manatee;
+		border-color: $manatee;
 	}
 
 	@include m(lg) {
@@ -51,32 +41,6 @@
 		text-transform: uppercase;
 	}
 
-	@include m(google) {
-		margin-top: 20px;
-		background-color: #4387f6;
-		margin-right: 8px;
-		border-radius: 6px;
-		padding: 10px 30px;
-		font-size: 20px;
-		float: left;
-		&:hover {
-			text-decoration: none;
-			background-color: #166af4;
-		}
-	}
-
-	@include m(trustpilot) {
-		margin-top: 20px;
-		background-color: #00b67b;
-		border-radius: 6px;
-		padding: 10px 30px;
-		font-size: 20px;
-		float: left;
-		&:hover {
-			text-decoration: none;
-			background-color: #009b69;
-		}
-	}
 }
 
 .search-form button {
@@ -87,7 +51,7 @@
 	border-radius: 0 3px 3px 0;
 	border: none;
 	vertical-align: bottom;
-	background-color: #999aa2;
+	background-color: $manatee;
 	color: $white;
 	overflow: visible;
 }
@@ -95,16 +59,16 @@
 .hamburger.btn {
 	font-size: 1.438rem;
     line-height: 45px;
-    background-color: #333645;
-    border-color: #333645;
+    background-color: $tuna-dark;
+    border-color: $tuna-dark;
     padding: 15px 15px 5px 15px;
     text-transform: uppercase;
     border-radius: 3px;
     white-space: normal;
 	&:hover {
 		color: $white;
-    	background-color: #22242e;
-    	border-color: #191a22;
+    	background-color: $charade-dark;
+    	border-color: $shark-dark;
 	}
 }
 
@@ -121,22 +85,22 @@
 }
 
 .btn--software:hover {
-	background-color: #566c88;
-	border-color: #4e627b;
+	background-color: $blue-bayoux;
+	border-color: $blue-bayoux-dark;
 }
 
 .facebook:hover{
-	background-color: #3b5998;
+	background-color: $chambray;
 }
 
 .linkedin:hover {
-	background-color: #0077b5;
+	background-color: $deep-cerulean;
 }
 
 .twitter:hover {
-	background-color: #00aced;
+	background-color: $cerulean;
 }
 
 .instagram:hover {
-	background-color: #d93175;
+	background-color: $cerise;
 }

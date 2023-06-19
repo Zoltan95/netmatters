@@ -20,14 +20,14 @@
 		padding-right: 15px;
 		.newsletter__input-fields label::after {
 			content: " *";
-			color: #d24d57;
+			color: $chestnut-rose;
 		}
 	}
 
 	@include e(input-fields) {
 		margin-bottom: 15px;
 		input:focus {
-			border-color: #5bc0de;
+			border-color: $viking;
             outline: 0;
             box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(91,192,222,.6);
 		}
@@ -53,7 +53,7 @@
 	overflow: hidden;
 	@include e(label) {
 		display: inline-block;
-		font-weight: 600;
+		font-weight: $font-weight--bold;
 		color: $tuna;
 		line-height: 32px;
 		cursor: pointer;
