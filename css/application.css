@@ -679,6 +679,9 @@ footer {
   color: #fff;
   overflow: visible;
 }
+.search-form button:hover {
+  background-color: #7e808a;
+}
 
 .hamburger.btn {
   font-size: 1.438rem;
@@ -1060,9 +1063,6 @@ header .search-form-mobile .search-form {
   margin-top: 11px;
   position: relative;
 }
-header .search-form-mobile .search-form button:hover {
-  background-color: #7e808a;
-}
 header .actions {
   display: flex;
   float: right;
@@ -1079,14 +1079,6 @@ header .actions div {
   display: flex;
   flex-wrap: nowrap;
 }
-header .actions div a.btn--it:hover {
-  background-color: #2a6ec6;
-  border-color: #2665b5;
-}
-header .actions div a.btn--default:hover {
-  background-color: #84858f;
-  border-color: #797a85;
-}
 header .actions form {
   display: flex;
   flex-direction: row;
@@ -1099,6 +1091,14 @@ header .actions .btn {
   height: 56px;
   line-height: 46px;
   font-size: 1.125rem;
+}
+header .actions .btn.btn--it:hover {
+  background-color: #2a6ec6;
+  border-color: #2665b5;
+}
+header .actions .btn.btn--default:hover {
+  background-color: #84858f;
+  border-color: #797a85;
 }
 header .actions button.hamburger {
   display: flex;
