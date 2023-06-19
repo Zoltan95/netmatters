@@ -38,10 +38,13 @@
         width : 100%;
     }
     .col--nav-logo {
+        display: flex;
         float: left;
         width: 41.66666667%;
     }
     .col--nav-info {
+        display: flex;
+        justify-content: end;
         min-height: 1px;
         padding-left: 15px;
         padding-right: 15px;

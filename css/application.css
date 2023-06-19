@@ -1012,15 +1012,6 @@ footer {
   content: "\e91b";
 }
 
-.header {
-  display: flex;
-  flex-direction: column;
-}
-
-header {
-  display: flex;
-  justify-content: center;
-}
 header .inner .logo-container a img {
   max-width: 100%;
   display: block;
@@ -1135,14 +1126,14 @@ header .section {
 }
 
 .main-navigation {
-  display: flex;
+  position: relative;
   background-color: #333645;
 }
 .main-navigation .container ul {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-top: 0;
+  margin-top: -15px;
   list-style: none;
   text-align: left;
   padding: 0;
@@ -2310,13 +2301,15 @@ header .section {
   }
 }
 @media (max-width: 767px) {
-  header .inner .row-services {
+  header .inner .section {
+    display: table;
+    width: 100%;
     margin: 0;
   }
   header .inner .actions .btn {
     padding-top: 16px;
   }
-  header .inner .row-services > * {
+  header .inner .section > * {
     padding: 0;
     display: table-cell;
     float: none;
@@ -2330,6 +2323,27 @@ header .section {
   }
   .mobile-container {
     display: inline-block;
+  }
+  .mobile-container a:hover {
+    text-decoration: underline;
+    outline: 0;
+  }
+  .mobile-container a span {
+    font-size: 1.3em;
+  }
+}
+@media (min-width: 992px) {
+  header .section {
+    display: flex;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-navigation {
+    padding-top: 15px;
+    padding-bottom: 2px;
+    display: flex;
   }
 }
 @media (max-width: 991px) {
@@ -2440,10 +2454,13 @@ header .section {
     width: 100%;
   }
   .col--nav-logo {
+    display: flex;
     float: left;
     width: 41.66666667%;
   }
   .col--nav-info {
+    display: flex;
+    justify-content: end;
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;

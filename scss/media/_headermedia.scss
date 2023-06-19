@@ -1,11 +1,13 @@
 @media (max-width: 767px) {
-    header .inner .row-services {
-        margin: 0;
+    header .inner .section {
+        display: table;
+		width: 100%;
+		margin: 0;
     }
     header .inner .actions .btn {
         padding-top: 16px;
     }
-    header .inner .row-services > * {
+    header .inner .section > * {
         padding: 0;
         display: table-cell;
         float: none;
@@ -19,7 +21,32 @@
 	}
     .mobile-container {
         display: inline-block;
+		a {
+			&:hover {
+				text-decoration: underline;
+				outline: 0;
+			}
+			span {
+				font-size: 1.3em;
+			}
+		}
+		
     }
+}
+
+@media (min-width: 992px) {
+	header .section {
+		display: flex;
+	}
+	.header {
+		display: flex;
+		flex-direction: column;
+	}
+	.main-navigation {
+		padding-top: 15px;
+		padding-bottom: 2px;
+		display: flex;
+	}
 }
 
 @media (max-width: 991px) {
