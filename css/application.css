@@ -2146,15 +2146,56 @@ header .section {
   float: left;
   height: 32px;
   width: 32px;
+  padding-right: 20px;
   margin-right: 20px;
   border-radius: 3px;
   border: 3px solid #323544;
+}
+.ckbox__button input {
+  height: 0;
+  width: 0;
+  position: absolute;
+  opacity: 0;
 }
 .ckbox__body {
   display: table-cell;
   vertical-align: top;
   width: 10000px;
   overflow: hidden;
+}
+.ckbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 26px;
+  width: 26px;
+  background-color: #ddd;
+}
+.ckbox__button:hover input ~ .checkmark {
+  cursor: pointer;
+}
+.ckbox__button input:checked ~ .checkmark {
+  color: #fff;
+  background-color: #323544;
+}
+.ckbox .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.ckbox__button input:checked ~ .checkmark:after {
+  display: block;
+}
+.ckbox__button .checkmark:after {
+  left: 10px;
+  top: 3px;
+  width: 7px;
+  height: 15px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .footer__row {

@@ -72,14 +72,55 @@
 		float: left;
 		height: 32px;
 		width: 32px;
+		padding-right: 20px;
 		margin-right: 20px;
 		border-radius: 3px;
 		border: 3px solid $tuna;
+		input {
+			height: 0;
+  			width: 0;
+			position: absolute;
+			opacity: 0;
+		}
 	}
 	@include e(body) {
 		display: table-cell;
 		vertical-align: top;
 		width: 10000px;
 		overflow: hidden;
+	}
+	.checkmark {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 26px;
+		width: 26px;
+		background-color: #ddd;
+	}
+	&__button:hover input ~ .checkmark {
+		cursor: pointer;
+	}
+	&__button input:checked ~ .checkmark {
+		color: $white;
+		background-color: $tuna;
+	}
+	.checkmark:after {
+		content: "";
+		position: absolute;
+		display: none;
+	}
+	&__button input:checked ~ .checkmark:after {
+		display: block;
+	}
+	&__button .checkmark:after {
+		left: 10px;
+		top: 3px;
+		width: 7px;
+		height: 15px;
+		border: solid white;
+		border-width: 0 2px 2px 0;
+		-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		transform: rotate(45deg);
 	}
 }
