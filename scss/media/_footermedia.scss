@@ -16,6 +16,11 @@
 
 @media (min-width: 768px) {
 
+    .footer__bottom-container
+    {
+        margin-left: auto;
+    }
+
     .license {
         flex-direction: row;
         ul li::before {

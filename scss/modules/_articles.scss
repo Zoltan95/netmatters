@@ -11,6 +11,7 @@
 	}
 
 	@include e(section) {
+		padding-top: 15px;
 		padding-bottom: 50px;
 	}
 
@@ -69,6 +70,8 @@
 		padding: 30px;
 		box-shadow: 0 3px 35px rgba(0,0,0,.1);
 		color: $dove-grey;
+		border-top: 0;
+		border-radius: 0 0 3px 3px;
 		h3 {
 			font-size: 1rem;
 			line-height: 1.5rem;
