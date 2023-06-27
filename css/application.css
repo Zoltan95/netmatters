@@ -2158,6 +2158,7 @@ header .section {
   line-height: 32px;
   cursor: pointer;
   margin-bottom: 5px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .ckbox__left {
   display: table-cell;
@@ -2189,12 +2190,15 @@ header .section {
   width: 10000px;
   overflow: hidden;
 }
+.ckbox__body a {
+  text-decoration: underline;
+}
 .ckbox .checkmark {
   position: absolute;
   top: -1px;
-  left: 0px;
-  height: 105%;
-  width: 100%;
+  left: -1px;
+  height: 107%;
+  width: 107%;
   background-color: #ddd;
 }
 .ckbox__button:hover input ~ .checkmark {
@@ -2513,6 +2517,10 @@ header .section {
   }
   .container {
     width: 750px;
+  }
+  .col--lg {
+    float: left;
+    width: 50%;
   }
 }
 @media (min-width: 992px) {
