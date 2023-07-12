@@ -23,6 +23,26 @@
 	87.5% {transform: translate(-50px);}	
 }
 
+@keyframes slideOut {
+	0%  {
+			transform: translate3d(0,-100%,0);
+			visibility: visible;
+		}
+	100%   	{
+			transform: translateZ(0);
+			}
+}
+
+@keyframes slideIn {
+	0%  {
+			transform: translateZ(0);
+		}
+	100% {
+        	visibility: hidden;
+        	transform: translate3d(0,-100%,0)
+   		}
+}
+
 .slide {
 
 	&-box {

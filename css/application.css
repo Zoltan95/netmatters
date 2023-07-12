@@ -1129,6 +1129,34 @@ header .section {
   height: 70px;
 }
 
+#header-sticky {
+  display: none;
+}
+
+.sticky {
+  position: fixed !important;
+  width: 100%;
+  right: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.slide-out {
+  animation-name: slideOut;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+}
+
+.slide-in {
+  animation-name: slideIn;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+}
+
+.navbarOffsetMargin {
+  padding-top: 3px;
+}
+
 .main-navigation {
   position: relative;
   background-color: #333645;
@@ -1473,6 +1501,24 @@ header .section {
   }
   87.5% {
     transform: translate(-50px);
+  }
+}
+@keyframes slideOut {
+  0% {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+  100% {
+    transform: translateZ(0);
+  }
+}
+@keyframes slideIn {
+  0% {
+    transform: translateZ(0);
+  }
+  100% {
+    visibility: hidden;
+    transform: translate3d(0, -100%, 0);
   }
 }
 .slide-box {
