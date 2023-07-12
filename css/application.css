@@ -1150,7 +1150,7 @@ header .section {
 .slide-in {
   animation-name: slideIn;
   animation-fill-mode: both;
-  animation-duration: 1s;
+  animation-duration: 0.25s;
 }
 
 .navbarOffsetMargin {
@@ -1518,6 +1518,7 @@ header .section {
   }
   100% {
     visibility: hidden;
+    display: none;
     transform: translate3d(0, -100%, 0);
   }
 }

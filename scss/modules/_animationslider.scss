@@ -39,6 +39,7 @@
 		}
 	100% {
         	visibility: hidden;
+			display: none;
         	transform: translate3d(0,-100%,0)
    		}
 }

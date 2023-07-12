@@ -34,33 +34,36 @@ const scrollDown = "scroll-down";
 let lastScroll = 0;
 
 window.addEventListener("scroll", () => {
-  const currentScroll = window.scrollY;
-  if (currentScroll <= 0) {
-    header.classList.remove(scrollUp);
-    $('#header').css('visibility', 'visible');
-    $('#header-sticky').css('display', 'none');
-    headerSticky.classList.remove('sticky');
-    return;
-  }
-  if (currentScroll > lastScroll && !header .classList.contains(scrollDown)) {
-    // down 
-    header .classList.remove(scrollUp);
-    header .classList.add(scrollDown);
-    $('#header-sticky').css('visibility', 'hidden');
-    headerSticky.classList.remove('sticky');
-    headerSticky.classList.remove("slide-out");
-    headerSticky.classList.add("slide-in");
-  } else if (
-    currentScroll < lastScroll &&
-    header.classList.contains(scrollDown)
-  ) {
-    // up 
-    header.classList.remove(scrollDown);
-    header.classList.add(scrollUp);
-    $('#header-sticky').css('display', 'block');
-    headerSticky.classList.add('sticky');
-    headerSticky.classList.remove("slide-in");
-    headerSticky.classList.add("slide-out");
-  }
-  lastScroll = currentScroll;
+    const currentScroll = window.scrollY;
+    if (currentScroll <= 0) {
+        header.classList.remove(scrollUp);
+        headerSticky.classList.remove("sticky");
+        $('#header-sticky').css('display', 'none')
+        $('#header').css('visibility', 'visible')
+    
+        return;
+    }
+    if (currentScroll < 250) {headerSticky.classList.remove("sticky");}
+    if (currentScroll > lastScroll && !header.classList.contains(scrollDown)) 
+    {
+        // down 
+        header.classList.remove(scrollUp);
+        header.classList.add(scrollDown);
+        $('#header-sticky').css('display', 'block')
+        $('#header').css('visibility', 'hidden')
+        headerSticky.classList.add("sticky");
+        headerSticky.classList.remove("slide-out");
+        headerSticky.classList.add("slide-in");
+
+    } 
+    else if (currentScroll < lastScroll && header.classList.contains(scrollDown)) 
+    {
+        // up 
+        header.classList.remove(scrollDown);
+        header.classList.add(scrollUp);
+        headerSticky.classList.remove("slide-in");
+        headerSticky.classList.add("slide-out");
+        
+    }
+    lastScroll = currentScroll;
 });
