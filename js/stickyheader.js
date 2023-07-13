@@ -1,5 +1,6 @@
 const headerSticky = document.getElementById("header-sticky");
 const header = document.getElementById("header");
+$('#header-sticky').css('display', 'none');
 let lastScroll = 0;
 
 window.addEventListener("scroll", () => {
