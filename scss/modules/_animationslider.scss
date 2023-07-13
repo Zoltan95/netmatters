@@ -38,8 +38,8 @@
 			transform: translateZ(0);
 		}
 	100% {
-        	visibility: hidden;
 			display: none;
+			visibility: hidden;
         	transform: translate3d(0,-100%,0)
    		}
 }

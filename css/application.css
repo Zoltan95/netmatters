@@ -1129,10 +1129,6 @@ header .section {
   height: 70px;
 }
 
-#header-sticky {
-  display: none;
-}
-
 .sticky {
   position: fixed !important;
   width: 100%;
@@ -1144,7 +1140,7 @@ header .section {
 .slide-out {
   animation-name: slideOut;
   animation-fill-mode: both;
-  animation-duration: 1s;
+  animation-duration: 0.25s;
 }
 
 .slide-in {
@@ -1517,8 +1513,8 @@ header .section {
     transform: translateZ(0);
   }
   100% {
-    visibility: hidden;
     display: none;
+    visibility: hidden;
     transform: translate3d(0, -100%, 0);
   }
 }

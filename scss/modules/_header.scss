@@ -126,7 +126,6 @@ header {
 }
 
 #header-sticky {
-    display: none;
 }
 
 //Navbar Sticky
@@ -141,7 +140,7 @@ header {
 .slide-out {
     animation-name: slideOut;
     animation-fill-mode: both;
-    animation-duration: 1s;
+    animation-duration: .25s;
 }
 
 .slide-in {
