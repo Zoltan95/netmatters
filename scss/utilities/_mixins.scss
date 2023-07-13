@@ -119,6 +119,10 @@
 	.main-navigation .container ul li.#{$service}.nav-item:hover .nav-item-btn span {
 		color: $white;
 	}
+
+	.#{$service} a span.ico {
+		color: $color;
+	}
 }
 
 // Image replacement
