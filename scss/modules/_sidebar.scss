@@ -118,6 +118,14 @@
 
 }
 
+.sidepanel__main>ul>li:hover>a {
+    background-color: hsla(0,0%,100%,.05);
+}
+
+.sidepanel__secondary>li:hover>a {
+    background-color: hsla(0,0%,100%,.05);
+}
+
 .sidepanel-banner__title {
     display: none;
 }
@@ -181,6 +189,12 @@
     z-index: 2;
 }
 
+.cookie-active {
+    margin: 0; 
+    height: 100%; 
+    overflow: hidden;
+}
+
 .menu-active 
 {
     margin: 0; 
@@ -228,7 +242,7 @@ body.menu-active #main {
 #header-sticky{
     left: 0;
     transition: all .5s;
-    
+    display: none;
 }
 
 #header-sticky.menu-active {

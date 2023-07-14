@@ -1,0 +1,25 @@
+@media (max-width: 767px){
+	.spacer-xs {
+		margin-bottom: 30px!important;
+	}
+}
+
+@media (min-width: 768px){
+	.modal__row {
+		display: flex;
+		flex-direction: row;
+		.col {
+			width: 50%;
+		}
+	}
+}
+
+@media (min-width: 768px){
+	.modal__content {
+		box-shadow: 0 5px 15px rgba(0,0,0,.5);
+	}
+
+	.modal__dialog {
+		width: 600px;
+	}
+}
