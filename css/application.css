@@ -2580,6 +2580,10 @@ header .section {
   background-color: hsla(0, 0%, 100%, 0.05);
 }
 
+.sidepanel__secondary > li:hover > a {
+  background-color: hsla(0, 0%, 100%, 0.05);
+}
+
 .sidepanel-banner__title {
   display: none;
 }
@@ -3074,6 +3078,18 @@ body.menu-active #main {
 @media (max-width: 991px) {
   .menu-item-532 {
     display: none;
+  }
+}
+@media (min-width: 992px) {
+  #header-sticky.menu-active {
+    left: -350px;
+  }
+  body.menu-active #main {
+    left: -350px;
+  }
+  #sidepanel {
+    right: -350px;
+    width: 350px;
   }
 }
 @media (max-width: 767px) {

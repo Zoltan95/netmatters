@@ -3,3 +3,17 @@
         display: none;
     }
 }
+
+@media (min-width: 992px){
+    #header-sticky.menu-active {
+        left: -350px; 
+    }
+
+    body.menu-active #main {
+        left: -350px;
+    }
+    #sidepanel {
+        right: -350px;
+        width: 350px;
+    }
+}
