@@ -28,7 +28,3 @@ window.addEventListener("scroll", () => {
     }
     lastScroll = currentScroll;
 });
-
-window.onload( () => {
-    $('#header-sticky').css('display', 'none');
-})
