@@ -1,5 +1,11 @@
 <?php
+
 include('includes/header.php')
+
+include('inc/connection.php');
+
+include('inc/header.php');
+
 ?>
         <!--Banner Start-->
             <div class="banner">
@@ -405,7 +411,12 @@ include('includes/header.php')
                         <div class="container">
                             <div class="articles__list">
                                 <div class="row">
+
                                     <div class="col software">
+
+                                    <!--
+                                    <div class="col software">                  <--- News Type
+
                                         <div class="articles__item">
                                             <a class="articles__item-link" href="#"></a>
                                             <div class="articles__img-container">
@@ -442,6 +453,7 @@ include('includes/header.php')
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="col it">
                                         <div class="articles__item">
                                             <a class="articles__item-link" href="#"></a>
@@ -516,6 +528,24 @@ include('includes/header.php')
                                             </div>
                                         </div>
                                     </div>
+
+                                    -->
+                                    <?php
+                                        $sql = "SELECT * FROM news_articles;";
+                                        $result = $conn->query($sql);
+
+                                        //if ($result->num_rows > 0) {
+                                            // output data of each row
+                                        //    while($row = $result->fetch_assoc()) {
+                                        //      echo "id: " . $row["id"] . "<br>";
+                                        //    }
+                                        //} else {
+                                        //    echo "0 results";
+                                        //}
+                                        //$conn->close();
+
+                                    ?>
+
                                 </div>
                             </div>
                         </div>
@@ -571,5 +601,9 @@ include('includes/header.php')
                 <!--Slideshow 2 End-->
 
 <?php
+
 include('includes/footer.php')
+
+include('inc/footer.php');
+
 ?>
