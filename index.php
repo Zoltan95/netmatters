@@ -1,7 +1,11 @@
 <?php
+
+include('includes/header.php')
+
 include('inc/connection.php');
 
 include('inc/header.php');
+
 ?>
         <!--Banner Start-->
             <div class="banner">
@@ -407,8 +411,12 @@ include('inc/header.php');
                         <div class="container">
                             <div class="articles__list">
                                 <div class="row">
+
+                                    <div class="col software">
+
                                     <!--
                                     <div class="col software">                  <--- News Type
+
                                         <div class="articles__item">
                                             <a class="articles__item-link" href="#"></a>
                                             <div class="articles__img-container">
@@ -445,6 +453,82 @@ include('inc/header.php');
                                             </div>
                                         </div>
                                     </div>
+
+                                    <div class="col it">
+                                        <div class="articles__item">
+                                            <a class="articles__item-link" href="#"></a>
+                                            <div class="articles__img-container">
+                                                <a class="articles__category" href="#">News</a>
+                                                <a class="articles__img-link" href="#">
+                                                    <img class="articles__img" src="https://www.netmatters.co.uk/assets/images/thumbnails/thumb/elliot-tarling-b892.png" alt="Elliot Tarling">
+                                                </a>
+                                            </div>
+                                            <div class="articles__block">
+                                                <h3>
+                                                    <a href="">Elliot Tarling - Netmatters 5 Year Legend</a>
+                                                    <span class="articles__read-time">
+                                                        - 3 minute read
+                                                    </span>
+                                                </h3>
+                                                <p>
+                                                    Today, we are congratulating Elliot Traling for attaining the Netmatters Long Service Award and earn...
+                                                </p>
+                                                <a class="btn btn--it" href="">
+                                                    Read More
+                                                </a>
+                                                <div class="articles__user">
+                                                    <div class="articles__user-avatar">
+                                                        <img src="https://www.netmatters.co.uk/assets/images/thumbnails/article_contact_thumb/netmatters-ltd-VXAv.png" alt="Netmatters">
+                                                    </div>
+                                                    <div class="articles__user-details">
+                                                        <strong class="text-primary">
+                                                            Posted by Netmatters
+                                                        </strong>                                                        
+                                                            <br>
+                                                            8th June 2023
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col web">
+                                        <div class="articles__item">
+                                            <a class="articles__item-link" href="#"></a>
+                                            <div class="articles__img-container">
+                                                <a class="articles__category" href="#">News</a>
+                                                <a class="articles__img-link" href="#">
+                                                    <img class="articles__img" src="https://www.netmatters.co.uk/assets/images/thumbnails/thumb/may-2023-notables-wAcE.png" alt="May 2023 Notables">
+                                                </a>
+                                            </div>
+                                            <div class="articles__block">
+                                                <h3>
+                                                    <a href="">May 2023 Notables</a>
+                                                    <span class="articles__read-time">
+                                                        - 4 minute read
+                                                    </span>
+                                                </h3>
+                                                <p>
+                                                    Each month, various departments recognise those employees who have excelled in their work and helped...
+                                                </p>
+                                                <a class="btn btn--web" href="">
+                                                    Read More
+                                                </a>
+                                                <div class="articles__user">
+                                                    <div class="articles__user-avatar">
+                                                        <img src="https://www.netmatters.co.uk/assets/images/thumbnails/article_contact_thumb/netmatters-ltd-VXAv.png" alt="Netmatters">
+                                                    </div>
+                                                    <div class="articles__user-details">
+                                                        <strong class="text-primary">
+                                                            Posted by Netmatters
+                                                        </strong>                                                        
+                                                            <br>
+                                                            7th June 2023
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     -->
                                     <?php
                                         $sql = "SELECT * FROM news_articles;";
@@ -461,6 +545,7 @@ include('inc/header.php');
                                         //$conn->close();
 
                                     ?>
+
                                 </div>
                             </div>
                         </div>
@@ -516,5 +601,9 @@ include('inc/header.php');
                 <!--Slideshow 2 End-->
 
 <?php
+
+include('includes/footer.php')
+
 include('inc/footer.php');
+
 ?>
