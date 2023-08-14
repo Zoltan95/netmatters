@@ -1,0 +1,105 @@
+@include nav-triangle(software,$software);
+@include nav-triangle(it,$it);
+@include nav-triangle(digital,$digital);
+@include nav-triangle(telecoms,$telecoms);
+@include nav-triangle(web,$web);
+@include nav-triangle(security,$security);
+@include nav-triangle(dev,$dev);
+
+.dev .sub-menu-banner {
+	background-color: $dev-dark;
+}
+.security .sub-menu-banner {
+	background-color: $security-dark;
+}
+.web .sub-menu-banner {
+	background-color: $web-dark;
+}
+.telecoms .sub-menu-banner {
+	background-color: $telecoms-dark;
+}
+.digital .sub-menu-banner {
+	background-color: $digital-dark;
+}
+.it .sub-menu-banner {
+	background-color: $it-dark;
+}
+.software .sub-menu-banner {
+	background-color: $software-dark;
+}
+
+.sub-menu {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-top: -15px;
+	list-style: none;
+	text-align: left;
+	padding: 0;
+
+	.h2.sub-menu-banner-title {
+		font-size: 2rem;
+	}
+
+
+	li {
+		width: 33%;
+		margin-top: 15px;
+
+		&.h2.sub-menu-banner-title {
+			display: block;
+			width: 100%;
+			color: $white !important;
+			margin-bottom: 10px;
+			margin-top: 15px;
+			font-weight: 500;
+		}
+
+		a {
+			color: $white;
+			font-size: 1.2rem;
+			line-height: 1.313rem;
+			padding: .625rem .938rem .625rem 0;
+			display: flex;
+			align-items: center;
+			&:hover {
+				.link-text {					
+					text-decoration: underline;
+										
+				}
+				span.link-icon-container {
+					text-decoration: none;
+				}
+			}
+			span.link-icon-container {
+				font-size: 1.2rem;
+			}
+			
+		}
+	}
+	&-banner {
+		margin: 0;
+		display: none;
+		background-color: $shark;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		min-width: 100%;
+		z-index: 10;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+}
+
+.link-icon-container {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	min-width: 23px;
+}
+
+.link-text {
+	font-size: 1.2rem;
+	line-height: 1.313rem;
+	margin-left: 10px;
+}

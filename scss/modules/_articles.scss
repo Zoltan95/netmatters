@@ -1,0 +1,138 @@
+.articles {
+	@include e(bar) {
+		padding-top: 50px;
+		.container .headings-container h3 {
+			font-weight: $font-weight--bold;
+			color: $tuna-dark;
+		}
+		.container .headings-container h3 a:hover {
+			text-decoration: underline;
+		}
+	}
+
+	@include e(section) {
+		padding-top: 15px;
+		padding-bottom: 50px;
+	}
+
+	@include e(list) {
+		margin-top: -30px;
+	}
+
+	@include e(category) {
+		position: absolute;
+		top: 10px;
+		right: 0;
+		padding: 0 10px;
+		z-index: 1;
+		color: $white;
+		background-color: $hoki;
+		font-size: .75rem;
+		font-weight: 600;
+		line-height: 1.438rem;
+		text-transform: uppercase;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	@include e(item) {
+		position: relative;
+		top: 0;
+		margin-top: 30px;
+		font-size: $base__font-size--secondary;
+		transition: all .5s ease 0s;
+	}
+
+	@include e(item-link) {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	@include e(img-container) {
+		position: relative;
+	}
+
+	@include e(img) {
+		display: block;
+		position: relative;
+		border: 0;
+		width: 100%;
+		height: auto;
+	}
+
+	@include e(block) {
+		display: block;
+		border: 1px solid $silver;
+		padding: 30px;
+		box-shadow: 0 3px 35px rgba(0,0,0,.1);
+		color: $dove-grey;
+		border-top: 0;
+		border-radius: 0 0 3px 3px;
+		h3 {
+			font-size: 1rem;
+			line-height: 1.5rem;
+		}
+		h3 a {
+			color: $hoki;
+			font-weight: $font-weight--bold;
+		}
+		p {
+			margin-bottom: 25px;
+		}
+	}
+
+	@include e(read-time) {
+		display: inline;
+		font-family: inherit;
+		font-weight: $font-weight--medium;
+		text-transform: uppercase;
+		color: rgba(51,54,69,.5);
+		font-size: .85rem;
+		vertical-align: middle;
+	}
+
+	@include e(user) {
+		display: table;
+		width: 100%;
+		margin-top: 30px;
+		padding-top: 30px;
+		border-top: 1px solid $silver;
+		font-size: .875rem;
+	}
+
+	@include e(user-avatar) {
+		width: 1%;
+		border-radius: 50%;
+		overflow: hidden;
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	@include e(user-details) {
+		display: table-cell;
+		vertical-align: middle;
+		padding-left: 20px;
+		line-height: 1.375rem;
+		strong {
+			color: $tuna;
+			font-weight: $font-weight--bold;
+		}
+	}
+	
+}
+
+.articles__item:hover {
+	top: -10px;
+	transition: all .5s ease 0s;
+}
+
+.articles__list .row {
+	margin-top: -30px;
+	margin-left: -15px;
+	margin-right: -15px;
+	padding: 0;
+}

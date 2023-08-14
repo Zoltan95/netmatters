@@ -1,0 +1,17 @@
+@media (min-width: 992px) {
+    .branding .col {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media (min-width: 1259px) {
+    .btn--google {
+        margin-top: 55px;
+        border: none;
+    }
+    .btn--trustpilot {
+        margin-top: 55px;
+        border: none;
+    }
+}

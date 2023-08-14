@@ -1,0 +1,129 @@
+.btn {
+	@extend %btn;
+	@include service-buttons(dev, $dev);
+	@include service-buttons(security, $security);
+	@include service-buttons(web, $web);
+	@include service-buttons(telecoms, $telecoms);
+	@include service-buttons(digital, $digital);
+	@include service-buttons(it, $it);
+	@include service-buttons(software, $software);
+	@include article-buttons(google, $dodger-blue, $blue-ribbon);
+	@include article-buttons(trustpilot, $jade, $green-haze);
+	
+	&--google {
+		margin-right: 8px;
+	}
+
+	@include m(primary-inverse) {
+		background-color: $charade;
+		border-radius: 6px;
+		padding: 10px 30px;
+		font-size: 20px;
+		margin-bottom: 50px;
+		&:hover {
+			text-decoration: none;
+			background-color: $wood-smoke;
+		}
+	}
+
+	@include m(default) {
+		color: $white;
+		background-color: $manatee;
+		border-color: $manatee;
+	}
+
+	@include m(modal) {
+		height: auto;
+		line-height: 35px;
+		padding: 5px 15px;
+		text-transform: uppercase;
+		font-size: 1.063rem;
+		border-radius: 3px;
+		white-space: normal;
+		display: block;
+		width: 100%;
+		color: #fff;
+    	background-color: #999aa2;
+    	border-color: #999aa2;
+		&:hover {
+			color: #fff;
+			background-color: #84858f;
+			border-color: #797a85;
+		}
+	}
+
+	@include m(lg) {
+		height: auto;
+		padding: 5px 20px;
+		font-size: 1.25rem;
+		border-radius: 3px;
+		white-space: normal;
+		text-transform: uppercase;
+	}
+
+}
+
+.search-form button {
+	outline: none;
+	padding: 7px 20px 3px;
+	height: 56px;
+	font-size: 1.063rem;
+	border-radius: 0 3px 3px 0;
+	border: none;
+	vertical-align: bottom;
+	background-color: $manatee;
+	color: $white;
+	overflow: visible;
+	&:hover {
+		background-color: $jumbo;
+	}
+}
+
+.hamburger.btn {
+	font-size: 1.438rem;
+    line-height: 45px;
+    background-color: $tuna-dark;
+    border-color: $tuna-dark;
+    padding: 15px 15px 5px 15px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    white-space: normal;
+	&:hover {
+		color: $white;
+    	background-color: $charade-dark;
+    	border-color: $shark-dark;
+	}
+}
+
+.btn--lg {
+    margin-top: 1.938rem;
+    margin-bottom: 1.125rem;
+    em {
+        line-height: 50px;
+    }
+
+    .arrow {
+        color: $white;
+    }
+}
+
+.btn--software:hover {
+	background-color: $blue-bayoux;
+	border-color: $blue-bayoux-dark;
+}
+
+.facebook:hover{
+	background-color: $chambray;
+}
+
+.linkedin:hover {
+	background-color: $deep-cerulean;
+}
+
+.twitter:hover {
+	background-color: $cerulean;
+}
+
+.instagram:hover {
+	background-color: $cerise;
+}

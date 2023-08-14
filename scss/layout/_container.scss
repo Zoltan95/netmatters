@@ -7,4 +7,59 @@
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
+    @extend %clearfix;
+}
+
+.footer__bottom-container {
+    margin-left: 0;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.headings-container {
+    display: flex;
+    justify-content: space-between;
+    h2 {
+        line-height: 1.1;
+    }
+}
+
+.btn-container {
+	display: block;
+}
+
+.section {
+    margin-left : -15px;
+    margin-right: -15px;
+}
+
+.inner {
+    padding: 20px 0;
+}
+
+.row {
+    @extend %clearfix;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.float--left {
+    float: left;
+}
+
+.float--right {
+    float: right;
+}
+
+.col {
+    @extend %col;
+    @include m(med) {
+		@extend %col;
+	}
+    @include m(lg) {
+		@extend %col;
+	}
+    @include m(xl) {
+		@extend %col;
+	}
 }

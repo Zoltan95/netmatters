@@ -1,0 +1,82 @@
+@media (min-width: 768px) {
+    .float--right-sm {
+      float: right;
+      margin-left: 20px;
+    }
+    .col--nav-logo {
+        position: relative;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+        float: left;
+        width: 50%;
+    }
+    .col--nav-info {
+        position: relative;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+        float: left;
+        width: 50%;
+    }
+    .container {
+        width: 750px;
+    }
+    .col--lg {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .col--med {
+        float: left;
+        width: 33.3%;
+    }
+    .col--lg {
+        float: left;
+        width: 50%;
+    }
+    .col--xl {
+        float: left;
+        width : 100%;
+    }
+    .col--nav-logo {
+        display: flex;
+        float: left;
+        width: 41.66666667%;
+    }
+    .col--nav-info {
+        display: flex;
+        justify-content: end;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+        float: left;
+        width: 58.33333333%;
+    }
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1260px) {
+    .col--lg {
+        width: 25%;
+    }
+    .col--nav-logo {
+        float: left;
+            width: 33.3%;
+    }
+    .col--nav-info {
+        position: relative;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+        float: left;
+        width: 66.66666667%;
+    }
+    .container {
+        width: 1200px;
+    }
+}

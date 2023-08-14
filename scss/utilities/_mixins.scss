@@ -44,6 +44,87 @@
 	}
 }
 
+// Nav Triangle Element
+@mixin nav-triangle ($service, $color) {
+	.main-navigation .container ul li.#{$service}.nav-item:hover > a::before {
+		content: "";
+		position: absolute;
+		left: 50%;
+		bottom: -35px;
+		transform: translateX(-50%);
+		z-index: 90;
+		width: 0;
+		height: 0;
+		border-color: $color transparent transparent;
+		border-style: solid;
+		border-width: 35px 83.5px 0;
+	}
+	@media (max-width: 1259px) {
+		.main-navigation .container ul li.#{$service}.nav-item:hover > a::before {
+			border-width: 35px 68px 0;
+		}
+	}
+}
+
+// Article Buttons
+@mixin article-buttons($name, $color, $color-hover) {
+	@include m($name) {
+		margin-top: 20px;
+		background-color: $color;
+		border-radius: 6px;
+		padding: 10px 30px;
+		font-size: 20px;
+		float: left;
+		&:hover {
+			text-decoration: none;
+			background-color: $color-hover;
+		}
+	}
+}
+
+// Services Colorols
+@mixin services-colors($service, $color, $white: $white) {
+	.#{$service} {
+		.services-list__icon {
+			background-color: $color;
+		}
+		&:hover {
+			.services-list__icon {
+				background-color: $white;
+				color: $color;
+			}
+			.services-list__h2, .services-list__p {
+				color: $white;
+			}
+		}
+		.articles__block h3 a {
+			color: $color;	
+		}
+		.articles__category {
+			background-color: $color;
+		}
+	}
+	.#{$service}.services-list__block:hover .btn  {
+		color: $color;
+	}
+
+	.services-list__block.#{$service}:hover, .#{$service}.nav-item:hover {
+		background-color: $color;
+	}
+
+	.main-navigation .container ul li.#{$service}.nav-item .nav-item-btn span {
+		color: $color;
+	}
+
+	.main-navigation .container ul li.#{$service}.nav-item:hover .nav-item-btn span {
+		color: $white;
+	}
+
+	.#{$service} a span.ico {
+		color: $color;
+	}
+}
+
 // Image replacement
 
 @mixin img-replace($img, $w, $h, $disp: block) {
@@ -52,4 +133,14 @@
 	width: $w;
 	height: $h;
 	display: $disp;
+}
+
+//Service Buttons Helper
+
+@mixin service-buttons($service, $color) {
+	@include m(#{$service}) {
+		color: $white;
+		background-color: $color;
+		border-color: $color;
+	}
 }

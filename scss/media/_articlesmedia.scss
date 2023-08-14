@@ -1,0 +1,28 @@
+@media (max-width: 616px) {
+    .articles .button-container {
+        display:block;
+    }
+}
+
+@media (min-width: 768px) {
+    .articles__list .col {
+        float: left;
+        width: 50%;
+    }
+    .articles__list .col .articles__block h3 {
+        min-height: 3rem;
+    }
+}
+
+@media (max-width: 1260px) and (min-width: 768px) {
+
+    .articles__list .row > :last-child {
+        display: none;
+    }
+}
+
+@media (min-width: 1260px) {
+    .articles__list .col {
+        width: 33.3333333333%;
+    }
+}

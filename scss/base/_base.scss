@@ -8,20 +8,101 @@
 }
 
 body {
-	color: palette(grey);
+	color: $white;
 	font-size: $base__font-size;
 	font-family: $font-family--primary;
-	line-height: calc($base__line/$base__font-size);
+	line-height: $base__line;
+	letter-spacing: .4px;
+}
+
+.h1, h1 {
+	font-family: inherit;
+	font-size: 2.25rem;
+	letter-spacing: .4px;
+	font-weight: 400;
+	margin: 0 0 28px;
+	color: $tuna-dark;
+}
+
+h2 {
+	font-family: inherit;
+	font-size :$headding-resize--huge;
+	font-weight: 400;
+	margin: 0 0 15px;
+	color: $tuna-dark;
+}
+
+h3 {
+	font-size: 1.625rem;
+	font-weight: 400;
+	line-height: 1.1;
+	margin: 0 0 15px;
+	color: $tuna-dark;
+}
+
+h4 {
+	font-weight: 400;
+	margin: 0 0 15px;
+}
+
+p {
+	line-height: 1.875rem;
+	margin-bottom: 25px;
+}
+
+button {
+	overflow: visible;
+	&, input, select, textarea {
+		margin: 0;
+		font-family: inherit;
+		font-size: inherit;
+		line-height: inherit;
+	}
+	&::-moz-focus-inner, input::-moz-focus-inner {
+		border: 0;
+		padding: 0;
+	}
+}
+
+header {
+	display: block;
+	background-color: $white;
 }
 
 div {
 	display: block;
 }
 
-.footer-row {
-	display: flex;
+a {	
+	color: $tuna-dark;
+	text-decoration: none;
+	background: transparent;
 }
 
-.footer-company-info {
-	
+label {
+	display: block;
+	color: $tuna-dark;
+	font-weight: 600;
+	margin-bottom: 5px;
 }
+
+
+footer {
+	position: relative;
+	color: $white;
+	background-color: $tuna;
+	padding: 27px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

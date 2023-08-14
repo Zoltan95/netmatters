@@ -2,3 +2,26 @@
 // Placeholders
 // ==========================================================================
 
+%flexwrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+%btn {
+    display: inline-block;
+	color: $white;
+	font-family: inherit;
+	font-weight: 400;
+	font-size: 1.063rem;
+	text-align: center;
+	vertical-align: middle;
+	background-color: $tuna-dark;
+	background-image: none;
+	height: auto;
+	line-height: 35px;
+	padding: 5px 15px;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	border: 1px solid $tuna-dark;
+	border-radius: 3px;
+}

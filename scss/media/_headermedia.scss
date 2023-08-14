@@ -1,0 +1,82 @@
+@media (max-width: 767px) {
+    header .inner .section {
+        display: table;
+		width: 100%;
+		margin: 0;
+    }
+    header .inner .actions .btn {
+        padding-top: 16px;
+    }
+    header .inner .section > * {
+        padding: 0;
+        display: table-cell;
+        float: none;
+        vertical-align: middle;
+        width: 100%;
+        position: relative;
+        min-height: 1px;
+    }
+	.search-form-mobile{
+		display: block!important;
+	}
+    .mobile-container {
+        display: inline-block;
+		a {
+			&:hover {
+				text-decoration: underline;
+				outline: 0;
+			}
+			span {
+				font-size: 1.3em;
+			}
+		}
+		
+    }
+}
+
+@media (min-width: 992px) {
+	header .section {
+		display: flex;
+	}
+	.header {
+		display: flex;
+		flex-direction: column;
+	}
+	.main-navigation {
+		padding-top: 15px;
+		padding-bottom: 2px;
+		display: flex;
+	}
+}
+
+@media (max-width: 991px) {
+	header .form-control {
+		display: inline-block;
+		border-radius: 0;
+		width: 174px;
+		margin-right: -5px;
+	}
+	header .logo-container {
+		display: table;
+		table-layout: fixed;
+	}
+	header .logo-container a {
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1259px) {
+	header .search-form-wrapper-tablet button {
+		border-radius: 3px;
+	}
+}
+
+@media (min-width: 1260px) {
+	header .form-control {
+		display: inline-block;
+		border-radius: 0;
+		width: 240px;
+		margin-right: -5px;
+	}
+}

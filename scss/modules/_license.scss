@@ -1,0 +1,29 @@
+.license {
+	display: flex;
+	flex-direction: column;
+	padding: 5px 0 10px;
+	width: 100%;
+	color: $white;
+	font-size: $base__font-size--secondary;
+	text-decoration: none;
+	ul {
+		display: flex;
+		list-style: none;
+		padding: 0;
+		margin: 0;	
+		li a {
+			color: $white;
+		}
+
+		li::before {
+			content: " - ";
+			margin-left: 5px;
+			display: none;
+		}
+	}
+
+	a:hover, a:focus {
+		text-decoration: underline;
+		color: $white;
+	}
+}

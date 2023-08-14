@@ -1,0 +1,116 @@
+.footer {
+    /////////////////////////////////////////////////////////
+    // Footer Top
+    /////////////////////////////////////////////////////////
+
+    @include e(row){
+        @extend %flexwrap;
+        justify-content: space-between;
+    }
+
+    @include e(company-info){
+        @extend %flexwrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    @include e(info){
+        width: auto;
+        h4 {
+            margin-bottom: 26px;
+            margin-top: 24px;
+            color: $white;
+            font-size: $base__font-size;
+            text-transform: uppercase;
+        }
+    }
+
+    @include e(logo){
+        width: 250px;
+        img {
+            width: 100%;
+            vertical-align: middle;
+            border: 0;
+	    }
+    }
+
+    /////////////////////////////////////////////////////////
+    // Footer Top - Social Logos
+    /////////////////////////////////////////////////////////
+
+    @include e(social-logos){
+        @extend %flexwrap;
+        flex-direction: row;
+        margin-bottom: 30px;
+        a {
+            padding: 12px 22px 16px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 26px;
+            line-height: 26px;
+            background-color: $ebony-clay;
+        }
+        a span {
+            position: relative;
+	        top: 4px;
+        }
+    }
+
+    /////////////////////////////////////////////////////////
+    // Footer Top - List
+    /////////////////////////////////////////////////////////
+
+    @include e(menu-row){
+        @extend %flexwrap;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    @include e(menu){
+        position: relative;
+        float: left;
+        width: 100%;
+        margin-bottom: 30px;
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li {
+                font-size: $base__font-size--secondary;
+                line-height: 1.375rem;
+                a {
+                    color: $white;
+                }
+    
+                a:hover, a:focus {
+                    text-decoration: underline;
+                    color: $white;
+                }
+            }
+        }
+        h4 {
+            text-transform: uppercase;
+            font-size: 1rem;
+            margin-bottom: 26px;
+        }
+    }
+
+    /////////////////////////////////////////////////////////
+    // Footer Bottom
+    /////////////////////////////////////////////////////////
+    
+    @include e(bottom){
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 10px;
+        left: 0;
+        background: $ebony-clay;
+        font-size: $base__font-size--secondary;
+        border: 0;
+    }
+}   
