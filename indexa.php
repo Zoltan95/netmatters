@@ -1,8 +1,9 @@
+<?php
+include('inc/connection.php');
 
-<?php include 'inc/functions.php' ?>
-<?php include 'inc/header.php'; ?>
-
-            <!--Banner Start-->
+include('inc/header.php');
+?>
+        <!--Banner Start-->
             <div class="banner">
                 <div class="banner__box">
                     <div class="banner__box-item">
@@ -406,7 +407,8 @@
                         <div class="container">
                             <div class="articles__list">
                                 <div class="row">
-<!--                                <div class="col software">
+                                    <!--
+                                    <div class="col software">                  <--- News Type
                                         <div class="articles__item">
                                             <a class="articles__item-link" href="#"></a>
                                             <div class="articles__img-container">
@@ -443,47 +445,21 @@
                                             </div>
                                         </div>
                                     </div>
--->
+                                    -->
                                     <?php
-                                        foreach (get_news_list() as $item) {
-                                            echo "<div class='col " . $item["news_type"] ."'>";
-                                                echo "<div class='articles__item'>";
-                                                    echo "<a class='articles__item-link' href='" . $item["news_link"] ."'></a>";
-                                                    echo "<div class=;articles__img-container;>";
-                                                        echo "<a class='articles__category' href='" . $item["news_category_link"] ."'>" .$item["news_category"] ."</a>";
-                                                        echo "<a class='articles__img-link' href='#'>";
-                                                            echo "<img class='articles__img' src='" . $item["news_img"] ."' alt='How can Bespoke Software Improve your Customer Retention?'>";
-                                                        echo "</a>";
-                                                    echo "</div>";
-                                                    echo "<div class='articles__block'>";
-                                                        echo "<h3>";
-                                                            echo "<a href=''>" . $item["news_header"] . "</a>";
-                                                            echo "<span class='articles__read-time'>";
-                                                                echo "- ". $item["news_header_readtime"] ." minute read";
-                                                            echo "</span>";
-                                                        echo "</h3>";
-                                                        echo "<p>";
-                                                            echo $item["news_about"];
-                                                        echo "</p>";
-                                                        echo "<a class='btn btn--software' href=''>";
-                                                            echo "Read More";
-                                                        echo "</a>";
-                                                        echo "<div class='articles__user'>";
-                                                            echo "<div class='articles__user-avatar'>";
-                                                                echo "<img src='". $item["img"] ."'>";
-                                                            echo "</div>";
-                                                            echo "<div class='articles__user-details'>";
-                                                                echo "<strong class='text-primary'>";
-                                                                    echo "Posted by " . $item["first_name"] . " " . $item["last_name"];
-                                                                echo "</strong>" ;                                                     
-                                                                    echo "<br>";
-                                                                    echo "9th June 2023";
-                                                            echo "</div>";
-                                                        echo "</div>";
-                                                    echo "</div>";
-                                                echo "</div>";
-                                            echo "</div>";
-                                        }        
+                                        $sql = "SELECT * FROM news_articles";
+                                        $result = $conn->query($sql);
+
+                                        //if ($result->num_rows > 0) {
+                                            // output data of each row
+                                        //    while($row = $result->fetch_assoc()) {
+                                        //      echo "id: " . $row["id"] . "<br>";
+                                        //    }
+                                        //} else {
+                                        //    echo "0 results";
+                                        //}
+                                        //$conn->close();
+
                                     ?>
                                 </div>
                             </div>
@@ -539,4 +515,6 @@
                 </div>
                 <!--Slideshow 2 End-->
 
-<?php include 'inc/footer.php'; ?>
+<?php
+include('inc/footer.php');
+?>
