@@ -1,5 +1,5 @@
 <?php include 'inc/header.php'; ?>
 <div>
-    Contact Page
+    <h1>Contact Page</h1>
 </div>
 <?php include 'inc/footer.php'; ?>
