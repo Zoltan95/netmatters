@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /netmatters/
+RewriteRule ^index\.php＄ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /netmatters/index.php [L]
