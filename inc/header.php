@@ -1,3 +1,5 @@
+<?php include 'inc/functions.php'; ?>
+
 <!DOCTYPE html>
     <html lang='en'>
     <head>
@@ -6,7 +8,7 @@
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
         <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
         <script src='https://kit.fontawesome.com/e82bcef862.js' crossorigin='anonymous'></script>
-        <link rel='stylesheet' type='text/css' href='//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css'/>";
+        <link rel='stylesheet' type='text/css' href='//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css'/>
         <link rel='stylesheet' href='css/application.css'>
         <title>Full Service Digital Agency | Cambridgeshire & Norfolk | Netmatters</title>
     </head>
@@ -21,7 +23,7 @@
                                 <div class='section'>
                                     <div class='col--nav-logo'>
                                         <div class='logo-container'>
-                                            <a href='#'>
+                                            <a href='/netmatters/'>
                                                 <img src='img/f-logo.png' alt='Netmatters'>
                                             </a>
                                         </div>
@@ -33,11 +35,11 @@
                                     </div>
                                     <div class='col--nav-info'>
                                         <div class='actions'>
-                                            <a class='btn btn--it hidden-sm' href='#'>
+                                            <a class='btn btn--it hidden-sm' href='/netmatters/contact'>
                                                 <span class='fa-computer-mouse fa-solid'></span>
                                                 Support
                                             </a>
-                                            <a class='btn btn--default hidden-sm' href='#'>
+                                            <a class='btn btn--default hidden-sm' href='/netmatters/contact'>
                                                 <span class='icon-paperplane'></span>
                                                 Contact
                                             </a>
@@ -560,13 +562,13 @@
                                 <div class='section'>
                                     <div class='col--nav-logo'>
                                         <div class='logo-container'>
-                                            <a href='#'>
+                                            <a href='/netmatters/'>
                                                 <img src='img/f-logo.png' alt='Netmatters'>
                                             </a>
                                         </div>
                                     </div>
                                     <div class='mobile-container'>
-                                        <a class='mobile' href='#'>
+                                        <a class='mobile' href='/netmatters/contact'>
                                             <span class='icon-phone_in_talk'></span>
                                         </a>
                                     </div>
@@ -578,7 +580,7 @@
                                                 </span>
                                                 Support
                                             </a>
-                                            <a class='btn btn--default hidden-sm' href='#'>
+                                            <a class='btn btn--default hidden-sm' href='/netmatters/contact'>
                                                 <span class='icon-paperplane'></span>
                                                 Contact
                                             </a>

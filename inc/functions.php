@@ -13,4 +13,16 @@ function get_news_list() {
         return false;
     }
 }
+
+function get_address_list() {
+    include 'connection.php';
+
+    try {
+        return $db->query('SELECT * FROM addresses');
+    } catch (Exception $e) {
+        echo "Error!: " . $e->getMessage() . "<br>";
+        return false;
+    }
+}
+
 ?>

@@ -1,0 +1,115 @@
+.breadcrumb {
+    background: none;
+    color: #333645;
+    font-size: .8125rem;
+    margin: 0;
+    padding: 0;
+
+    &>li {
+        display: inline-block;
+    }
+
+    &a {
+        color: #333645;
+        font-weight: 700;
+    }
+
+    &>li+li:before {
+        content: "/\A0";
+        padding: 0 5px;
+        color: #333645;
+    }
+
+    @include e(container) {
+        box-shadow: 0 5px 35px rgba(0,0,0,.1);
+        padding: 14px 0 13px;
+    }
+    
+}
+
+.page-head .container h1 {
+    max-width: 750px;
+}
+
+.section {
+    margin: 0;
+    &.top {
+        padding-top: 50px;
+        padding-bottom: 0;
+    }
+}
+
+
+
+.office-addresses {
+
+    & .service-list .block {
+        border-radius: 20px;
+        overflow: hidden;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border: 1px solid #ccc;
+        box-shadow: 0 3px 35px rgba(0,0,0,.1);
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    & .block.address .image img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+
+
+    & .map {
+        position: relative;
+        overflow: hidden;
+        height: 250px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    & .content {
+        padding: 30px;
+        text-align: left;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        .h2 {
+            font-size: 1.25rem;
+            position: relative;
+            margin-bottom: 15px;
+            a {
+                font-weight: 400;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        p {
+            margin-top: 0;
+            color: #666;
+            font-size: .8125rem;
+            line-height: 1.375rem;
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+        .tel {
+            .h3 {
+                font-size: 1.625rem;
+            }
+            margin-top: auto;
+            a {
+                font-weight: 700; 
+            }
+        }
+        .view-more a {
+            margin-top: 15px;
+            font-size: .9em;
+            padding: 5px 30px;
+        }
+    }
+}
+

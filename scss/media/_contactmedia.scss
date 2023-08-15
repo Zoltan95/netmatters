@@ -1,0 +1,16 @@
+@media (max-width: 991px) {
+    .page-head {
+        background-color: #333645;
+        margin-top: -50px;
+        padding: 24px 0;
+
+        &:not(.bottom) {
+            margin-bottom: 50px;
+        }
+
+        & .container h1 {
+            color: #fff!important;
+            margin: 0;
+        }
+    }
+}
