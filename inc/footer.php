@@ -774,5 +774,6 @@
     <script type="text/javascript" src="js/mobilemenu.js"></script>
     <script type="text/javascript" src="js/banner.js"></script>
     <script type="text/javascript" src="js/cookieconsent.js"></script>
+    <script type="text/javascript" src="js/contacts.js"></script>
 </body>
 </html>

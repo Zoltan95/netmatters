@@ -358,7 +358,7 @@ h2 {
   color: #333645;
 }
 
-h3 {
+h3, .h3 {
   font-size: 1.625rem;
   font-weight: 400;
   line-height: 1.1;
@@ -3137,6 +3137,10 @@ body.menu-active #main {
     margin: 0;
   }
 }
+#middle {
+  color: #666;
+}
+
 .breadcrumb {
   background: none;
   color: #333645;
@@ -3172,8 +3176,53 @@ body.menu-active #main {
   padding-top: 50px;
   padding-bottom: 0;
 }
+.section.bottom {
+  padding-top: 0;
+  padding-bottom: 50px;
+}
+.section.bottom .row {
+  padding-top: 0;
+}
+.section.bottom .row .col {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
-.office-addresses .service-list .block {
+.contact-block p {
+  margin-top: 0;
+}
+.contact-block p strong:not(.btn) {
+  font-weight: 600;
+  color: #333645;
+}
+.contact-block p a:not(.btn) {
+  font-weight: 600;
+}
+.contact-block .container {
+  padding: 0;
+  width: auto;
+}
+.contact-block .container a:not(.btn) {
+  font-weight: 600;
+}
+.contact-block .question .answer {
+  display: none;
+  position: absolute;
+  height: 0%;
+  transition: height 10s linear 1s;
+}
+.contact-block .question .answer.ele-active {
+  display: block;
+  transition: height 10s linear 1s;
+  height: 100%;
+}
+
+.office-address-row .spacer-sm:last-of-type {
+  margin-bottom: 0px;
+}
+.office-address .service-list .block {
   border-radius: 20px;
   overflow: hidden;
   padding: 0;
@@ -3185,37 +3234,37 @@ body.menu-active #main {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
-.office-addresses .block.address .image img {
+.office-address .block.address .image img {
   width: 100%;
   height: auto;
   max-width: 100%;
 }
-.office-addresses .map {
+.office-address .map {
   position: relative;
   overflow: hidden;
   height: 250px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-.office-addresses .content {
+.office-address .content {
   padding: 30px;
   text-align: left;
   display: flex;
   height: 100%;
   flex-direction: column;
 }
-.office-addresses .content .h2 {
+.office-address .content .h2 {
   font-size: 1.25rem;
   position: relative;
   margin-bottom: 15px;
 }
-.office-addresses .content .h2 a {
+.office-address .content .h2 a {
   font-weight: 400;
 }
-.office-addresses .content .h2 a:hover {
+.office-address .content .h2 a:hover {
   text-decoration: underline;
 }
-.office-addresses .content p {
+.office-address .content p {
   margin-top: 0;
   color: #666;
   font-size: 0.8125rem;
@@ -3223,16 +3272,16 @@ body.menu-active #main {
   font-weight: 400;
   margin-bottom: 15px;
 }
-.office-addresses .content .tel {
+.office-address .content .tel {
   margin-top: auto;
 }
-.office-addresses .content .tel .h3 {
+.office-address .content .tel .h3 {
   font-size: 1.625rem;
 }
-.office-addresses .content .tel a {
+.office-address .content .tel a {
   font-weight: 700;
 }
-.office-addresses .content .view-more a {
+.office-address .content .view-more a {
   margin-top: 15px;
   font-size: 0.9em;
   padding: 5px 30px;

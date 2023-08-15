@@ -25,7 +25,7 @@
     </div>
 
     <!--Office Adresses-->
-    <div class="office-addresses">
+    <div class="office-address">
         <div class="service-list container">
             <div class="row office-address-row">
                 <?php
@@ -72,8 +72,8 @@
     
     <div class="section bottom container">
         <div class="row">
-            <div class="">
-                <div>
+            <div class="col">
+                <div class="contact-block">
                     <p>
                         <strong>Email us on:</strong>
                         <br>
@@ -91,20 +91,20 @@
                     </p>
 
                 </div>
-                <div>
+                <div class="contact-block">
                     <div class="container">
                         <div>
                             <div class="accordion">
                                 <div class="question">
                                     <h4>
-                                        <a href="#">
+                                        <a href="#" id="toggler">
                                             <p class="question-text">
                                                 Out of Hours IT Support
                                                 <em class="fa fa-chevron-down rotate"></em>
                                             </p>
                                         </a>
                                     </h4>
-                                    <div clas="answer">
+                                    <div class="answer">
                                         <p>Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
                                         <p>
                                             <strong>Monday - Friday 18:00 - 22:00</strong>
@@ -123,7 +123,7 @@
                     </div>
                 </div>
             </div>
-            <div class="">
+            <div class="col">
                 <form action="">
                     <div class="row">
                         <div>
