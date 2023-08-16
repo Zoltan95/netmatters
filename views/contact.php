@@ -61,7 +61,6 @@
                         echo "</div>";
                     echo "</div>";
                     echo "<div class='map'>";
-                    echo '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1715.2766080459753!2d1.712628985995402!3d52.55573141109476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47da0593b311cec3%3A0x1cb3c1d4c0b340f6!2sNetmatters%20Great%20Yarmouth!5e0!3m2!1sen!2suk!4v1692193267187!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
                         echo "<img src='".$item["maps_img"]."' alt='".$item["office_name"]."'>";
                     echo "</div>";
                 echo "</div>";
