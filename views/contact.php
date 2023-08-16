@@ -61,6 +61,7 @@
                         echo "</div>";
                     echo "</div>";
                     echo "<div class='map'>";
+                    echo '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1715.2766080459753!2d1.712628985995402!3d52.55573141109476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47da0593b311cec3%3A0x1cb3c1d4c0b340f6!2sNetmatters%20Great%20Yarmouth!5e0!3m2!1sen!2suk!4v1692193267187!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
                         echo "<img src='".$item["maps_img"]."' alt='".$item["office_name"]."'>";
                     echo "</div>";
                 echo "</div>";
@@ -123,41 +124,40 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <form action="">
+            <div class="col form">
+                <form action="" id="contact-form">
                     <div class="row">
-                        <div>
-                            <div class="form-group">
+                        <div class="col--contact-form">
+                            <div class="newsletter__input-fields">
                                 <label class="required" for="name">Your Name</label>
-                                <input class="form-control" id="name" name="name" value type="text">
+                                <input class="newsletter__input-ctrl" id="name" name="name" value type="text">
                             </div>
                         </div>
-                        <div>
-                            <div class="form-group">
+                        <div class="col--contact-form">
+                            <div class="newsletter__input-fields">
                                 <label for="company">Company Name</label>
-                                <input class="form-control" id="company" name="company" value type="text">
+                                <input class="newsletter__input-ctrl" id="company" name="company" value type="text">
                             </div>
                         </div>
-                        <div>
-                            <div class="form-group">
+                        <div class="col--contact-form">
+                            <div class="newsletter__input-fields">
                                 <label class="required" for="email">Your Email</label>
-                                <input class="form-control" id="email" name="email" value type="email">
+                                <input class="newsletter__input-ctrl" id="email" name="email" value type="email">
                             </div>
                         </div>
-                        <div>
-                            <div class="form-group">
+                        <div class="col--contact-form">
+                            <div class="newsletter__input-fields">
                                 <label class="required" for="telephone">Your Telephone Number</label>
-                                <input class="form-control" id="telephone" name="telephone" value type="text">
+                                <input class="newsletter__input-ctrl" id="telephone" name="telephone" value type="text">
                             </div>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="newsletter__input-fields">
                         <label class="required" for="message">Message</label>
-                        <textarea class="form-control" name="message" id="message" cols="50" rows="10">
-                        Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?
+                        <textarea class="newsletter__input-ctrl" name="message" id="message" cols="50" rows="10">Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?
                         </textarea>
                     </div>
-                    <div class="form-group">
+                    <div class="newsletter__input-fields">
                         <label class="ckbox__label">
                             <span class="ckbox">
                                 <span class="ckbox__left">                                       

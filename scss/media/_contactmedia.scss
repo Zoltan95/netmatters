@@ -13,4 +13,31 @@
             margin: 0;
         }
     }
+
+    .breadcrumb__container {
+        border-top: 1px solid #333645;
+    }
 }
+
+@media (max-width: 400px){
+    #contact-form .action-block {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (min-width: 1260px){
+    .section.bottom.container .row .col {
+        width: 33.33333333%;
+        float: right;
+        &.form {
+            width: 66.66666667%;
+        }
+    }
+
+    .section.bottom.container {
+        margin-top: 10px;
+    }
+
+}
+
+
