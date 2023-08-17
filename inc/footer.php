@@ -57,7 +57,7 @@
                         <div class="footer__company-info">
                             <div class="footer__info">
                                 <div class="footer__logo">
-                                    <img src="img/nm-logo-white-med.png" alt="Netmatters Logo">
+                                    <img src="<?php echo $req."img/nm-logo-white-med.png"?>" alt="Netmatters Logo">
                                 </div>
                                 <h4>Follow us on:</h4>
                                 <div class="footer__social-logos">

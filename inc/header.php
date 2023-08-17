@@ -1,4 +1,12 @@
-<?php include 'inc/functions.php'; ?>
+<?php
+$requestlink = $_SERVER['REQUEST_URI'];
+$req = "";
+switch ($requestlink) {
+    case '/netmatters/contact/enquiry':
+        $req = "../";
+        break;
+}
+?>
 
 <!DOCTYPE html>
     <html lang='en'>
@@ -9,7 +17,7 @@
         <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
         <script src='https://kit.fontawesome.com/e82bcef862.js' crossorigin='anonymous'></script>
         <link rel='stylesheet' type='text/css' href='//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css'/>
-        <link rel='stylesheet' href='css/application.css'>
+        <link rel='stylesheet' href='<?php echo $req."css/application.css"?>'>
         <title>Full Service Digital Agency | Cambridgeshire & Norfolk | Netmatters</title>
     </head>
     <body id='body' class=''>
@@ -563,7 +571,7 @@
                                     <div class='col--nav-logo'>
                                         <div class='logo-container'>
                                             <a href='/netmatters/'>
-                                                <img src='img/f-logo.png' alt='Netmatters'>
+                                                <img src='<?php echo $req."img/f-logo.png"?>' alt='Netmatters'>
                                             </a>
                                         </div>
                                     </div>

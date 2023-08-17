@@ -1,3 +1,4 @@
+<?php include 'inc/functions.php'; ?>
 <?php include 'inc/header.php'; ?>
 
             <!--Banner Start-->
