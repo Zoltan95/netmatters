@@ -1,12 +1,39 @@
-<?php 
+<?php    
+    session_start();
+
+    if (!empty($_SESSION["name"])) {
+        $sname = $_SESSION["name"];
+    }else {
+        $sname = "";
+    }
+
+    if (!empty($_SESSION["company"])) {
+        $scompany = $_SESSION["company"];
+    }else {
+        $scompany = "";
+    }
+
+    if (!empty($_SESSION["email"])) {
+        $semail = $_SESSION["email"];
+    }else {
+        $semail = "";
+    }
+
+    if (!empty($_SESSION["telephone"])) {
+        $stelephone = $_SESSION["telephone"];
+    }else {
+        $stelephone = "";
+    }
+
+    if (!empty($_SESSION["message"])) {
+        $smessage = $_SESSION["message"];
+    }else {
+        $smessage = "";
+    }
+
+
     include 'inc/header.php';
     include 'inc/contact-form-top.php'; 
-
-    $name = "";
-    $company = "";
-    $email = "";
-    $telephone = "";
-    $message = "";  
 ?>
 
     
@@ -64,36 +91,36 @@
                 </div>
             </div>
             <div class="col form">
-                <form action="/netmatters/contact#enquiry" id="contact-form" method="POST">
+                <form action="/netmatters/contact/enquiry" id="contact-form" method="POST">
                     <div class="row">
                         <div class="col--contact-form">
                             <div class="newsletter__input-fields">
                                 <label class="required" for="name">Your Name</label>
-                                <input class="newsletter__input-ctrl" id="name" name="name" value type="text">
+                                <input class="newsletter__input-ctrl" id="name" name="name" value="<?php echo $sname; ?>" type="text">
                             </div>
                         </div>
                         <div class="col--contact-form">
                             <div class="newsletter__input-fields">
                                 <label for="company">Company Name</label>
-                                <input class="newsletter__input-ctrl" id="company" name="company" value type="text">
+                                <input class="newsletter__input-ctrl" id="company" name="company" value="<?php echo $scompany; ?>" type="text">
                             </div>
                         </div>
                         <div class="col--contact-form">
                             <div class="newsletter__input-fields">
                                 <label class="required" for="email">Your Email</label>
-                                <input class="newsletter__input-ctrl" id="email" name="email" value type="email">
+                                <input class="newsletter__input-ctrl" id="email" name="email" value="<?php echo $semail; ?>" type="email">
                             </div>
                         </div>
                         <div class="col--contact-form">
                             <div class="newsletter__input-fields">
                                 <label class="required" for="telephone">Your Telephone Number</label>
-                                <input class="newsletter__input-ctrl" id="telephone" name="telephone" value type="text">
+                                <input class="newsletter__input-ctrl" id="telephone" name="telephone" value="<?php echo $stelephone; ?>" type="text">
                             </div>
                         </div>
                     </div>
                     <div class="newsletter__input-fields">
                         <label class="required" for="message">Message</label>
-                        <textarea class="newsletter__input-ctrl" name="message" id="message" cols="50" rows="10">Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?
+                        <textarea class="newsletter__input-ctrl" name="message" id="message" value="<?php echo $smessage; ?>" cols="50" rows="10">Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?
                         </textarea>
                     </div>
                     <div class="newsletter__input-fields">

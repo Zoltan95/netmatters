@@ -770,10 +770,10 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script type="text/javascript" src="js/stickyheader.js"></script>
-    <script type="text/javascript" src="js/mobilemenu.js"></script>
-    <script type="text/javascript" src="js/banner.js"></script>
-    <script type="text/javascript" src="js/cookieconsent.js"></script>
-    <script type="text/javascript" src="js/contacts.js"></script>
+    <script type="text/javascript" src="<?php echo $req."js/stickyheader.js"?>"></script>
+    <script type="text/javascript" src="<?php echo $req."js/mobilemenu.js"?>"></script>
+    <script type="text/javascript" src="<?php echo $req."js/banner.js"?>"></script>
+    <script type="text/javascript" src="<?php echo $req."js/cookieconsent.js"?>"></script>
+    <script type="text/javascript" src="<?php echo $req."js/contacts.js"?>"></script>
 </body>
 </html>

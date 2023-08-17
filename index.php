@@ -12,6 +12,11 @@ switch ($request) {
         require __DIR__ . '/views/contact.php';
         break;
 
+    case '/netmatters/contact#contact-form':
+        require __DIR__ . '/views/contact.php';
+        break;
+    
+
     case '/netmatters/contact/enquiry':
         require __DIR__ . '/views/enquiry.php';
         break;
