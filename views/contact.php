@@ -1,6 +1,7 @@
 <?php    
-    session_start();
+    if(session_status() !== PHP_SESSION_ACTIVE) {session_start();}
 
+    include 'inc/header.php';
     if (!empty($_SESSION["name"])) {
         $sname = $_SESSION["name"];
     }else {
@@ -31,8 +32,12 @@
         $smessage = "";
     }
 
+    if (!empty($_SESSION["error"])) {
+        $serr = $_SESSION["error"];
+    }else {
+        $serr = "";
+    }
 
-    include 'inc/header.php';
     include 'inc/contact-form-top.php'; 
 ?>
 
@@ -92,6 +97,16 @@
             </div>
             <div class="col form">
                 <form action="/netmatters/contact/enquiry" id="contact-form" method="POST">
+                    <?php
+                    if (!empty($serr)) {
+                        echo "<div>";
+                            echo "<div>";
+                                echo "<button>x</button>";
+                                echo $serr;
+                            echo "</div>";
+                        echo "</div>";
+                    }
+                    ?>
                     <div class="row">
                         <div class="col--contact-form">
                             <div class="newsletter__input-fields">

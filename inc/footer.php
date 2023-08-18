@@ -1,3 +1,4 @@
+               
                 <!--Newsletter Start-->
                 <div class="newsletter__main">
                     <div class="container">
@@ -9,7 +10,7 @@
                                         <label for="newsletter-name">
                                             Your Name
                                         </label>
-                                        <input id="newsletter-name" class="newsletter__input-ctrl" name="name" type="text" value="">
+                                        <input id="newsletter-name" class="newsletter__input-ctrl" name="name" type="text" value="<?php echo $sname; ?>">
                                     </div>
                                 </div>
                                 <div class="newsletter__input-box">
@@ -17,7 +18,7 @@
                                         <label for="newsletter-email">
                                             Your Email
                                         </label>
-                                        <input id="newsletter-email" class="newsletter__input-ctrl" name="email" type="email" value="">
+                                        <input id="newsletter-email" class="newsletter__input-ctrl" name="email" type="email" value="<?php echo $semail; ?>">
                                     </div>
                                 </div>
                             </div>

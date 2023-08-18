@@ -5,6 +5,10 @@ $request = $_SERVER['REQUEST_URI'];
 switch ($request) {
     case '/netmatters':
     case '/netmatters/':
+        if(session_status() === PHP_SESSION_ACTIVE) {
+        session_unset();
+        session_destroy();
+        }
         require __DIR__ . '/views/home.php';
         break;
 
@@ -23,6 +27,10 @@ switch ($request) {
 
     default:
         http_response_code(404);
+        if(session_status() === PHP_SESSION_ACTIVE) {
+        session_unset();
+        session_destroy();
+        }
         require __DIR__ . '/views/404.php';
 }
 ?>

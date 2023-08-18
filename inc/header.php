@@ -6,8 +6,11 @@ switch ($requestlink) {
         $req = "../";
         break;
 }
-?>
 
+
+?>
+<?php $sname = "" ;?>
+<?php $semail = "" ;?>  
 <!DOCTYPE html>
     <html lang='en'>
     <head>
