@@ -2,69 +2,52 @@
     if(session_status() !== PHP_SESSION_ACTIVE) {session_start();}
 
     include 'inc/header.php';
+    
+    $mback = "";
+    $mbackm = "";
 
-    $session_name = [
-        $cname => "name",
-        $scompany => "company",
-        $semail => "email",
-        $stelephone => "telephone",
-        $smessage => "message",
-        $serr => "error",
-    ];
-
-    $session = [
-        $sname  => "",
-        $scompany => "",
-        $semail => "",
-        $stelephone => "",
-        $smessage => "",
-        $serr => "",
-    ];
-    /* // Rework the code but doesn't work
-    foreach ($session as $keya => $valuea) {
-        foreach ($session_name as $keyb => $valueb) {
-            if (!empty($_SESSION["$valueb"])) {
-                $keya = $_SESSION["$valueb"];
-            }else {
-                $keya = "";
-            }
-        }
-    }
-    */
     if (!empty($_SESSION["name"])) {
-        $sname = $_SESSION["name"];
+        $name = $_SESSION["name"];
     }else {
-        $sname = "";
+        $name = "";
     }
 
     if (!empty($_SESSION["company"])) {
-        $scompany = $_SESSION["company"];
+        $company = $_SESSION["company"];
     }else {
-        $scompany = "";
+        $company = "";
     }
 
     if (!empty($_SESSION["email"])) {
-        $semail = $_SESSION["email"];
+        $email = $_SESSION["email"];
     }else {
-        $semail = "";
+        $email = "";
     }
 
     if (!empty($_SESSION["telephone"])) {
-        $stelephone = $_SESSION["telephone"];
+        $telephone = $_SESSION["telephone"];
     }else {
-        $stelephone = "";
+        $telephone = "";
     }
 
     if (!empty($_SESSION["message"])) {
-        $smessage = $_SESSION["message"];
+        $message = $_SESSION["message"];
     }else {
-        $smessage = "";
+        $message = "";
     }
 
     if (!empty($_SESSION["error"])) {
-        $serr = $_SESSION["error"];
+        $err = $_SESSION["error"];
     }else {
-        $serr = "";
+        $err = "";
+    }
+
+    if (!$err) {
+        $mbackm = "Your enquiry has been sent.";
+        $mback = "success";
+    }else {
+        $mbackm = "The telephone format is incorrect.";
+        $mback = "danger";
     }
 
     include 'inc/contact-form-top.php'; 
@@ -127,11 +110,11 @@
             <div class="col form">
                 <form action="/netmatters/contact/enquiry" id="contact-form" method="POST">
                     <?php
-                    if (!empty($serr)) {
-                        echo "<div>";
-                            echo "<div>";
-                                echo "<button>x</button>";
-                                echo $serr;
+                    if (!empty($mback)) {
+                        echo "<div id='errormsg'>";
+                            echo "<div class='alert alert--$mback'>";
+                                echo "<button class='close'>x</button>";
+                                echo $mbackm;
                             echo "</div>";
                         echo "</div>";
                     }
@@ -140,31 +123,31 @@
                         <div class="col--contact-form">
                             <div class="newsletter__input-fields">
                                 <label class="required" for="name">Your Name</label>
-                                <input class="newsletter__input-ctrl" id="name" name="name" value="<?php echo $sname; ?>" type="text">
+                                <input class="newsletter__input-ctrl" id="name" name="name" value="<?php echo $name; ?>" type="text">
                             </div>
                         </div>
                         <div class="col--contact-form">
                             <div class="newsletter__input-fields">
                                 <label for="company">Company Name</label>
-                                <input class="newsletter__input-ctrl" id="company" name="company" value="<?php echo $scompany; ?>" type="text">
+                                <input class="newsletter__input-ctrl" id="company" name="company" value="<?php echo $company; ?>" type="text">
                             </div>
                         </div>
                         <div class="col--contact-form">
                             <div class="newsletter__input-fields">
                                 <label class="required" for="email">Your Email</label>
-                                <input class="newsletter__input-ctrl" id="email" name="email" value="<?php echo $semail; ?>" type="email">
+                                <input class="newsletter__input-ctrl" id="email" name="email" value="<?php echo $email; ?>" type="email">
                             </div>
                         </div>
                         <div class="col--contact-form">
                             <div class="newsletter__input-fields">
                                 <label class="required" for="telephone">Your Telephone Number</label>
-                                <input class="newsletter__input-ctrl" id="telephone" name="telephone" value="<?php echo $stelephone; ?>" type="text">
+                                <input class="newsletter__input-ctrl" id="telephone" name="telephone" value="<?php echo $telephone; ?>" type="text">
                             </div>
                         </div>
                     </div>
                     <div class="newsletter__input-fields">
                         <label class="required" for="message">Message</label>
-                        <textarea class="newsletter__input-ctrl" name="message" id="message" value="<?php echo $smessage; ?>" cols="50" rows="10">Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?
+                        <textarea class="newsletter__input-ctrl" name="message" id="message" value="<?php echo $message; ?>" cols="50" rows="10">Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?
                         </textarea>
                     </div>
                     <div class="newsletter__input-fields">
@@ -172,7 +155,7 @@
                             <span class="ckbox">
                                 <span class="ckbox__left">                                       
                                     <span class="ckbox__button">
-                                        <input type="checkbox" value="">
+                                        <input type="checkbox" name="newsletter" value="0">
                                         <span class="checkmark"></span>
                                     </span>    
                                 </span>

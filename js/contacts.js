@@ -1,3 +1,6 @@
+let name_bool = false;
+let email_bool = false;
+let tel_bool = false;
 
 // Contact form slider
 $(document).on("click", ".question a", function(t) {
@@ -8,11 +11,6 @@ $(document).on("click", ".question a", function(t) {
     i.slideToggle(),
     !0
 });
-
-
-let name_bool = false;
-let email_bool = false;
-let tel_bool = false;
 
 $(document).ready(function(){
   if ($('#name').val() != ""){
@@ -32,25 +30,22 @@ $('#name').on('input', function() {
   }
 
 });
-/*
-$('#telephone').on('input', function() {
-  var input = $(this).val();
-  let re = /^(((\+44\s?\d{4}|\(?0\d{4}\)?)\s?\d{3}\s?\d{3})|((\+44\s?\d{3}|\(?0\d{3}\)?)\s?\d{3}\s?\d{4})|((\+44\s?\d{2}|\(?0\d{2}\)?)\s?\d{4}\s?\d{4}))(\s?\#(\d{4}|\d{3}))?$/;
-  var is_email = re.test(input);
-  if (input === "")
-  {
-    tel_bool = false;
-  }
-  else if (!is_email)
-  {
-    tel_bool = false;
-  }
-  else
-  {
-      tel_bool = true;
+
+$('#errormsg .close').on('click', function() {
+    $("#errormsg").remove();
+});
+
+
+$(".checkmark").on( "click tap", function() { 
+  if (!$(".ckbox__button input").is(":checked")){
+    //$(".ckbox__button").addClass('is-checked');
+    $(".ckbox__button input").attr('value', 1);
+    }else {
+    //$(".ckbox__button").removeClass('is-checked');
+    $(".ckbox__button input").attr('value', 0);
   }
 });
-*/
+
 $('#email').on('input', function() {
   var input = $(this).val();
   let re = /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;

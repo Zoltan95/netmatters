@@ -6,6 +6,7 @@
     $email = "";
     $telephone = "";
     $message = ""; 
+    $newsletter = "";
 
     function test_input($data) {
         $data = trim($data);
@@ -21,9 +22,10 @@
                 $email = test_input($_POST['email']);
                 $message = test_input($_POST['message']);
                 $telephone = test_input($_POST['telephone']);
+                $newsletter = test_input($_POST['newsletter']);
 
             if (!preg_match("/^(((\+44\s?\d{4}|\(?0\d{4}\)?)\s?\d{3}\s?\d{3})|((\+44\s?\d{3}|\(?0\d{3}\)?)\s?\d{3}\s?\d{4})|((\+44\s?\d{2}|\(?0\d{2}\)?)\s?\d{4}\s?\d{4}))(\s?\#(\d{4}|\d{3}))?$/",$telephone)) {
-                $err = "Your phone number isn't valid.";
+                $err = true;
                 $_SESSION["name"] = $name;
                 $_SESSION["company"] = $company;
                 $_SESSION["email"] = $email;
@@ -33,10 +35,13 @@
                 
                 return header("Location: /netmatters/contact#contact-form");
             }else {
-                if(session_status() === PHP_SESSION_ACTIVE) {
-                    session_unset();
-                    session_destroy();
-                }
+                
+                $err = false;
+                $_SESSION["error"] = $err;
+
+                include 'functions.php';
+                add_enquiry($name, $company, $email, $telephone, $message, $newsletter);
+
                 return header("Location: /netmatters/contact#contact-form");
             }
         }

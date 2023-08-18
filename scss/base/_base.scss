@@ -62,6 +62,21 @@ button {
 		border: 0;
 		padding: 0;
 	}
+
+	&.close {
+		float: right;
+		font-size: 21px;
+		font-weight: 700;
+		line-height: 1;
+		color: #000;
+		text-shadow: 0 1px 0 #fff;
+		opacity: .2;
+		padding: 0;
+		cursor: pointer;
+		background: transparent;
+		border: 0;
+		-webkit-appearance: none;
+	}
 }
 
 header {

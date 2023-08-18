@@ -1,6 +1,6 @@
 <?php
 function get_news_list() {
-    include 'connection.php';
+    include 'connection-news.php';
 
     try {
         return $db->query('SELECT * 
@@ -15,7 +15,7 @@ function get_news_list() {
 }
 
 function get_address_list() {
-    include 'connection.php';
+    include 'connection-news.php';
 
     try {
         return $db->query('SELECT * FROM addresses');
@@ -24,5 +24,26 @@ function get_address_list() {
         return false;
     }
 }
+
+function add_enquiry($name, $company, $email, $telephone, $message, $newsletter) {
+    include 'connection-enquiry.php';
+        $sql = 'INSERT INTO enquiry(name, company, email, telephone, message, newsletter)
+        VALUE(?, ?, ?, ?, ?, ?)';
+    try {
+        $results = $db->prepeare($sql);
+        $results -> bindValue(1, $name, PDO::PARAM_STR);
+        $results -> bindValue(2, $company, PDO::PARAM_STR);
+        $results -> bindValue(3, $email, PDO::PARAM_STR);
+        $results -> bindValue(4, $telephone, PDO::PARAM_STR);
+        $results -> bindValue(5, $message, PDO::PARAM_STR);
+        $results -> bindValue(6, $newsletter, PDO::PARAM_INT);
+        $result -> execute();
+    } catch (Exception $e) {
+        echo "Error!: " . $e->getMessage() . "<br>";
+        return false;
+    }
+    return true;
+}
+
 
 ?>
