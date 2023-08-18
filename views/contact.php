@@ -2,6 +2,35 @@
     if(session_status() !== PHP_SESSION_ACTIVE) {session_start();}
 
     include 'inc/header.php';
+
+    $session_name = [
+        $cname => "name",
+        $scompany => "company",
+        $semail => "email",
+        $stelephone => "telephone",
+        $smessage => "message",
+        $serr => "error",
+    ];
+
+    $session = [
+        $sname  => "",
+        $scompany => "",
+        $semail => "",
+        $stelephone => "",
+        $smessage => "",
+        $serr => "",
+    ];
+    /* // Rework the code but doesn't work
+    foreach ($session as $keya => $valuea) {
+        foreach ($session_name as $keyb => $valueb) {
+            if (!empty($_SESSION["$valueb"])) {
+                $keya = $_SESSION["$valueb"];
+            }else {
+                $keya = "";
+            }
+        }
+    }
+    */
     if (!empty($_SESSION["name"])) {
         $sname = $_SESSION["name"];
     }else {
