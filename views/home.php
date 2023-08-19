@@ -458,9 +458,135 @@
                     </div>
                 </div>
                 <!--Articles End-->
+                
 
-                <!--Slideshow 2 Start-->
-                <div class="slide-box">
+                <div id="slide-box">
+                    <div>
+                        <div class="description">
+                            <div class="box">
+                                <h3>Ashcroft Partnership LLP</h3>
+                                <p>Originally founded in 2006 as Ashcroft Anthony, they became Ashcroft Partnership LLP in 2020 and are one of the top chartered accountancy firms in Cambridge, advising entrepreneurs and families.</p>
+                                <div class="arrow"></div>
+                            </div>
+                        </div>
+                        <img src="img/clients/ashcroftlogo_landscape_goldblack_DP60P-small.png" alt="">
+                    </div>
+                    <div>
+                        <div class="description">
+                            <div class="box">
+                                <h3>BEAT</h3>
+                                <p>The UK's eating disorder charity founded in 1989.</p>
+                                <div class="arrow"></div>
+                            </div>
+                        </div>
+                        <img src="img/clients/beat_logo.png" alt="">
+                    </div>
+                    <div>
+                        <div class="description">
+                            <div class="box">
+                                <h3>Black Swan Care Group</h3>
+                                <p>Black Swan Care Group own and manage 21 high-quality care and residential homes with a focus on putting the needs of their residents first.</p>
+                                <a class="btn btn--software" href="#">View Our Case Study <em class="fa-solid fa-arrow-right"></em></a>
+                                <div class="arrow"></div>
+                            </div>
+                        </div>
+                        <img src="img/clients/black_swan_logo.png" alt="">
+                    </div>
+                    <div>
+                        <div class="description">
+                            <div class="box">
+                                <h3>Crane Garden Buildings</h3>
+                                <p>Leading manufacturer and supplier of high-end garden rooms, summerhouses, workshops and sheds in the UK.</p>
+                                <div class="arrow"></div>
+                            </div>
+                        </div>
+                        <img src="img/clients/crane_logo.png" alt="">
+                    </div>
+                    <div>
+                        <div class="description">
+                            <div class="box">
+                                <h3>Girl Guiding Anglia</h3>
+                                <p>Girl Guiding Anglia is part of Girlguiding, the UK's leading charity for girls and young women in the UK.</p>
+                                <div class="arrow"></div>
+                            </div>
+                        </div>
+                        <img src="img/clients/girl_guides_anglia_logo.png" alt="">
+                    </div>
+                    <div>
+                        <div class="description">
+                            <div class="box">
+                                <h3>GDST</h3>
+                                <p>The <a href="https://www.gdst.net/">Girls' Day School Trust (GDST)</a> is the UK's leading family of 25 independent girls' schools.</p>
+                                <a class="btn btn--digital" href="#">View Our Case Study <em class="icon-arrow-right"></em></a>
+                                <div class="arrow"></div>
+                            </div>
+                        </div>
+                        <img src="img/clients/girls_day_school_trust_logob.png" alt="">
+                    </div>
+                    <div>
+                        <div class="description">
+                            <div class="box box-no-description">
+                                <h3>Howes Percival</h3>
+                                <p>Howes Percival.</p>
+                                <div class="arrow"></div>
+                            </div>
+                        </div>
+                        <img src="img/clients/howespercivallogo.png" alt="">
+                    </div>
+                    <div>
+                        <div class="description">
+                            <div class="box">
+                                <h3>One Traveller</h3>
+                                <p><a href="https://www.onetraveller.co.uk/">One Traveller</a>, founded in 2007, is a leading provider of solo holidays for over 50s.</p>
+                                <div class="arrow"></div>
+                            </div>
+                        </div>
+                        <img src="img/clients/onetravellerlogo_white_figuire.png" alt="">
+                    </div>
+                    <div>
+                        <div class="description">
+                            <div class="box">
+                                <h3>Searles Leisure Resort</h3>
+                                <p>Searles Leisure Resort, on the beautiful North Norfolk coast, is an award-winning UK holiday resort for families.</p>
+                                <div class="arrow"></div>
+                            </div>
+                        </div>
+                        <img src="img/clients/searles_logo.jpg" alt="">
+                    </div>
+                    <div>
+                        <div class="description">
+                            <div class="box box-no-description">
+                                <h3>Survey Solutions</h3>
+                                <p>Survey Solutions.</p>
+                                <div class="arrow"></div>
+                            </div>
+                        </div>
+                        <img src="img/clients/survey_solutions_logo.png" alt="">
+                    </div>
+                    <div>
+                        <div class="description">
+                            <div class="box">
+                                <h3>Sweetzy</h3>
+                                <p>Sweetzy are an online sweets retailer, based in Wymondham.</p>
+                                <a href="#" class="btn btn--digital">View Our Case Study <em class="icon-arrow-right"></em></a>
+                                <div class="arrow"></div>
+                            </div>
+                        </div>
+                        <img src="img/clients/sweetzy_logo.png" alt="">
+                    </div>
+                    <div>
+                        <div class="description">
+                            <div class="box box-no-description">
+                                <h3>Xupes</h3>
+                                <p>Xupes</p>
+                                <div class="arrow"></div>
+                            </div>
+                        </div>
+                        <img src="img/clients/xupes_logo.png" alt="">
+                    </div>
+                </div>
+                <!--Slideshow 2 Start
+                <div id="slide-box" class="slide-box">
                     <div class="slide-item">
                         <img src="img/clients/ashcroftlogo_landscape_goldblack_DP60P-small.png" alt="">
                     </div>
@@ -498,6 +624,7 @@
                         <img src="img/clients/xupes_logo.png" alt="">
                     </div>
                 </div>
+                -->
                 <!--Slideshow 2 End-->
 
 <?php include 'inc/footer.php'; ?>

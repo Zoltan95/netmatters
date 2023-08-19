@@ -1740,6 +1740,98 @@ header .section {
   width: 100%;
 }
 
+.box-no-description p {
+  display: none;
+}
+
+.btn > em {
+  padding-top: 10px;
+  margin-right: -4px;
+  margin-left: 12px;
+}
+
+.description {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: -200px;
+  right: -200px;
+}
+.description .box {
+  text-align: center;
+  background-color: #333645;
+  color: #fff;
+  padding: 20px;
+  font-size: 0.875rem;
+  max-width: 280px;
+  margin: 0 auto 50px;
+}
+.description .box h3 {
+  position: relative;
+  font-size: 1.125rem;
+  color: #fff;
+  padding-bottom: 17px;
+  margin: 0;
+}
+.description .box p {
+  margin: 0;
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  margin-bottom: 0;
+}
+.description .box p a {
+  font-weight: 600;
+  color: #fff;
+}
+.description .box p a:hover {
+  text-decoration: underline;
+}
+.description .box .btn {
+  margin-top: 11px;
+  font-size: 16px;
+  display: flex;
+}
+.description .box .arrow {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -36px;
+}
+.description .box .arrow:after {
+  content: "";
+  margin: auto;
+  display: inline-block;
+  border-color: #333645 transparent transparent;
+  border-style: solid;
+  border-width: 35px 36px 0;
+}
+
+#slide-box {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#slide-box .slick-list {
+  overflow: visible;
+}
+#slide-box .slick-slide {
+  position: relative;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+#slide-box .slick-slide:hover .description {
+  display: block;
+}
+#slide-box .slick-slide img {
+  max-height: 70px;
+  width: auto !important;
+  max-width: 200px;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+#slide-box .slick-slide img:hover {
+  filter: grayscale(0);
+}
+
 .dev .services-list__icon {
   background-color: #ce4125;
 }
