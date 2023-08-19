@@ -1,5 +1,8 @@
 <?php
-    if(session_status() !== PHP_SESSION_ACTIVE) {session_start();}
+
+    if(session_status() !== PHP_SESSION_ACTIVE) {
+        session_start();
+    }
 
     $name = "";
     $company = "";
@@ -22,10 +25,14 @@
                 $email = test_input($_POST['email']);
                 $message = test_input($_POST['message']);
                 $telephone = test_input($_POST['telephone']);
-                $newsletter = test_input($_POST['newsletter']);
+                if (empty($newsletter)) {
+                    $newsletter = 1;
+                }else {
+                    $newsletter = test_input($_POST['newsletter']);
+                }
 
             if (!preg_match("/^(((\+44\s?\d{4}|\(?0\d{4}\)?)\s?\d{3}\s?\d{3})|((\+44\s?\d{3}|\(?0\d{3}\)?)\s?\d{3}\s?\d{4})|((\+44\s?\d{2}|\(?0\d{2}\)?)\s?\d{4}\s?\d{4}))(\s?\#(\d{4}|\d{3}))?$/",$telephone)) {
-                $err = true;
+                $err = 1;
                 $_SESSION["name"] = $name;
                 $_SESSION["company"] = $company;
                 $_SESSION["email"] = $email;
@@ -36,7 +43,9 @@
                 return header("Location: /netmatters/contact#contact-form");
             }else {
                 
-                $err = false;
+                session_unset();
+                
+                $err = 0;
                 $_SESSION["error"] = $err;
 
                 include 'functions.php';

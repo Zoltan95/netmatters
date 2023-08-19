@@ -28,16 +28,16 @@ function get_address_list() {
 function add_enquiry($name, $company, $email, $telephone, $message, $newsletter) {
     include 'connection-enquiry.php';
         $sql = 'INSERT INTO enquiry(name, company, email, telephone, message, newsletter)
-        VALUE(?, ?, ?, ?, ?, ?)';
+        VALUES(?, ?, ?, ?, ?, ?)';
     try {
-        $results = $db->prepeare($sql);
+        $results = $db->prepare($sql);
         $results -> bindValue(1, $name, PDO::PARAM_STR);
         $results -> bindValue(2, $company, PDO::PARAM_STR);
         $results -> bindValue(3, $email, PDO::PARAM_STR);
         $results -> bindValue(4, $telephone, PDO::PARAM_STR);
         $results -> bindValue(5, $message, PDO::PARAM_STR);
         $results -> bindValue(6, $newsletter, PDO::PARAM_INT);
-        $result -> execute();
+        $results -> execute();
     } catch (Exception $e) {
         echo "Error!: " . $e->getMessage() . "<br>";
         return false;

@@ -1,53 +1,57 @@
-<?php    
+<?php   
     if(session_status() !== PHP_SESSION_ACTIVE) {session_start();}
 
     include 'inc/header.php';
     
-    $mback = "";
-    $mbackm = "";
-
-    if (!empty($_SESSION["name"])) {
+    if (isset($_SESSION["name"])) {
         $name = $_SESSION["name"];
     }else {
         $name = "";
     }
 
-    if (!empty($_SESSION["company"])) {
+    if (isset($_SESSION["company"])) {
         $company = $_SESSION["company"];
     }else {
         $company = "";
     }
 
-    if (!empty($_SESSION["email"])) {
+    if (isset($_SESSION["email"])) {
         $email = $_SESSION["email"];
     }else {
         $email = "";
     }
 
-    if (!empty($_SESSION["telephone"])) {
+    if (isset($_SESSION["telephone"])) {
         $telephone = $_SESSION["telephone"];
     }else {
         $telephone = "";
     }
 
-    if (!empty($_SESSION["message"])) {
+    if (isset($_SESSION["message"])) {
         $message = $_SESSION["message"];
     }else {
         $message = "";
     }
 
-    if (!empty($_SESSION["error"])) {
+    if (isset($_SESSION["error"])) {
         $err = $_SESSION["error"];
+        session_unset();
     }else {
         $err = "";
     }
-
-    if (!$err) {
+    
+    switch ($err) {
+    case "0" : 
         $mbackm = "Your enquiry has been sent.";
         $mback = "success";
-    }else {
+        break;
+    case "1" :
         $mbackm = "The telephone format is incorrect.";
         $mback = "danger";
+        break;
+    default :
+        $mback = "";
+        $mbackm = "";
     }
 
     include 'inc/contact-form-top.php'; 
@@ -155,7 +159,7 @@
                             <span class="ckbox">
                                 <span class="ckbox__left">                                       
                                     <span class="ckbox__button">
-                                        <input type="checkbox" name="newsletter" value="0">
+                                        <input type="checkbox" id="newsletter" name="newsletter" value="1">
                                         <span class="checkmark"></span>
                                     </span>    
                                 </span>

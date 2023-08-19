@@ -12,6 +12,10 @@ $(document).on("click", ".question a", function(t) {
     !0
 });
 
+$('#errormsg .close').on('click', function() {
+  $("#errormsg").remove();
+});
+
 $(document).ready(function(){
   if ($('#name').val() != ""){
     name_bool = true;
@@ -23,26 +27,23 @@ $(document).ready(function(){
 
 $('#name').on('input', function() {
   var cname = $(this).val();
-  if (cname.length >= 3) {
+  if (cname.length >= 2) {
+    $("#name").removeClass("has-error");
     name_bool = true;
   } else {
+    $("#name").addClass("has-error");
     name_bool = false;
   }
 
 });
 
-$('#errormsg .close').on('click', function() {
-    $("#errormsg").remove();
-});
-
-
 $(".checkmark").on( "click tap", function() { 
   if (!$(".ckbox__button input").is(":checked")){
     //$(".ckbox__button").addClass('is-checked');
-    $(".ckbox__button input").attr('value', 1);
+    $(".ckbox__button input").attr('value', 2);
     }else {
     //$(".ckbox__button").removeClass('is-checked');
-    $(".ckbox__button input").attr('value', 0);
+    $(".ckbox__button input").attr('value', 1);
   }
 });
 
@@ -52,15 +53,18 @@ $('#email').on('input', function() {
   var is_email = re.test(input);
   if (input === "")
   {
+    $("#email").addClass("has-error");
     email_bool = false;
   }
   else if (!is_email)
   {
+    $("#email").addClass("has-error");
     email_bool = false;
   }
   else
   {
-      email_bool = true;
+    $("#email").removeClass("has-error");
+    email_bool = true;
   }
 });
 
