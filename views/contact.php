@@ -49,6 +49,10 @@
         $mbackm = "The telephone format is incorrect.";
         $mback = "danger";
         break;
+    case "2" :
+        $mbackm = "The email format is incorrect.";
+        $mback = "danger";
+        break;    
     default :
         $mback = "";
         $mbackm = "";

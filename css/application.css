@@ -1233,7 +1233,7 @@ header .section {
 }
 .nav-item .nav-item-btn span {
   display: block;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   line-height: 0.9;
   padding-bottom: 10px;
 }
@@ -1679,6 +1679,7 @@ header .section {
   position: relative;
   text-align: center;
   bottom: 100px;
+  padding: 0;
 }
 
 .slick-dots li {
@@ -2872,7 +2873,6 @@ body.menu-active #main {
   }
   .main-navigation {
     padding-top: 15px;
-    padding-bottom: 2px;
     display: flex;
   }
 }

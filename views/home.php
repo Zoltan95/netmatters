@@ -486,7 +486,7 @@
                         <img src="img/clients/onetravellerlogo_white_figuire.png" alt="">
                     </div>
                     <div class="slide-item">
-                        <img src="img/clients/searles_logo.png" alt="">
+                        <img src="img/clients/searles_logo.jpg" alt="">
                     </div>
                     <div class="slide-item">
                         <img src="img/clients/survey_solutions_logo.png" alt="">

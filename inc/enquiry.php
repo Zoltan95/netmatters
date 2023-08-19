@@ -30,8 +30,18 @@
                 }else {
                     $newsletter = test_input($_POST['newsletter']);
                 }
+            
+            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                $err = 2;
+                $_SESSION["name"] = $name;
+                $_SESSION["company"] = $company;
+                $_SESSION["email"] = $email;
+                $_SESSION["telephone"] = $telephone;
+                $_SESSION["message"] = $message;
+                $_SESSION["error"] = $err;
 
-            if (!preg_match("/^(((\+44\s?\d{4}|\(?0\d{4}\)?)\s?\d{3}\s?\d{3})|((\+44\s?\d{3}|\(?0\d{3}\)?)\s?\d{3}\s?\d{4})|((\+44\s?\d{2}|\(?0\d{2}\)?)\s?\d{4}\s?\d{4}))(\s?\#(\d{4}|\d{3}))?$/",$telephone)) {
+                return header("Location: /netmatters/contact#contact-form");
+            }else if (!preg_match("/^(((\+44\s?\d{4}|\(?0\d{4}\)?)\s?\d{3}\s?\d{3})|((\+44\s?\d{3}|\(?0\d{3}\)?)\s?\d{3}\s?\d{4})|((\+44\s?\d{2}|\(?0\d{2}\)?)\s?\d{4}\s?\d{4}))(\s?\#(\d{4}|\d{3}))?$/",$telephone)) {
                 $err = 1;
                 $_SESSION["name"] = $name;
                 $_SESSION["company"] = $company;
