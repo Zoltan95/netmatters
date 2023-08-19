@@ -459,7 +459,7 @@
                 </div>
                 <!--Articles End-->
                 
-
+                <!--Slideshow 2 Start-->
                 <div id="slide-box">
                     <div>
                         <div class="description">
@@ -517,7 +517,7 @@
                             <div class="box">
                                 <h3>GDST</h3>
                                 <p>The <a href="https://www.gdst.net/">Girls' Day School Trust (GDST)</a> is the UK's leading family of 25 independent girls' schools.</p>
-                                <a class="btn btn--digital" href="#">View Our Case Study <em class="icon-arrow-right"></em></a>
+                                <a class="btn btn--digital" href="#">View Our Case Study <em class="fa-solid fa-arrow-right"></em></a>
                                 <div class="arrow"></div>
                             </div>
                         </div>
@@ -568,7 +568,7 @@
                             <div class="box">
                                 <h3>Sweetzy</h3>
                                 <p>Sweetzy are an online sweets retailer, based in Wymondham.</p>
-                                <a href="#" class="btn btn--digital">View Our Case Study <em class="icon-arrow-right"></em></a>
+                                <a href="#" class="btn btn--digital">View Our Case Study <em class="fa-solid fa-arrow-right"></em></a>
                                 <div class="arrow"></div>
                             </div>
                         </div>
@@ -585,46 +585,6 @@
                         <img src="img/clients/xupes_logo.png" alt="">
                     </div>
                 </div>
-                <!--Slideshow 2 Start
-                <div id="slide-box" class="slide-box">
-                    <div class="slide-item">
-                        <img src="img/clients/ashcroftlogo_landscape_goldblack_DP60P-small.png" alt="">
-                    </div>
-                    <div class="slide-item">
-                        <img src="img/clients/beat_logo.png" alt="">
-                    </div>
-                    <div class="slide-item">
-                        <img src="img/clients/black_swan_logo.png" alt="">
-                    </div>
-                    <div class="slide-item">
-                        <img src="img/clients/crane_logo.png" alt="">
-                    </div>
-                    <div class="slide-item">
-                        <img src="img/clients/girl_guides_anglia_logo.png" alt="">
-                    </div>
-                    <div class="slide-item">
-                        <img src="img/clients/girls_day_school_trust_logob.png" alt="">
-                    </div>
-                    <div class="slide-item">
-                        <img src="img/clients/howespercivallogo.png" alt="">
-                    </div>
-                    <div class="slide-item">
-                        <img src="img/clients/onetravellerlogo_white_figuire.png" alt="">
-                    </div>
-                    <div class="slide-item">
-                        <img src="img/clients/searles_logo.jpg" alt="">
-                    </div>
-                    <div class="slide-item">
-                        <img src="img/clients/survey_solutions_logo.png" alt="">
-                    </div>
-                    <div class="slide-item">
-                        <img src="img/clients/sweetzy_logo.png" alt="">
-                    </div>
-                    <div class="slide-item">
-                        <img src="img/clients/xupes_logo.png" alt="">
-                    </div>
-                </div>
-                -->
                 <!--Slideshow 2 End-->
 
 <?php include 'inc/footer.php'; ?>

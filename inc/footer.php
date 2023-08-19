@@ -766,7 +766,267 @@
             </div>
         </div>
     </div>
+    <!--Cookie-app Start-->
+    <div id="cookie-app">
+        <div class="cookie-btn-box">
+            <button type="button" class="btn btn--cookie-settings">Manage Consent</button>
+            <div class="cookie-settings">
+                <div class="container">
+                    <div class="h3">Cookie Preferences</div>
+                    <div class="h5">Netmatters uses cookies on their website. Cookies are small text files that are stored on your computer or other device by websites that you visit. This page explains the cookies we use and what we use them for, and lets you turn them on or off. (Some cookies are necessary in order for our website to work properly.) We also explain below which other companies use cookies on our website and what they use them for, and lets you turn those other companies' cookies on or off.</div>
+                    <div class="h5">Our website uses cookies in order to make the website easier to use, to support the provision of information and functionality to you, as well as to provide us with information about how the website is used so that we can make sure it is as up to date, relevant and error free as we can. We also use cookies to try to ensure that our online adverts reflect the interests of web users. Further information about the types of cookies that are used on our website is set out box below.</div>
+                    <div class="h5">As well as the options provided below, you can choose to restrict or block cookies through your browser settings at any time. For more information about how to do this, and about cookies in general, you can visit 
+                        <a href="https://cookiepedia.co.uk/all-about-cookies" target="_blank">www.cookiepedia.co.uk</a>and 
+                    <a href="https://www.youronlinechoices.eu" target="_blank">www.youronlinechoices.eu</a>
+                    . However, please be aware that restricting or blocking cookies set on our website may impact the functionality or performance of the website, or prevent you from using certain services provided through the website</div>
+                    <div class="h5">Please note that third parties (including, for example, advertising networks and providers of external services like website analysis services) may also use cookies, over which we have no control, although we may receive services from these third parties (including, for example, for targeted advertising purposes and website analytics). These cookies are likely to be performance cookies or targeting cookies (as described below).</div>
+                </div>
 
+                <div class="container">
+                    <div class="h1">Functional Cookies</div>
+                    <div class="h5">
+                        Functional cookies allow our website to remember choices you make, such as your user name, log in details or language preferences, and any customisations you make to pages on our website during your visit.
+                    </div>
+                    <div class="h4">
+                        <strong>Examples of how we use these cookies include:</strong>
+                    </div>
+                    <ul>
+                        <li>
+                            <h5>Live chat</h5>
+                        </li>
+                    </ul>
+                    <div class="buttons">
+                        <button type="button" class="btn btn--light">Disable</button>
+                        <button type="button" class="btn btn--web">Enable</button>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="h1">Perfomance & Analytics</div>
+                    <div class="h5">These cookies help us understand how people use our website. They collect information such as which pages on our website visitors go to most often, which features they use, and which websites people have visited before they visit ours. We use this information to improve our website and provide a better user experience.</div>
+                    <div class="h4">
+                        <strong>Examples of how we use these cookies include:</strong>
+                    </div>
+                    <ul>
+                        <li>Monitoring and providing statistics on how our website is used.</li>
+                        <li>Helping us improve our website by measuring any errors that occur.</li>
+                        <li>Testing the website's design and operability</li>
+                    </ul>
+                    <div class="buttons">
+                        <button type="button" class="btn btn--light">Disable</button>
+                        <button type="button" class="btn btn--web">Enable</button>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <h5>Different web browsers may use different methods for managing cookies. Please follow the instructions below, from the web browser manufacturers directly, to configure your browser settings*.</h5>
+                    <ul>
+                        <li>
+                            <a href="https://support.microsoft.com/en-us/help/17442/windows-internet-explorer-delete-manage-cookies">Microsoft Internet Explorer (IE)</a>
+                        </li>
+                        <li>
+                            <a href="https://support.google.com/chrome/answer/95647?hl=en">Google Chrome</a>
+                        </li>
+                        <li>
+                            <a href="https://support.apple.com/en-gb/guide/safari/manage-cookies-and-website-data-sfri11471/mac">Safari</a>
+                        </li>
+                        <li>
+                            <a href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences">Firefox</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="container">
+                    <div class="btn">Show detailed preferences</div>
+                    <div>
+                        <table>
+                            <thead>
+                                <tr class="no-hover">
+                                    <td colspan="50">Company</td>
+                                    <td colspan="50">Domain</td>
+                                    <td></td>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr class="no-hover">
+                                    <td colspan="50">
+                                        <span class="pointer">
+                                            <span>+</span>
+                                            <span>Hotjar Ltd</span>
+                                        </span>
+                                    </td>
+                                    <td colspan="50">hotjar.com</td>
+                                    <td>
+                                        <div class="buttons table-buttons">
+                                            <button type="button" class="btn btn--light">Disable</button>
+                                            <button type="button" class="btn btn--web">Enable</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="no-hover">
+                                    <td colspan="200" class="expanded">
+                                        <div></div>
+                                        <div class="flex">
+                                            <a class="btn btn--cookie" href="https://www.hotjar.com/legal/policies/terms-of-service/" target="_blank">Privacy Policy</a>
+                                            <a class="btn btn--cookie" href="https://www.hotjar.com/legal/policies/privacy/" target="_blank">Terms & Conditions</a>
+                                        </div>    
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                            <tbody>
+                                <tr class="no-hover">
+                                    <td colspan="50">
+                                        <span class="pointer">
+                                            <span>+</span>
+                                            <span>LinkedIn Corporation</span>
+                                        </span>
+                                    </td>
+                                    <td colspan="50">licdn.com</td>
+                                    <td>
+                                        <div class="buttons table-buttons">
+                                            <button type="button" class="btn btn--light">Disable</button>
+                                            <button type="button" class="btn btn--web">Enable</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="no-hover">
+                                    <td colspan="200" class="expanded">
+                                        <div></div>
+                                        <div class="flex">
+                                            <a class="btn btn--cookie" href="https://www.linkedin.com/legal/user-agreement" target="_blank">Privacy Policy</a>
+                                            <a class="btn btn--cookie" href="https://www.linkedin.com/legal/privacy-policy" target="_blank">Terms & Conditions</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                            <tbody>
+                                <tr class="no-hover">
+                                    <td colspan="50">
+                                        <span class="pointer">
+                                            <span>+</span>
+                                            <span>Facebook Inc.</span>
+                                        </span>
+                                    </td>
+                                    <td colspan="50">facebook.com, facebook.net</td>
+                                    <td>
+                                        <div class="buttons table-buttons">
+                                            <button type="button" class="btn btn--light">Disable</button>
+                                            <button type="button" class="btn btn--web">Enable</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="no-hover">
+                                    <td colspan="200" class="expanded">
+                                        <div>
+                                        Facebook is an online social networking service that enables its users to connect with friends and family as well as make new connections.
+                                        </div>
+                                        <div class="flex">
+                                            <a class="btn btn--cookie" href="https://www.facebook.com/legal/terms/updatet" target="_blank">Privacy Policy</a>
+                                            <a class="btn btn--cookie" href="https://www.facebook.com/about/privacy/update" target="_blank">Terms & Conditions</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                            <tbody>
+                                <tr class="no-hover">
+                                    <td colspan="50">
+                                        <span class="pointer">
+                                            <span>+</span>
+                                            <span>Google Inc.</span>
+                                        </span>
+                                    </td>
+                                    <td colspan="50">google.com, googletagmanager.com, google-analytics.com</td>
+                                    <td>
+                                        <div class="buttons table-buttons">
+                                            <button type="button" class="btn btn--light">Disable</button>
+                                            <button type="button" class="btn btn--web">Enable</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="no-hover">
+                                    <td colspan="200" class="expanded">
+                                        <div></div>
+                                        <div class="flex">
+                                            <a class="btn btn--cookie" href="https://policies.google.com/terms?fg=1" target="_blank">Privacy Policy</a>
+                                            <a class="btn btn--cookie" href="https://policies.google.com/privacy?fg=1" target="_blank">Terms & Conditions</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                            <tbody>
+                                <tr class="no-hover">
+                                    <td colspan="50">
+                                        <span class="pointer">
+                                            <span>+</span>
+                                            <span>Lead Forensics</span>
+                                        </span>
+                                    </td>
+                                    <td colspan="50">https://www.leadforensics.com/</td>
+                                    <td>
+                                        <div class="buttons table-buttons">
+                                            <button type="button" class="btn btn--light">Disable</button>
+                                            <button type="button" class="btn btn--web">Enable</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="no-hover">
+                                    <td colspan="200" class="expanded">
+                                        <div>
+                                            Netmatters use a paid for software on our website which allows us access to information on the company you work for. This is done through the business' registered IP address and only allows us access to the information such as contact details, year founded, SIC codes and other information about the business. It also records the behaviour of the user from the company on the website, such as page views, time on the site, "goals" completed and other similar metrics.
+                                            We use this data to help us improve lead generation through the website as this tool allows us access to see which businesses have visited the website but have not converted by calling, emailing or sending a contact form.
+                                        </div>
+                                        <div class="flex">
+                                            <a class="btn btn--cookie" href="https://www.leadforensics.com/terms-of-service/" target="_blank">Privacy Policy</a>
+                                            <a class="btn btn--cookie" href="https://www.leadforensics.com/privacy-policy/" target="_blank">Terms & Conditions</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                            <tbody>
+                                <tr class="no-hover">
+                                    <td colspan="50">
+                                        <span class="pointer">
+                                            <span>+</span>
+                                            <span>3CX</span>
+                                        </span>
+                                    </td>
+                                    <td colspan="50">https://netmatters.co.uk/</td>
+                                    <td>
+                                        <div class="buttons table-buttons">
+                                            <button type="button" class="btn btn--light">Disable</button>
+                                            <button type="button" class="btn btn--web">Enable</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="no-hover">
+                                    <td colspan="200" class="expanded">
+                                        <div>
+                                            Personal data to be processed and for the use of cookies in order to engage in a chat processed by Netmatters, for the purpose of Chat/Support for the time of 30 day(s) as per the GDPR.
+                                        </div>
+                                        <div class="flex"></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+
+                <div class="container actions">
+                    <button type="button" class="btn btn--light">Cancel</button>
+                    <button type="button" class="btn btn--web">Continue to website</button>
+                </div>
+
+            </div>
+        </div>
+    <div>
+    <!--Cookie-app End-->
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

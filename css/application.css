@@ -597,6 +597,7 @@ footer {
   font-weight: 400;
   font-size: 1.063rem;
   text-align: center;
+  cursor: pointer;
   vertical-align: middle;
   background-color: #333645;
   background-image: none;
@@ -1745,6 +1746,7 @@ header .section {
 }
 
 .btn > em {
+  position: relative;
   padding-top: 10px;
   margin-right: -4px;
   margin-left: 12px;
