@@ -1,6 +1,6 @@
 <?php
 function get_news_list() {
-    include 'connection-news.php';
+    include 'connection.php';
 
     try {
         return $db->query('SELECT * 
@@ -15,7 +15,7 @@ function get_news_list() {
 }
 
 function get_address_list() {
-    include 'connection-news.php';
+    include 'connection.php';
 
     try {
         return $db->query('SELECT * FROM addresses');
@@ -26,7 +26,7 @@ function get_address_list() {
 }
 
 function add_enquiry($name, $company, $email, $telephone, $message, $newsletter) {
-    include 'connection-enquiry.php';
+    include 'connection.php';
         $sql = 'INSERT INTO enquiry(name, company, email, telephone, message, newsletter)
         VALUES(?, ?, ?, ?, ?, ?)';
     try {

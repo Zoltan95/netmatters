@@ -1,16 +1,7 @@
-<?php
-$requestlink = $_SERVER['REQUEST_URI'];
-$req = "";
-switch ($requestlink) {
-    case '/netmatters/contact/enquiry':
-        $req = "../";
-        break;
-}
 
-
-?>
 <?php $sname = "" ;?>
-<?php $semail = "" ;?>  
+<?php $semail = "" ;?> 
+
 <!DOCTYPE html>
     <html lang='en'>
     <head>
@@ -34,7 +25,7 @@ switch ($requestlink) {
                                 <div class='section'>
                                     <div class='col--nav-logo'>
                                         <div class='logo-container'>
-                                            <a href='/netmatters/'>
+                                            <a href='/'>
                                                 <img src='img/f-logo.png' alt='Netmatters'>
                                             </a>
                                         </div>
@@ -46,11 +37,11 @@ switch ($requestlink) {
                                     </div>
                                     <div class='col--nav-info'>
                                         <div class='actions'>
-                                            <a class='btn btn--it hidden-sm' href='/netmatters/contact'>
+                                            <a class='btn btn--it hidden-sm' href='contact.php'>
                                                 <span class='fa-computer-mouse fa-solid'></span>
                                                 Support
                                             </a>
-                                            <a class='btn btn--default hidden-sm' href='/netmatters/contact'>
+                                            <a class='btn btn--default hidden-sm' href='contact.php'>
                                                 <span class='icon-paperplane'></span>
                                                 Contact
                                             </a>
@@ -573,13 +564,13 @@ switch ($requestlink) {
                                 <div class='section'>
                                     <div class='col--nav-logo'>
                                         <div class='logo-container'>
-                                            <a href='/netmatters/'>
+                                            <a href='/'>
                                                 <img src='<?php echo $req."img/f-logo.png"?>' alt='Netmatters'>
                                             </a>
                                         </div>
                                     </div>
                                     <div class='mobile-container'>
-                                        <a class='mobile' href='/netmatters/contact'>
+                                        <a class='mobile' href='contact.php'>
                                             <span class='icon-phone_in_talk'></span>
                                         </a>
                                     </div>
@@ -591,7 +582,7 @@ switch ($requestlink) {
                                                 </span>
                                                 Support
                                             </a>
-                                            <a class='btn btn--default hidden-sm' href='/netmatters/contact'>
+                                            <a class='btn btn--default hidden-sm' href='contact.php'>
                                                 <span class='icon-paperplane'></span>
                                                 Contact
                                             </a>

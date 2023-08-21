@@ -1031,10 +1031,11 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script type="text/javascript" src="<?php echo $req."js/stickyheader.js"?>"></script>
-    <script type="text/javascript" src="<?php echo $req."js/mobilemenu.js"?>"></script>
-    <script type="text/javascript" src="<?php echo $req."js/banner.js"?>"></script>
-    <script type="text/javascript" src="<?php echo $req."js/cookieconsent.js"?>"></script>
-    <script type="text/javascript" src="<?php echo $req."js/contacts.js"?>"></script>
+    <script type="text/javascript" src="https://netmatters.zoltan-urban.netmatters-scs.co.uk/js/stickyheader.js"></script>
+    <script type="text/javascript" src="https://netmatters.zoltan-urban.netmatters-scs.co.uk/js/stickyheader.js"></script>
+    <script type="text/javascript" src="https://netmatters.zoltan-urban.netmatters-scs.co.uk/js/mobilemenu.js"></script>
+    <script type="text/javascript" src="https://netmatters.zoltan-urban.netmatters-scs.co.uk/js/banner.js"></script>
+    <script type="text/javascript" src="https://netmatters.zoltan-urban.netmatters-scs.co.uk/js/cookieconsent.js"></script>
+    <script type="text/javascript" src="https://netmatters.zoltan-urban.netmatters-scs.co.uk/js/contacts.js"></script>
 </body>
 </html>

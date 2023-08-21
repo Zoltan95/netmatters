@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "netmatters_news";
+$username = "zoltanur_root";
+$password = "pDIP2+5_eMM=";
+$dbname = "zoltanur_netmatters";
 
 try {
   $db = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);

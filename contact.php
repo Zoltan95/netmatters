@@ -116,7 +116,7 @@
                 </div>
             </div>
             <div class="col form">
-                <form action="/netmatters/contact/enquiry" id="contact-form" method="POST">
+                <form action="inc/enquiry.php" id="contact-form" method="POST">
                     <?php
                     if (!empty($mback)) {
                         echo "<div id='errormsg'>";

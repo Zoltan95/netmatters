@@ -40,7 +40,8 @@
                 $_SESSION["message"] = $message;
                 $_SESSION["error"] = $err;
 
-                return header("Location: /netmatters/contact#contact-form");
+                return header("Location: https://netmatters.zoltan-urban.netmatters-scs.co.uk/contact.php#contact-form");
+                
             }else if (!preg_match("/^(((\+44\s?\d{4}|\(?0\d{4}\)?)\s?\d{3}\s?\d{3})|((\+44\s?\d{3}|\(?0\d{3}\)?)\s?\d{3}\s?\d{4})|((\+44\s?\d{2}|\(?0\d{2}\)?)\s?\d{4}\s?\d{4}))(\s?\#(\d{4}|\d{3}))?$/",$telephone)) {
                 $err = 1;
                 $_SESSION["name"] = $name;
@@ -50,7 +51,7 @@
                 $_SESSION["message"] = $message;
                 $_SESSION["error"] = $err;
                 
-                return header("Location: /netmatters/contact#contact-form");
+                return header("Location: https://netmatters.zoltan-urban.netmatters-scs.co.uk/contact.php#contact-form");
             }else {
                 
                 session_unset();
@@ -61,7 +62,7 @@
                 include 'functions.php';
                 add_enquiry($name, $company, $email, $telephone, $message, $newsletter);
 
-                return header("Location: /netmatters/contact#contact-form");
+                return header("Location: https://netmatters.zoltan-urban.netmatters-scs.co.uk/contact.php#contact-form");
             }
         }
     }
