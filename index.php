@@ -1,21 +1,8 @@
 
-
 <?php include 'inc/functions.php'; ?>
 <?php include 'inc/header.php'; ?>
 
             <!--Banner Start-->
-
-<?php
-
-include('includes/header.php')
-
-include('inc/connection.php');
-
-include('inc/header.php');
-
-?>
-        <!--Banner Start-->
-
             <div class="banner">
                 <div class="banner__box">
                     <div class="banner__box-item">
@@ -419,126 +406,6 @@ include('inc/header.php');
                         <div class="container">
                             <div class="articles__list">
                                 <div class="row">
-
-
-                                    <div class="col software">
-
-                                    <!--
-                                    <div class="col software">                  <--- News Type
-
-                                        <div class="articles__item">
-                                            <a class="articles__item-link" href="#"></a>
-                                            <div class="articles__img-container">
-                                                <a class="articles__category" href="#">Insights</a>
-                                                <a class="articles__img-link" href="#">
-                                                    <img class="articles__img" src="https://www.netmatters.co.uk/assets/images/thumbnails/thumb/how-can-bespoke-5NZK.png" alt="How can Bespoke Software Improve your Customer Retention?">
-                                                </a>
-                                            </div>
-                                            <div class="articles__block">
-                                                <h3>
-                                                    <a href="">How Can Bespoke Software improve Your Custome...</a>
-                                                    <span class="articles__read-time">
-                                                        - 5 minute read
-                                                    </span>
-                                                </h3>
-                                                <p>
-                                                    Customer retention is critical to any business that is looking to grow. For fast-paced businesses th...
-                                                </p>
-                                                <a class="btn btn--software" href="">
-                                                    Read More
-                                                </a>
-                                                <div class="articles__user">
-                                                    <div class="articles__user-avatar">
-                                                        <img src="https://www.netmatters.co.uk/assets/images/thumbnails/article_contact_thumb/alex-hall-UIuf.jpg" alt="Alex Hall">
-                                                    </div>
-                                                    <div class="articles__user-details">
-                                                        <strong class="text-primary">
-                                                            Posted by Alex Hall
-                                                        </strong>                                                        
-                                                            <br>
-                                                            9th June 2023
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col it">
-                                        <div class="articles__item">
-                                            <a class="articles__item-link" href="#"></a>
-                                            <div class="articles__img-container">
-                                                <a class="articles__category" href="#">News</a>
-                                                <a class="articles__img-link" href="#">
-                                                    <img class="articles__img" src="https://www.netmatters.co.uk/assets/images/thumbnails/thumb/elliot-tarling-b892.png" alt="Elliot Tarling">
-                                                </a>
-                                            </div>
-                                            <div class="articles__block">
-                                                <h3>
-                                                    <a href="">Elliot Tarling - Netmatters 5 Year Legend</a>
-                                                    <span class="articles__read-time">
-                                                        - 3 minute read
-                                                    </span>
-                                                </h3>
-                                                <p>
-                                                    Today, we are congratulating Elliot Traling for attaining the Netmatters Long Service Award and earn...
-                                                </p>
-                                                <a class="btn btn--it" href="">
-                                                    Read More
-                                                </a>
-                                                <div class="articles__user">
-                                                    <div class="articles__user-avatar">
-                                                        <img src="https://www.netmatters.co.uk/assets/images/thumbnails/article_contact_thumb/netmatters-ltd-VXAv.png" alt="Netmatters">
-                                                    </div>
-                                                    <div class="articles__user-details">
-                                                        <strong class="text-primary">
-                                                            Posted by Netmatters
-                                                        </strong>                                                        
-                                                            <br>
-                                                            8th June 2023
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col web">
-                                        <div class="articles__item">
-                                            <a class="articles__item-link" href="#"></a>
-                                            <div class="articles__img-container">
-                                                <a class="articles__category" href="#">News</a>
-                                                <a class="articles__img-link" href="#">
-                                                    <img class="articles__img" src="https://www.netmatters.co.uk/assets/images/thumbnails/thumb/may-2023-notables-wAcE.png" alt="May 2023 Notables">
-                                                </a>
-                                            </div>
-                                            <div class="articles__block">
-                                                <h3>
-                                                    <a href="">May 2023 Notables</a>
-                                                    <span class="articles__read-time">
-                                                        - 4 minute read
-                                                    </span>
-                                                </h3>
-                                                <p>
-                                                    Each month, various departments recognise those employees who have excelled in their work and helped...
-                                                </p>
-                                                <a class="btn btn--web" href="">
-                                                    Read More
-                                                </a>
-                                                <div class="articles__user">
-                                                    <div class="articles__user-avatar">
-                                                        <img src="https://www.netmatters.co.uk/assets/images/thumbnails/article_contact_thumb/netmatters-ltd-VXAv.png" alt="Netmatters">
-                                                    </div>
-                                                    <div class="articles__user-details">
-                                                        <strong class="text-primary">
-                                                            Posted by Netmatters
-                                                        </strong>                                                        
-                                                            <br>
-                                                            7th June 2023
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    -->
                                     <?php
                                     foreach (get_news_list() as $item) {
                                         echo "<div class='col " . $item["news_type"] ."'>";
@@ -580,7 +447,6 @@ include('inc/header.php');
                                         echo "</div>";
                                     }        
                                     ?>
-
                                 </div>
                             </div>
                         </div>
@@ -722,14 +588,4 @@ include('inc/header.php');
                 </div>
                 <!--Slideshow 2 End-->
 
-
 <?php include 'inc/footer.php'; ?>
-
-<?php
-
-include('includes/footer.php')
-
-include('inc/footer.php');
-
-?>
-

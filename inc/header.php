@@ -1,17 +1,3 @@
-<?php
-$requestlink = $_SERVER['REQUEST_URI'];
-$title = "";
-switch ($requestlink) {
-    case '/':
-        $title = "Full Service Digital Agency | Cambridgeshire & Norfolk | Netmatters";
-        break;
-    case '/contact.php':
-        $title = "Contact Us | Netmatters";
-        break;
-}
-
-
-?>
 
 <?php $sname = "" ;?>
 <?php $semail = "" ;?> 
@@ -25,8 +11,8 @@ switch ($requestlink) {
         <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
         <script src='https://kit.fontawesome.com/e82bcef862.js' crossorigin='anonymous'></script>
         <link rel='stylesheet' type='text/css' href='//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css'/>
-        <link rel='stylesheet' href="css/application.css">
-        <title><?php echo $title ?></title>
+        <link rel='stylesheet' href='<?php echo $req."css/application.css"?>'>
+        <title>Full Service Digital Agency | Cambridgeshire & Norfolk | Netmatters</title>
     </head>
     <body id='body' class=''>
         <div id='main'>
