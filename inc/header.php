@@ -1,4 +1,7 @@
 
+<?php $sname = "" ;?>
+<?php $semail = "" ;?> 
+
 <!DOCTYPE html>
     <html lang='en'>
     <head>
@@ -7,8 +10,8 @@
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
         <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
         <script src='https://kit.fontawesome.com/e82bcef862.js' crossorigin='anonymous'></script>
-        <link rel='stylesheet' type='text/css' href='//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css'/>";
-        <link rel='stylesheet' href='css/application.css'>
+        <link rel='stylesheet' type='text/css' href='//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css'/>
+        <link rel='stylesheet' href='<?php echo $req."css/application.css"?>'>
         <title>Full Service Digital Agency | Cambridgeshire & Norfolk | Netmatters</title>
     </head>
     <body id='body' class=''>
@@ -22,7 +25,7 @@
                                 <div class='section'>
                                     <div class='col--nav-logo'>
                                         <div class='logo-container'>
-                                            <a href='#'>
+                                            <a href='/'>
                                                 <img src='img/f-logo.png' alt='Netmatters'>
                                             </a>
                                         </div>
@@ -34,11 +37,11 @@
                                     </div>
                                     <div class='col--nav-info'>
                                         <div class='actions'>
-                                            <a class='btn btn--it hidden-sm' href='#'>
+                                            <a class='btn btn--it hidden-sm' href='contact.php'>
                                                 <span class='fa-computer-mouse fa-solid'></span>
                                                 Support
                                             </a>
-                                            <a class='btn btn--default hidden-sm' href='#'>
+                                            <a class='btn btn--default hidden-sm' href='contact.php'>
                                                 <span class='icon-paperplane'></span>
                                                 Contact
                                             </a>
@@ -561,13 +564,13 @@
                                 <div class='section'>
                                     <div class='col--nav-logo'>
                                         <div class='logo-container'>
-                                            <a href='#'>
-                                                <img src='img/f-logo.png' alt='Netmatters'>
+                                            <a href='/'>
+                                                <img src='<?php echo $req."img/f-logo.png"?>' alt='Netmatters'>
                                             </a>
                                         </div>
                                     </div>
                                     <div class='mobile-container'>
-                                        <a class='mobile' href='#'>
+                                        <a class='mobile' href='contact.php'>
                                             <span class='icon-phone_in_talk'></span>
                                         </a>
                                     </div>
@@ -579,14 +582,14 @@
                                                 </span>
                                                 Support
                                             </a>
-                                            <a class='btn btn--default hidden-sm' href='#'>
+                                            <a class='btn btn--default hidden-sm' href='contact.php'>
                                                 <span class='icon-paperplane'></span>
                                                 Contact
                                             </a>
                                             <div class='float--left hidden-xs search-form-wrapper-tablet'>
                                                 <form class='search-form' action='#'>
-                                                    <label class='hidden' for='search-input-mobile'>Search:</label>
-                                                    <input id=search-input-mobile class='newsletter__input-ctrl form-control' placeholder='Search...' name='keyword' type='text' value=''>
+                                                    <label class='hidden' for='search-input-mobile-copy'>Search:</label>
+                                                    <input id=search-input-mobile-copy class='newsletter__input-ctrl form-control' placeholder='Search...' name='keyword' type='text' value=''>
                                                     <button type='submit'>
                                                         <span class='search-input__icon fa-sharp fa-solid fa-magnifying-glass'></span>
                                                     </button>
@@ -602,8 +605,8 @@
                                 </div>
                                 <div class='search-form-mobile'>
                                     <form class='search-form' action='#'>
-                                        <label class='hidden' for='search-input'>Search:</label>
-                                        <input id=search-input class='newsletter__input-ctrl form-control' placeholder='Search...' name='keyword' type='text' value=''>
+                                        <label class='hidden' for='search-input-copy'>Search:</label>
+                                        <input id=search-input-copy class='newsletter__input-ctrl form-control' placeholder='Search...' name='keyword' type='text' value=''>
                                         <button type='submit'>
                                                 <span class='search-input__icon fa-sharp fa-solid fa-magnifying-glass'></span>
                                         </button>

@@ -61,6 +61,12 @@
 }
 
 // Helpres Media
+@media (max-width: 991px) {
+	.spacer-sm {
+		margin-bottom: 30px;
+	}
+}
+
 @media (max-width: 767px) {
     .hidden-xs {
         display: none!important;
@@ -83,4 +89,10 @@
     .hidden-sm {
         display: none!important;
     }
+}
+
+// Colors
+
+.text-web {
+    color: #926fb1!important;
 }

@@ -1,15 +1,16 @@
 <?php
-$host = "localhost";
-$user = "root";
-$password = "";
-$db = "netmatters_news";
-
-// Check connection
-mysqli_report(MYSQLI_REPORT_STRICT | MYSQLI_REPORT_ALL);
+$servername = "localhost";
+$username = "zoltanur_root";
+$password = "pDIP2+5_eMM=";
+$dbname = "zoltanur_netmatters";
 
 try {
-  $mysqli = new mysqli($host, $user, $password, $db);
-} catch (mysqli_sql_exception $e) {
-    echo $e;
+  $db = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+  // set the PDO error mode to exception
+  $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  //echo "Connected successfully";
+} catch(PDOException $e) {
+  echo "Connection failed: " . $e->getMessage();
+  exit;
 }
 ?>
