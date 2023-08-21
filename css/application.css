@@ -371,6 +371,19 @@ h4 {
   margin: 0 0 15px;
 }
 
+.h4, .h5, .h6, h4, h5, h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.h5, h5 {
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
 p {
   line-height: 1.875rem;
   margin-bottom: 25px;
@@ -687,6 +700,30 @@ footer {
   color: #fff;
   background-color: #999aa2;
   border-color: #999aa2;
+}
+.btn--light {
+  color: #aaa;
+  background-color: #fff;
+  border-color: #f0f0f0;
+}
+.btn--cookie-settings {
+  position: fixed;
+  line-height: 22px;
+  z-index: 99;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  background: #75788a;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #fff;
+  border: solid #75788a;
+  border-width: 1px 1px 0 0;
+  border-radius: 0;
+  border-top-right-radius: 10px;
+  padding: 0 10px;
+  cursor: pointer;
+  font-size: 0.8rem;
 }
 .btn--modal {
   height: auto;
@@ -2895,6 +2932,80 @@ body.menu-active #main {
   color: #fff;
   background-color: #7e57a0;
   border-color: #735093;
+}
+
+.cookie-settings {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 8000;
+  overflow-y: auto;
+}
+.cookie-settings .container {
+  color: #666;
+  margin-top: 20px;
+}
+.cookie-settings .table {
+  overflow-x: auto;
+}
+.cookie-settings .btn--cookie {
+  line-height: 20px;
+  font-size: unset;
+}
+.cookie-settings table {
+  display: none;
+  margin-top: 10px;
+  max-width: 100%;
+  background-color: transparent;
+  border: 1px solid #ddd;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.cookie-settings table td {
+  border: 1px solid #fff;
+  background-color: #ddd;
+  padding: 15px;
+  min-height: 20px;
+}
+.cookie-settings table thead tr td {
+  background-color: #aaa;
+  color: #fff;
+}
+.cookie-settings .table-buttons {
+  display: flex;
+  flex-direction: row;
+}
+.cookie-settings table button {
+  margin: 2px;
+}
+.cookie-settings .expanded {
+  background-color: #ddd !important;
+  margin-top: 0 !important;
+  border-top: 0 !important;
+}
+
+tbody tr:last-child {
+  display: none;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.table tbody tr.active:hover:not(.no-hover) td, .table tbody tr.active:hover:not(.no-hover) th {
+  background-color: #0075b0 !important;
+}
+
+.table tbody tr:hover:not(.no-hover) td {
+  background-color: #c8f7c5 !important;
 }
 
 @media (max-width: 991px) {

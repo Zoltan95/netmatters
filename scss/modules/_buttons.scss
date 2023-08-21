@@ -32,6 +32,32 @@
 		border-color: $manatee;
 	}
 
+	@include m(light) {
+		color: #aaa;
+		background-color: #fff;
+		border-color: #f0f0f0;
+	}
+
+	@include m(cookie-settings) {
+		position: fixed;
+		line-height: 22px;
+		z-index: 99;
+		bottom: 0;
+		left: 0;
+		display: flex;
+		background: #75788a;
+		font-weight: 600;
+		text-transform: capitalize;
+		color: #fff;
+		border: solid #75788a;
+		border-width: 1px 1px 0 0;
+		border-radius: 0;
+		border-top-right-radius: 10px;
+		padding: 0 10px;
+		cursor: pointer;
+		font-size: .8rem;
+	}
+
 	@include m(modal) {
 		height: auto;
 		line-height: 35px;

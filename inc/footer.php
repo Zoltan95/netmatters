@@ -756,7 +756,7 @@
                 <div class="modal__footer">
                     <div class="modal__row">
                         <div class="col">  
-                            <a class="btn btn--modal spacer-xs">Change Settings</a>
+                            <a id="cookiewindow" class="btn btn--modal spacer-xs">Change Settings</a>
                         </div>
                         <div class="col">
                             <a id="accept" class="btn btn--modal web">Accept Cookies</a>
@@ -772,7 +772,7 @@
             <button type="button" class="btn btn--cookie-settings">Manage Consent</button>
             <div class="cookie-settings">
                 <div class="container">
-                    <div class="h3">Cookie Preferences</div>
+                    <div class="h3">Cookies Preferences</div>
                     <div class="h5">Netmatters uses cookies on their website. Cookies are small text files that are stored on your computer or other device by websites that you visit. This page explains the cookies we use and what we use them for, and lets you turn them on or off. (Some cookies are necessary in order for our website to work properly.) We also explain below which other companies use cookies on our website and what they use them for, and lets you turn those other companies' cookies on or off.</div>
                     <div class="h5">Our website uses cookies in order to make the website easier to use, to support the provision of information and functionality to you, as well as to provide us with information about how the website is used so that we can make sure it is as up to date, relevant and error free as we can. We also use cookies to try to ensure that our online adverts reflect the interests of web users. Further information about the types of cookies that are used on our website is set out box below.</div>
                     <div class="h5">As well as the options provided below, you can choose to restrict or block cookies through your browser settings at any time. For more information about how to do this, and about cookies in general, you can visit 
@@ -837,8 +837,8 @@
                 </div>
 
                 <div class="container">
-                    <div class="btn">Show detailed preferences</div>
-                    <div>
+                    <div id="detailedpref" class="btn btn--default">Show detailed preferences</div>
+                    <div class="table">
                         <table>
                             <thead>
                                 <tr class="no-hover">
@@ -868,8 +868,8 @@
                                     <td colspan="200" class="expanded">
                                         <div></div>
                                         <div class="flex">
-                                            <a class="btn btn--cookie" href="https://www.hotjar.com/legal/policies/terms-of-service/" target="_blank">Privacy Policy</a>
-                                            <a class="btn btn--cookie" href="https://www.hotjar.com/legal/policies/privacy/" target="_blank">Terms & Conditions</a>
+                                            <a class="btn btn--cookie btn--default" href="https://www.hotjar.com/legal/policies/terms-of-service/" target="_blank">Privacy Policy</a>
+                                            <a class="btn btn--cookie btn--default" href="https://www.hotjar.com/legal/policies/privacy/" target="_blank">Terms & Conditions</a>
                                         </div>    
                                     </td>
                                 </tr>
@@ -895,8 +895,8 @@
                                     <td colspan="200" class="expanded">
                                         <div></div>
                                         <div class="flex">
-                                            <a class="btn btn--cookie" href="https://www.linkedin.com/legal/user-agreement" target="_blank">Privacy Policy</a>
-                                            <a class="btn btn--cookie" href="https://www.linkedin.com/legal/privacy-policy" target="_blank">Terms & Conditions</a>
+                                            <a class="btn btn--cookie btn--default" href="https://www.linkedin.com/legal/user-agreement" target="_blank">Privacy Policy</a>
+                                            <a class="btn btn--cookie btn--default" href="https://www.linkedin.com/legal/privacy-policy" target="_blank">Terms & Conditions</a>
                                         </div>
                                     </td>
                                 </tr>
@@ -924,8 +924,8 @@
                                         Facebook is an online social networking service that enables its users to connect with friends and family as well as make new connections.
                                         </div>
                                         <div class="flex">
-                                            <a class="btn btn--cookie" href="https://www.facebook.com/legal/terms/updatet" target="_blank">Privacy Policy</a>
-                                            <a class="btn btn--cookie" href="https://www.facebook.com/about/privacy/update" target="_blank">Terms & Conditions</a>
+                                            <a class="btn btn--cookie btn--default" href="https://www.facebook.com/legal/terms/updatet" target="_blank">Privacy Policy</a>
+                                            <a class="btn btn--cookie btn--default" href="https://www.facebook.com/about/privacy/update" target="_blank">Terms & Conditions</a>
                                         </div>
                                     </td>
                                 </tr>
@@ -951,8 +951,8 @@
                                     <td colspan="200" class="expanded">
                                         <div></div>
                                         <div class="flex">
-                                            <a class="btn btn--cookie" href="https://policies.google.com/terms?fg=1" target="_blank">Privacy Policy</a>
-                                            <a class="btn btn--cookie" href="https://policies.google.com/privacy?fg=1" target="_blank">Terms & Conditions</a>
+                                            <a class="btn btn--cookie btn--default" href="https://policies.google.com/terms?fg=1" target="_blank">Privacy Policy</a>
+                                            <a class="btn btn--cookie btn--default" href="https://policies.google.com/privacy?fg=1" target="_blank">Terms & Conditions</a>
                                         </div>
                                     </td>
                                 </tr>
@@ -981,8 +981,8 @@
                                             We use this data to help us improve lead generation through the website as this tool allows us access to see which businesses have visited the website but have not converted by calling, emailing or sending a contact form.
                                         </div>
                                         <div class="flex">
-                                            <a class="btn btn--cookie" href="https://www.leadforensics.com/terms-of-service/" target="_blank">Privacy Policy</a>
-                                            <a class="btn btn--cookie" href="https://www.leadforensics.com/privacy-policy/" target="_blank">Terms & Conditions</a>
+                                            <a class="btn btn--cookie btn--default" href="https://www.leadforensics.com/terms-of-service/" target="_blank">Privacy Policy</a>
+                                            <a class="btn btn--cookie btn--default" href="https://www.leadforensics.com/privacy-policy/" target="_blank">Terms & Conditions</a>
                                         </div>
                                     </td>
                                 </tr>
@@ -1019,8 +1019,8 @@
                 </div>
 
                 <div class="container actions">
-                    <button type="button" class="btn btn--light">Cancel</button>
-                    <button type="button" class="btn btn--web">Continue to website</button>
+                    <button id="consent-cancel" type="button" class="btn btn--default">Cancel</button>
+                    <button id="consent-continue" type="button" class="btn btn--web">Continue to website</button>
                 </div>
 
             </div>

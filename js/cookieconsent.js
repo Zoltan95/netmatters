@@ -34,7 +34,50 @@ window.onload = () => {
         consentPopup.classList.remove('hidden');
         body.classList.add('cookie-active');
     }
+
+    $("#consent-continue").on( "click tap", function() { 
+        $('.cookie-settings').css("display", "none");
+        saveToStorage(storageType);
+        consentPopup.classList.add('hidden');
+        body.classList.remove('cookie-active');
+    });
+
+    $(".btn--cookie-settings").on( "click tap", function() { 
+        $('#consent-popup').removeClass('hidden');
+        body.classList.add('cookie-active');
+    });
+
+    $("#consent-cancel").on( "click tap", function() { 
+        $('.cookie-settings').css("display", "none");
+        saveToStorage(storageType);
+        consentPopup.classList.add('hidden');
+        body.classList.remove('cookie-active');
+    });
 }
+
+$("#cookiewindow").on( "click tap", function() { 
+    $('.cookie-settings').css("display", "block");
+});
+
+$(".pointer").on( "click tap", function() { 
+    if ($(".pointer span").first().text() === "+") {
+        $(".pointer span").first().text("-");
+        $(this).parent().parent(".no-hover").next().css('display', 'table-row');
+    } else {
+        $(".pointer span").first().text("+");
+        $(this).parent().parent(".no-hover").next().css('display', 'none');
+    }
+});
+
+$("#detailedpref").on( "click tap", function() { 
+    if ($("#detailedpref").text() === "Show detailed preferences") {
+        $("#detailedpref").text("Hide detailed preferences");
+        $(".table table").css('display', 'table');
+    } else {
+        $("#detailedpref").text("Show detailed preferences");
+        $(".table table").css('display', 'none');
+    }
+});
 
 
 
