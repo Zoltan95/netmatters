@@ -13,6 +13,9 @@ switch ($requestlink) {
 
 ?>
 
+<?php $sname = "" ;?>
+<?php $semail = "" ;?> 
+
 <!DOCTYPE html>
     <html lang='en'>
     <head>
@@ -36,7 +39,7 @@ switch ($requestlink) {
                                 <div class='section'>
                                     <div class='col--nav-logo'>
                                         <div class='logo-container'>
-                                            <a href='#'>
+                                            <a href='/'>
                                                 <img src='img/f-logo.png' alt='Netmatters'>
                                             </a>
                                         </div>
@@ -48,11 +51,11 @@ switch ($requestlink) {
                                     </div>
                                     <div class='col--nav-info'>
                                         <div class='actions'>
-                                            <a class='btn btn--it hidden-sm' href='#'>
+                                            <a class='btn btn--it hidden-sm' href='contact.php'>
                                                 <span class='fa-computer-mouse fa-solid'></span>
                                                 Support
                                             </a>
-                                            <a class='btn btn--default hidden-sm' href='#'>
+                                            <a class='btn btn--default hidden-sm' href='contact.php'>
                                                 <span class='icon-paperplane'></span>
                                                 Contact
                                             </a>
@@ -575,13 +578,13 @@ switch ($requestlink) {
                                 <div class='section'>
                                     <div class='col--nav-logo'>
                                         <div class='logo-container'>
-                                            <a href='#'>
-                                                <img src='img/f-logo.png' alt='Netmatters'>
+                                            <a href='/'>
+                                                <img src='<?php echo $req."img/f-logo.png"?>' alt='Netmatters'>
                                             </a>
                                         </div>
                                     </div>
                                     <div class='mobile-container'>
-                                        <a class='mobile' href='#'>
+                                        <a class='mobile' href='contact.php'>
                                             <span class='icon-phone_in_talk'></span>
                                         </a>
                                     </div>
@@ -593,14 +596,14 @@ switch ($requestlink) {
                                                 </span>
                                                 Support
                                             </a>
-                                            <a class='btn btn--default hidden-sm' href='#'>
+                                            <a class='btn btn--default hidden-sm' href='contact.php'>
                                                 <span class='icon-paperplane'></span>
                                                 Contact
                                             </a>
                                             <div class='float--left hidden-xs search-form-wrapper-tablet'>
                                                 <form class='search-form' action='#'>
-                                                    <label class='hidden' for='search-input-mobile'>Search:</label>
-                                                    <input id=search-input-mobile class='newsletter__input-ctrl form-control' placeholder='Search...' name='keyword' type='text' value=''>
+                                                    <label class='hidden' for='search-input-mobile-copy'>Search:</label>
+                                                    <input id=search-input-mobile-copy class='newsletter__input-ctrl form-control' placeholder='Search...' name='keyword' type='text' value=''>
                                                     <button type='submit'>
                                                         <span class='search-input__icon fa-sharp fa-solid fa-magnifying-glass'></span>
                                                     </button>
@@ -616,8 +619,8 @@ switch ($requestlink) {
                                 </div>
                                 <div class='search-form-mobile'>
                                     <form class='search-form' action='#'>
-                                        <label class='hidden' for='search-input'>Search:</label>
-                                        <input id=search-input class='newsletter__input-ctrl form-control' placeholder='Search...' name='keyword' type='text' value=''>
+                                        <label class='hidden' for='search-input-copy'>Search:</label>
+                                        <input id=search-input-copy class='newsletter__input-ctrl form-control' placeholder='Search...' name='keyword' type='text' value=''>
                                         <button type='submit'>
                                                 <span class='search-input__icon fa-sharp fa-solid fa-magnifying-glass'></span>
                                         </button>
