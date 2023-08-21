@@ -1,0 +1,132 @@
+[21-Aug-2023 13:39:06 UTC] PHP Warning:  include(/inc/functions.php): Failed to open stream: No such file or directory in /home/zoltanurban/public_html/netmatters/index.php on line 2
+[21-Aug-2023 13:39:06 UTC] PHP Warning:  include(): Failed opening '/inc/functions.php' for inclusion (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/zoltanurban/public_html/netmatters/index.php on line 2
+[21-Aug-2023 13:39:06 UTC] PHP Warning:  include(/inc/header.php): Failed to open stream: No such file or directory in /home/zoltanurban/public_html/netmatters/index.php on line 3
+[21-Aug-2023 13:39:06 UTC] PHP Warning:  include(): Failed opening '/inc/header.php' for inclusion (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/zoltanurban/public_html/netmatters/index.php on line 3
+[21-Aug-2023 13:39:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_news_list() in /home/zoltanurban/public_html/netmatters/index.php:410
+Stack trace:
+#0 {main}
+  thrown in /home/zoltanurban/public_html/netmatters/index.php on line 410
+[21-Aug-2023 13:57:24 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 14
+[21-Aug-2023 13:57:24 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 568
+[21-Aug-2023 13:57:24 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/footer.php on line 61
+[21-Aug-2023 13:58:36 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 14
+[21-Aug-2023 13:58:36 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 568
+[21-Aug-2023 13:58:36 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/footer.php on line 61
+[21-Aug-2023 13:58:37 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 14
+[21-Aug-2023 13:58:37 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 568
+[21-Aug-2023 13:58:37 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/footer.php on line 61
+[21-Aug-2023 13:58:38 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 14
+[21-Aug-2023 13:58:38 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 568
+[21-Aug-2023 13:58:38 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/footer.php on line 61
+[21-Aug-2023 14:00:08 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 14
+[21-Aug-2023 14:00:08 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 568
+[21-Aug-2023 14:00:08 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/footer.php on line 61
+[21-Aug-2023 14:00:09 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 14
+[21-Aug-2023 14:00:09 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 568
+[21-Aug-2023 14:00:09 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/footer.php on line 61
+[21-Aug-2023 14:00:10 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 14
+[21-Aug-2023 14:00:10 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 568
+[21-Aug-2023 14:00:10 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/footer.php on line 61
+[21-Aug-2023 14:00:11 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 14
+[21-Aug-2023 14:00:11 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 568
+[21-Aug-2023 14:00:11 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/footer.php on line 61
+[21-Aug-2023 14:00:12 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 14
+[21-Aug-2023 14:00:12 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 568
+[21-Aug-2023 14:00:12 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/footer.php on line 61
+[21-Aug-2023 14:00:12 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 14
+[21-Aug-2023 14:00:12 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 568
+[21-Aug-2023 14:00:12 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/footer.php on line 61
+[21-Aug-2023 14:00:16 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 14
+[21-Aug-2023 14:00:16 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 568
+[21-Aug-2023 14:00:16 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/footer.php on line 61
+[21-Aug-2023 14:02:34 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 14
+[21-Aug-2023 14:02:34 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 568
+[21-Aug-2023 14:02:34 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/footer.php on line 61
+[21-Aug-2023 14:07:00 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 14
+[21-Aug-2023 14:07:00 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 568
+[21-Aug-2023 14:07:00 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/footer.php on line 61
+[21-Aug-2023 14:08:56 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 14
+[21-Aug-2023 14:08:56 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 568
+[21-Aug-2023 14:08:56 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/footer.php on line 61
+[21-Aug-2023 14:09:46 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 14
+[21-Aug-2023 14:09:46 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 568
+[21-Aug-2023 14:09:46 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/footer.php on line 61
+[21-Aug-2023 14:09:54 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 14
+[21-Aug-2023 14:09:54 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 568
+[21-Aug-2023 14:09:54 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/footer.php on line 61
+[21-Aug-2023 14:10:09 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 14
+[21-Aug-2023 14:10:09 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 568
+[21-Aug-2023 14:10:09 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/footer.php on line 61
+[21-Aug-2023 14:20:22 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 14
+[21-Aug-2023 14:20:22 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 568
+[21-Aug-2023 14:20:35 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 14
+[21-Aug-2023 14:20:35 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 568
+[21-Aug-2023 14:21:13 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 14
+[21-Aug-2023 14:21:13 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 568
+[21-Aug-2023 14:22:46 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 14
+[21-Aug-2023 14:22:46 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 568
+[21-Aug-2023 14:24:46 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 14
+[21-Aug-2023 14:24:46 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 568
+[21-Aug-2023 14:25:06 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 14
+[21-Aug-2023 14:25:06 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 568
+[21-Aug-2023 14:25:13 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 14
+[21-Aug-2023 14:25:13 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 568
+[21-Aug-2023 14:26:49 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 14
+[21-Aug-2023 14:26:49 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 568
+[21-Aug-2023 14:26:49 UTC] PHP Fatal error:  Uncaught Error: Undefined constant PDO::ERRMODE_ALL in /home/zoltanurban/public_html/netmatters/inc/connection.php:10
+Stack trace:
+#0 /home/zoltanurban/public_html/netmatters/inc/functions.php(18): include()
+#1 /home/zoltanurban/public_html/netmatters/inc/contact-form-top.php(31): get_address_list()
+#2 /home/zoltanurban/public_html/netmatters/contact.php(61): include('/home/zoltanurb...')
+#3 {main}
+  thrown in /home/zoltanurban/public_html/netmatters/inc/connection.php on line 10
+[21-Aug-2023 14:26:55 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 14
+[21-Aug-2023 14:26:55 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 568
+[21-Aug-2023 14:26:55 UTC] PHP Fatal error:  Uncaught Error: Undefined constant PDO::ERRMODE_ALL in /home/zoltanurban/public_html/netmatters/inc/connection.php:10
+Stack trace:
+#0 /home/zoltanurban/public_html/netmatters/inc/functions.php(3): include()
+#1 /home/zoltanurban/public_html/netmatters/index.php(410): get_news_list()
+#2 {main}
+  thrown in /home/zoltanurban/public_html/netmatters/inc/connection.php on line 10
+[21-Aug-2023 14:26:58 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 14
+[21-Aug-2023 14:26:58 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 568
+[21-Aug-2023 14:26:58 UTC] PHP Fatal error:  Uncaught Error: Undefined constant PDO::ERRMODE_ALL in /home/zoltanurban/public_html/netmatters/inc/connection.php:10
+Stack trace:
+#0 /home/zoltanurban/public_html/netmatters/inc/functions.php(18): include()
+#1 /home/zoltanurban/public_html/netmatters/inc/contact-form-top.php(31): get_address_list()
+#2 /home/zoltanurban/public_html/netmatters/contact.php(61): include('/home/zoltanurb...')
+#3 {main}
+  thrown in /home/zoltanurban/public_html/netmatters/inc/connection.php on line 10
+[21-Aug-2023 14:27:17 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 14
+[21-Aug-2023 14:27:17 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 568
+[21-Aug-2023 14:27:17 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/footer.php on line 61
+[21-Aug-2023 14:27:23 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 14
+[21-Aug-2023 14:27:23 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 568
+[21-Aug-2023 14:27:23 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/footer.php on line 61
+[21-Aug-2023 14:27:34 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 14
+[21-Aug-2023 14:27:34 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 568
+[21-Aug-2023 14:27:34 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/footer.php on line 61
+[21-Aug-2023 14:27:39 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 14
+[21-Aug-2023 14:27:39 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 568
+[21-Aug-2023 14:27:39 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/footer.php on line 61
+[21-Aug-2023 14:43:27 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 14
+[21-Aug-2023 14:43:27 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 568
+[21-Aug-2023 14:43:27 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/footer.php on line 61
+[21-Aug-2023 14:44:28 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 14
+[21-Aug-2023 14:44:28 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 568
+[21-Aug-2023 14:44:28 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/footer.php on line 61
+[21-Aug-2023 14:44:36 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 14
+[21-Aug-2023 14:44:36 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 568
+[21-Aug-2023 14:44:36 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/footer.php on line 61
+[21-Aug-2023 14:46:37 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 584
+[21-Aug-2023 14:46:37 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/footer.php on line 61
+[21-Aug-2023 14:46:42 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 584
+[21-Aug-2023 14:46:42 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/footer.php on line 61
+[21-Aug-2023 14:47:19 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 583
+[21-Aug-2023 14:47:19 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/footer.php on line 61
+[21-Aug-2023 14:47:25 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 583
+[21-Aug-2023 14:47:25 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/footer.php on line 61
+[21-Aug-2023 14:47:41 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 583
+[21-Aug-2023 14:47:41 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/footer.php on line 61
+[21-Aug-2023 14:48:00 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/header.php on line 583
+[21-Aug-2023 14:48:00 UTC] PHP Warning:  Undefined variable $req in /home/zoltanurban/public_html/netmatters/inc/footer.php on line 61

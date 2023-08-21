@@ -1,10 +1,8 @@
 
-
 <?php include 'inc/functions.php'; ?>
 <?php include 'inc/header.php'; ?>
 
-        <!--Banner Start-->
-
+            <!--Banner Start-->
             <div class="banner">
                 <div class="banner__box">
                     <div class="banner__box-item">
@@ -407,7 +405,7 @@
                     <div class="articles__section">
                         <div class="container">
                             <div class="articles__list">
-                                <div class="row">               
+                                <div class="row">
                                     <?php
                                     foreach (get_news_list() as $item) {
                                         echo "<div class='col " . $item["news_type"] ."'>";
@@ -449,7 +447,6 @@
                                         echo "</div>";
                                     }        
                                     ?>
-
                                 </div>
                             </div>
                         </div>
@@ -591,14 +588,4 @@
                 </div>
                 <!--Slideshow 2 End-->
 
-
 <?php include 'inc/footer.php'; ?>
-
-<?php
-
-include('includes/footer.php')
-
-include('inc/footer.php');
-
-?>
-
