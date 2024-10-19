@@ -58,7 +58,7 @@
                         <div class="footer__company-info">
                             <div class="footer__info">
                                 <div class="footer__logo">
-                                    <img src="<?php echo $req."img/nm-logo-white-med.png"?>" alt="Netmatters Logo">
+                                    <img src="img/nm-logo-white-med.png" alt="Netmatters Logo">
                                 </div>
                                 <h4>Follow us on:</h4>
                                 <div class="footer__social-logos">
@@ -1031,11 +1031,10 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script type="text/javascript" src="https://netmatters.zoltan-urban.netmatters-scs.co.uk/js/stickyheader.js"></script>
-    <script type="text/javascript" src="https://netmatters.zoltan-urban.netmatters-scs.co.uk/js/stickyheader.js"></script>
-    <script type="text/javascript" src="https://netmatters.zoltan-urban.netmatters-scs.co.uk/js/mobilemenu.js"></script>
-    <script type="text/javascript" src="https://netmatters.zoltan-urban.netmatters-scs.co.uk/js/banner.js"></script>
-    <script type="text/javascript" src="https://netmatters.zoltan-urban.netmatters-scs.co.uk/js/cookieconsent.js"></script>
-    <script type="text/javascript" src="https://netmatters.zoltan-urban.netmatters-scs.co.uk/js/contacts.js"></script>
+    <script type="text/javascript" src="js/stickyheader.js"></script>
+    <script type="text/javascript" src="js/mobilemenu.js"></script>
+    <script type="text/javascript" src="js/banner.js"></script>
+    <script type="text/javascript" src="js/cookieconsent.js"></script>
+    <script type="text/javascript" src="js/contacts.js"></script>
 </body>
 </html>

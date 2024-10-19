@@ -3,10 +3,10 @@
 $requestlink = $_SERVER['REQUEST_URI'];
 $title = "";
 switch ($requestlink) {
-    case '/':
+    case '/netmatters/':
         $title = "Full Service Digital Agency | Cambridgeshire & Norfolk | Netmatters";
         break;
-    case '/contact.php':
+    case '/netmatters/contact.php':
         $title = "Contact Us | Netmatters";
         break;
 }
@@ -580,7 +580,7 @@ switch ($requestlink) {
                                     <div class='col--nav-logo'>
                                         <div class='logo-container'>
                                             <a href='/'>
-                                                <img src='<?php echo $req."img/f-logo.png"?>' alt='Netmatters'>
+                                                <img src="img/f-logo.png" alt='Netmatters'>
                                             </a>
                                         </div>
                                     </div>
